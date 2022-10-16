@@ -1,0 +1,5 @@
+<map id="Hospital" name="Hospital">
+<area shape="rect" id="node2" href="$classEntity.html" title="{Entity\n|# observers\l# id\l# entity_id\l# type\l# radius\l# cameras\l|+ Entity()\l+ Entity()\l+ ~Entity()\l+ Entity()\l+ operator=()\l+ AddObserver()\l+ RemoveObserver()\l+ Notify()\l+ GetRadius()\l+ SetRadius()\land 13 more...\l}" alt="" coords="85,365,244,663"/>
+<area shape="rect" id="node3" href="$classIEntity.html" title="{IEntity\n||+ AddObserver()\l+ RemoveObserver()\l+ Notify()\l+ ~IEntity()\l+ GetEntityId()\l+ SetEntityId()\l+ GetType()\l+ SetType()\l+ GetId()\l+ SetId()\l+ UpdateDirection()\l+ UpdatePosition()\l+ GetPosition()\l+ GetDirection()\l+ GetData()\l}" alt="" coords="5,5,164,288"/>
+<area shape="rect" id="node4" href="$classVector3.html" title="A class that can be used to represent a 3D Vector. " alt="" coords="189,5,303,288"/>
+</map>

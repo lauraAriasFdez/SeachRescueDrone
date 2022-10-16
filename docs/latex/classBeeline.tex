@@ -1,0 +1,70 @@
+\hypertarget{classBeeline}{}\section{Beeline Class Reference}
+\label{classBeeline}\index{Beeline@{Beeline}}
+
+
+A class that enables a \hyperlink{classBeeline}{Beeline} movement strategy.  
+
+
+
+
+{\ttfamily \#include $<$Beeline.\+h$>$}
+
+
+
+Inheritance diagram for Beeline\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classBeeline__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Beeline\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classBeeline__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBeeline_a352e1d94483d9a3a1e821f1386f23327}\label{classBeeline_a352e1d94483d9a3a1e821f1386f23327}} 
+\hyperlink{classBeeline_a352e1d94483d9a3a1e821f1386f23327}{Beeline} ()
+\begin{DoxyCompactList}\small\item\em A constructor for an instance of the \hyperlink{classBeeline}{Beeline} class. \end{DoxyCompactList}\item 
+void \hyperlink{classBeeline_a1af3f739bafa5a305e39f3b7f278b79d}{Move} (const \hyperlink{classVector3}{Vector3} \&position, std\+::queue$<$ \hyperlink{classVector3}{Vector3} $>$ \&q)
+\begin{DoxyCompactList}\small\item\em A method that adds locations to the queue of \hyperlink{classVector3}{Vector3} locations to be visited. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class that enables a \hyperlink{classBeeline}{Beeline} movement strategy. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classBeeline_a1af3f739bafa5a305e39f3b7f278b79d}\label{classBeeline_a1af3f739bafa5a305e39f3b7f278b79d}} 
+\index{Beeline@{Beeline}!Move@{Move}}
+\index{Move@{Move}!Beeline@{Beeline}}
+\subsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily void Beeline\+::\+Move (\begin{DoxyParamCaption}\item[{const \hyperlink{classVector3}{Vector3} \&}]{position,  }\item[{std\+::queue$<$ \hyperlink{classVector3}{Vector3} $>$ \&}]{q }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method that adds locations to the queue of \hyperlink{classVector3}{Vector3} locations to be visited. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em position} & A constant reference to a \hyperlink{classVector3}{Vector3} of any location in space. \\
+\hline
+\mbox{\tt in}  & {\em q} & A reference to a queue of \hyperlink{classVector3}{Vector3} objects that represent the locations to be visited in space. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIMovement_abe373c52df6be3a5139ab785b13e8964}{I\+Movement}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/src/\+Movement/\hyperlink{Beeline_8h}{Beeline.\+h}\item 
+/home/user/repo/project/src/\+Movement/\hyperlink{Beeline_8cc}{Beeline.\+cc}\end{DoxyCompactItemize}

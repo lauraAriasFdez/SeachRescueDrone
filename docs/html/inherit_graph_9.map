@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classIMovement.html" title="An Interface for any Movement Strategy. " alt="" coords="5,31,100,57"/>
+<area shape="rect" id="node2" href="$classBeeline.html" title="A class that enables a Beeline movement strategy. " alt="" coords="148,5,219,32"/>
+<area shape="rect" id="node3" href="$classPatrol.html" title="A class that enables a Patrol movement strategy. " alt="" coords="154,56,213,83"/>
+</map>

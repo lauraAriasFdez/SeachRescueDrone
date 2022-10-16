@@ -1,0 +1,10 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classIEntity.html" title="IEntity" alt="" coords="5,81,69,108"/>
+<area shape="rect" id="node2" href="$classEntity.html" title="Entity" alt="" coords="117,81,177,108"/>
+<area shape="rect" id="node3" href="$classHospital.html" title="Hospital" alt="" coords="251,5,327,32"/>
+<area shape="rect" id="node4" href="$classIDrone.html" title="IDrone" alt="" coords="257,56,322,83"/>
+<area shape="rect" id="node7" href="$classRechargeStation.html" title="RechargeStation" alt="" coords="225,107,353,133"/>
+<area shape="rect" id="node8" href="$classRobot.html" title="Robot" alt="" coords="260,157,319,184"/>
+<area shape="rect" id="node5" href="$classBatteryDecorator.html" title="BatteryDecorator" alt="" coords="401,31,536,57"/>
+<area shape="rect" id="node6" href="$classDrone.html" title="Drone" alt="" coords="438,81,499,108"/>
+</map>

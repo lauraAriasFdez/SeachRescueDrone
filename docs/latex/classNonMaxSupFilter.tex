@@ -1,0 +1,78 @@
+\hypertarget{classNonMaxSupFilter}{}\section{Non\+Max\+Sup\+Filter Class Reference}
+\label{classNonMaxSupFilter}\index{Non\+Max\+Sup\+Filter@{Non\+Max\+Sup\+Filter}}
+
+
+A \hyperlink{classFilter}{Filter} class that eliminates wide and fuzzy edges in an image. It only keeps the strongest pixel in the specified direction from the direction matrix.  
+
+
+
+
+{\ttfamily \#include $<$non\+\_\+max\+\_\+sup\+\_\+filter.\+h$>$}
+
+
+
+Inheritance diagram for Non\+Max\+Sup\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classNonMaxSupFilter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Non\+Max\+Sup\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classNonMaxSupFilter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNonMaxSupFilter_a6a5ad2f1e7d98dcf8d6c03e02fe7e5d8}\label{classNonMaxSupFilter_a6a5ad2f1e7d98dcf8d6c03e02fe7e5d8}} 
+\hyperlink{classNonMaxSupFilter_a6a5ad2f1e7d98dcf8d6c03e02fe7e5d8}{Non\+Max\+Sup\+Filter} ()
+\begin{DoxyCompactList}\small\item\em Empty constructor for \hyperlink{classNonMaxSupFilter}{Non\+Max\+Sup\+Filter}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classColor}{Color} $>$ \hyperlink{classNonMaxSupFilter_a00c4dcab5fe613124051d7a782284df3}{Apply\+At\+Pixel} (const std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$ original, int x, int y)
+\begin{DoxyCompactList}\small\item\em Applies the Non-\/\+Max Supression filter to a single pixel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classFilter}{Filter} class that eliminates wide and fuzzy edges in an image. It only keeps the strongest pixel in the specified direction from the direction matrix. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classNonMaxSupFilter_a00c4dcab5fe613124051d7a782284df3}\label{classNonMaxSupFilter_a00c4dcab5fe613124051d7a782284df3}} 
+\index{Non\+Max\+Sup\+Filter@{Non\+Max\+Sup\+Filter}!Apply\+At\+Pixel@{Apply\+At\+Pixel}}
+\index{Apply\+At\+Pixel@{Apply\+At\+Pixel}!Non\+Max\+Sup\+Filter@{Non\+Max\+Sup\+Filter}}
+\subsubsection{\texorpdfstring{Apply\+At\+Pixel()}{ApplyAtPixel()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{classColor}{Color} $>$ Non\+Max\+Sup\+Filter\+::\+Apply\+At\+Pixel (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$}]{original,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Applies the Non-\/\+Max Supression filter to a single pixel. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em original} & A vector of input images to apply the filter over. \\
+\hline
+\mbox{\tt in}  & {\em x} & An integer representing the width in which the image color pixel is located, and the pixel to which the filter should be applied. \\
+\hline
+\mbox{\tt in}  & {\em y} & An integer representing the height in which the image color pixel is located, and the pixel to which the filter should be applied.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A unique pointer array containing a color for each filtered image the filter should produce as an output, for this filter there should be only one color in the vector. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRelatedPixelFilter_a4701695c3b2ca7fdcc41b3d03c5840df}{Related\+Pixel\+Filter}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{non__max__sup__filter_8h}{non\+\_\+max\+\_\+sup\+\_\+filter.\+h}\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{non__max__sup__filter_8cc}{non\+\_\+max\+\_\+sup\+\_\+filter.\+cc}\end{DoxyCompactItemize}

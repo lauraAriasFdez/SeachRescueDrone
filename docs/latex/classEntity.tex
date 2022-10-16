@@ -1,0 +1,483 @@
+\hypertarget{classEntity}{}\section{Entity Class Reference}
+\label{classEntity}\index{Entity@{Entity}}
+
+
+Inheritance diagram for Entity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classEntity__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Entity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classEntity__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEntity_a980f368aa07ce358583982821533a54a}\label{classEntity_a980f368aa07ce358583982821533a54a}} 
+\hyperlink{classEntity_a980f368aa07ce358583982821533a54a}{Entity} ()
+\begin{DoxyCompactList}\small\item\em Default constructor accepting no parameters. \end{DoxyCompactList}\item 
+\hyperlink{classEntity_adce4e08d76d3bfcb9703d29e7e03c145}{Entity} (picojson\+::object \&object)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEntity_a588098978eea6a3486b7361605ff3f0f}\label{classEntity_a588098978eea6a3486b7361605ff3f0f}} 
+virtual \hyperlink{classEntity_a588098978eea6a3486b7361605ff3f0f}{$\sim$\+Entity} ()
+\begin{DoxyCompactList}\small\item\em A destructor that removes/deletes all observers of the entity. \end{DoxyCompactList}\item 
+\hyperlink{classEntity_ad172cbc40deff00a36d76ab8dcf9a3c2}{Entity} (const \hyperlink{classEntity}{Entity} \&object\+To\+Copy)
+\begin{DoxyCompactList}\small\item\em A copy constructor that allows to copy/duplicate any \hyperlink{classEntity}{Entity}. \end{DoxyCompactList}\item 
+void \hyperlink{classEntity_abc90e1d87db431ddbabc81776d8bfb04}{operator=} (const \hyperlink{classEntity}{Entity} \&object\+To\+Copy)
+\begin{DoxyCompactList}\small\item\em Performs a deep copy of the \hyperlink{classEntity}{Entity} object passed in. \end{DoxyCompactList}\item 
+void \hyperlink{classEntity_a13e0fdabb9f5ae73ecd4d7bf7834a3a9}{Add\+Observer} (\hyperlink{classIObserver}{I\+Observer} $\ast$new\+\_\+observer)
+\begin{DoxyCompactList}\small\item\em Function that will add an observer to the entity. \end{DoxyCompactList}\item 
+void \hyperlink{classEntity_a8e6bb1a529eaa32782d83824861ff29f}{Remove\+Observer} (\hyperlink{classIObserver}{I\+Observer} $\ast$observer\+\_\+to\+\_\+remove)
+\begin{DoxyCompactList}\small\item\em Function that will remove an observer from the entity. \end{DoxyCompactList}\item 
+void \hyperlink{classEntity_a9e180b76d5dfa6652edcffaf0aea5ec0}{Notify} (picojson\+::object \&notification)
+\begin{DoxyCompactList}\small\item\em Function that will send a message to the observers of that entity so message gets notified to the UI. \end{DoxyCompactList}\item 
+double \hyperlink{classEntity_a01b41a1294ffea6e11a897c633a14ef4}{Get\+Radius} ()
+\begin{DoxyCompactList}\small\item\em This will return a double which represents radius of entity (for collision) \end{DoxyCompactList}\item 
+void \hyperlink{classEntity_acf8bd6d266b147e86248c1ce5d925665}{Set\+Radius} (int r)
+\begin{DoxyCompactList}\small\item\em This will set a double which represents radius of entity (for collision) \end{DoxyCompactList}\item 
+int \hyperlink{classEntity_a0040a9ca2da893a4eccec20f542220a9}{Get\+Id} ()
+\begin{DoxyCompactList}\small\item\em This will return an integer that represents the command in which the object was created. \end{DoxyCompactList}\item 
+void \hyperlink{classEntity_ac806fc870b7d2419fbd207cf6ca4dd2e}{Set\+Id} (int id2)
+\begin{DoxyCompactList}\small\item\em This will set the command \# in which the object was created. \end{DoxyCompactList}\item 
+int \hyperlink{classEntity_afd77b9faebc188849705d91c239d193c}{Get\+Entity\+Id} ()
+\begin{DoxyCompactList}\small\item\em This will return the \hyperlink{classEntity}{Entity} Id, meaning the type of object (0 represents a drone) \end{DoxyCompactList}\item 
+void \hyperlink{classEntity_a2cc57041bbb23a4acdf1b2afe1756ac7}{Set\+Entity\+Id} (int id2)
+\begin{DoxyCompactList}\small\item\em This will set the \hyperlink{classEntity}{Entity} Id, meaning the type of object (0 represents a drone) \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classEntity_a05d8f23908e47ad19e762754461c62e6}{Get\+Type} ()
+\begin{DoxyCompactList}\small\item\em This will return a string representing object type \char`\"{}drone\char`\"{}, \char`\"{}hospital\char`\"{}... \end{DoxyCompactList}\item 
+void \hyperlink{classEntity_a8d956360ddbff29834d22855a785fe6c}{Set\+Type} (std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em This will set the object type \char`\"{}drone\char`\"{}, \char`\"{}hospital\char`\"{}... \end{DoxyCompactList}\item 
+void \hyperlink{classEntity_a6ae8474b6eb3684f3977dcb5406a3d11}{Update\+Direction} (const \hyperlink{classVector3}{Vector3} \&new\+Dir)
+\begin{DoxyCompactList}\small\item\em Updates the direction of the entity. \end{DoxyCompactList}\item 
+void \hyperlink{classEntity_ab58e8c31ba272bdd1e945130af43493f}{Update\+Position} (const \hyperlink{classVector3}{Vector3} \&new\+Dir)
+\begin{DoxyCompactList}\small\item\em Updates the position of the entity. \end{DoxyCompactList}\item 
+\hyperlink{classVector3}{Vector3} \hyperlink{classEntity_ac6916016f6b9b4b4d18fd988a373fddb}{Get\+Position} () const
+\begin{DoxyCompactList}\small\item\em getter for entity position \end{DoxyCompactList}\item 
+\hyperlink{classVector3}{Vector3} \hyperlink{classEntity_aae3890ab5d3d17ef4f805e735890f077}{Get\+Direction} () const
+\begin{DoxyCompactList}\small\item\em getter for entity direction \end{DoxyCompactList}\item 
+virtual void \hyperlink{classEntity_a9f3c739a3ef623a9febc7801270ba719}{Add\+Camera} (\hyperlink{classCamera}{Camera} $\ast$new\+\_\+camera)
+\begin{DoxyCompactList}\small\item\em Function that will add a camera to the vector of cameras of the entity. \end{DoxyCompactList}\item 
+virtual \hyperlink{classCamera}{Camera} $\ast$ \hyperlink{classEntity_ae09d3e79d0d14c2990b1da52d2268399}{Get\+Camera} (int idx)
+\begin{DoxyCompactList}\small\item\em Get the idx camera from the cameras of the entity. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classEntity_a25fcdac45c906ba995f427ce6facab96}{Get\+Data} (float dt)
+\begin{DoxyCompactList}\small\item\em A method to get the pertinent data of an \hyperlink{classEntity}{Entity} to be written to C\+SV file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEntity_a6e98ade5dc4d06116b35b3447afbf75b}\label{classEntity_a6e98ade5dc4d06116b35b3447afbf75b}} 
+std\+::vector$<$ \hyperlink{classIObserver}{I\+Observer} $\ast$ $>$ \hyperlink{classEntity_a6e98ade5dc4d06116b35b3447afbf75b}{observers}
+\begin{DoxyCompactList}\small\item\em A vector of observer pointer objects that need to be notify if this entity changes states. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEntity_aa4425a59c337b4d3b71c217ccaf511bc}\label{classEntity_aa4425a59c337b4d3b71c217ccaf511bc}} 
+int \hyperlink{classEntity_aa4425a59c337b4d3b71c217ccaf511bc}{id}
+\begin{DoxyCompactList}\small\item\em int representing command number when entity was created \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEntity_a3aa2fdf81f48766096b7b92c9972b13a}\label{classEntity_a3aa2fdf81f48766096b7b92c9972b13a}} 
+int \hyperlink{classEntity_a3aa2fdf81f48766096b7b92c9972b13a}{entity\+\_\+id}
+\begin{DoxyCompactList}\small\item\em int representing type of object (0 represents a drone) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEntity_a298a9ebf2474bb00874b5ff6a0d637ef}\label{classEntity_a298a9ebf2474bb00874b5ff6a0d637ef}} 
+std\+::string \hyperlink{classEntity_a298a9ebf2474bb00874b5ff6a0d637ef}{type}
+\begin{DoxyCompactList}\small\item\em string representing object type \char`\"{}drone\char`\"{}, \char`\"{}hospital\char`\"{}... \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEntity_a09590883f0fae6e8e28751ccae8b4e93}\label{classEntity_a09590883f0fae6e8e28751ccae8b4e93}} 
+\hyperlink{classVector3}{Vector3} \hyperlink{classEntity_a09590883f0fae6e8e28751ccae8b4e93}{position}
+\begin{DoxyCompactList}\small\item\em A vector representing the position of the \hyperlink{classEntity}{Entity}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEntity_a0cbd80b9c5246037b94addee1730c41d}\label{classEntity_a0cbd80b9c5246037b94addee1730c41d}} 
+\hyperlink{classVector3}{Vector3} \hyperlink{classEntity_a0cbd80b9c5246037b94addee1730c41d}{direction}
+\begin{DoxyCompactList}\small\item\em A vector representing the direction of the \hyperlink{classEntity}{Entity}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEntity_a610ded8f251ca7e837de4497821667e5}\label{classEntity_a610ded8f251ca7e837de4497821667e5}} 
+double \hyperlink{classEntity_a610ded8f251ca7e837de4497821667e5}{radius}
+\begin{DoxyCompactList}\small\item\em A double representing the radius of the \hyperlink{classEntity}{Entity}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEntity_a1745d1d05834aab29e1591a3a0b1877d}\label{classEntity_a1745d1d05834aab29e1591a3a0b1877d}} 
+std\+::vector$<$ \hyperlink{classCamera}{Camera} $\ast$ $>$ \hyperlink{classEntity_a1745d1d05834aab29e1591a3a0b1877d}{cameras}
+\begin{DoxyCompactList}\small\item\em A vector of pointers to instances of the \hyperlink{classCamera}{Camera} class representing the cameras that the \hyperlink{classEntity}{Entity} can use. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEntity_adce4e08d76d3bfcb9703d29e7e03c145}\label{classEntity_adce4e08d76d3bfcb9703d29e7e03c145}} 
+\index{Entity@{Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Entity()}{Entity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{picojson\+::object \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object} & picson object Object that we want to retrive info from \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEntity_ad172cbc40deff00a36d76ab8dcf9a3c2}\label{classEntity_ad172cbc40deff00a36d76ab8dcf9a3c2}} 
+\index{Entity@{Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Entity()}{Entity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{const \hyperlink{classEntity}{Entity} \&}]{object\+To\+Copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A copy constructor that allows to copy/duplicate any \hyperlink{classEntity}{Entity}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object\+To\+Copy} & The \hyperlink{classEntity}{Entity} object to make a deep copy from. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEntity_a9f3c739a3ef623a9febc7801270ba719}\label{classEntity_a9f3c739a3ef623a9febc7801270ba719}} 
+\index{Entity@{Entity}!Add\+Camera@{Add\+Camera}}
+\index{Add\+Camera@{Add\+Camera}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Add\+Camera()}{AddCamera()}}
+{\footnotesize\ttfamily void Entity\+::\+Add\+Camera (\begin{DoxyParamCaption}\item[{\hyperlink{classCamera}{Camera} $\ast$}]{new\+\_\+camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Function that will add a camera to the vector of cameras of the entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\+\_\+camera} & New camera object to be added to the vector of cameras of the entity \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classBatteryDecorator_a25470bba4af4e6c112a858584a38fcdd}{Battery\+Decorator}.
+
+\mbox{\Hypertarget{classEntity_a13e0fdabb9f5ae73ecd4d7bf7834a3a9}\label{classEntity_a13e0fdabb9f5ae73ecd4d7bf7834a3a9}} 
+\index{Entity@{Entity}!Add\+Observer@{Add\+Observer}}
+\index{Add\+Observer@{Add\+Observer}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Add\+Observer()}{AddObserver()}}
+{\footnotesize\ttfamily void Entity\+::\+Add\+Observer (\begin{DoxyParamCaption}\item[{\hyperlink{classIObserver}{I\+Observer} $\ast$}]{new\+\_\+observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Function that will add an observer to the entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\+\_\+observer} & New observer to be added that will receive notifications of the entities state changes. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIEntity_a0d682e3663a78b6b5fd3df8cd51aa321}{I\+Entity}.
+
+\mbox{\Hypertarget{classEntity_ae09d3e79d0d14c2990b1da52d2268399}\label{classEntity_ae09d3e79d0d14c2990b1da52d2268399}} 
+\index{Entity@{Entity}!Get\+Camera@{Get\+Camera}}
+\index{Get\+Camera@{Get\+Camera}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Get\+Camera()}{GetCamera()}}
+{\footnotesize\ttfamily \hyperlink{classCamera}{Camera} $\ast$ Entity\+::\+Get\+Camera (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the idx camera from the cameras of the entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em idx} & integer representing the camera you want to get\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classCamera}{Camera} object pointer 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classBatteryDecorator_ad65baa2cd098b990a49bdff7c0fde62c}{Battery\+Decorator}.
+
+\mbox{\Hypertarget{classEntity_a25fcdac45c906ba995f427ce6facab96}\label{classEntity_a25fcdac45c906ba995f427ce6facab96}} 
+\index{Entity@{Entity}!Get\+Data@{Get\+Data}}
+\index{Get\+Data@{Get\+Data}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Get\+Data()}{GetData()}}
+{\footnotesize\ttfamily std\+::string Entity\+::\+Get\+Data (\begin{DoxyParamCaption}\item[{float}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method to get the pertinent data of an \hyperlink{classEntity}{Entity} to be written to C\+SV file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dt} & A float representing the change in time since the last update\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String Returns a string containing the comma separated data to be written to a C\+SV file. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIEntity_a4d9355e68c6be349f57dc67fc1c036ba}{I\+Entity}.
+
+\mbox{\Hypertarget{classEntity_aae3890ab5d3d17ef4f805e735890f077}\label{classEntity_aae3890ab5d3d17ef4f805e735890f077}} 
+\index{Entity@{Entity}!Get\+Direction@{Get\+Direction}}
+\index{Get\+Direction@{Get\+Direction}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Get\+Direction()}{GetDirection()}}
+{\footnotesize\ttfamily \hyperlink{classVector3}{Vector3} Entity\+::\+Get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+getter for entity direction 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classVector3}{Vector3} object representing the entity direction 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIEntity_aa99a8fef8b22195a5113c38ef51f086d}{I\+Entity}.
+
+\mbox{\Hypertarget{classEntity_afd77b9faebc188849705d91c239d193c}\label{classEntity_afd77b9faebc188849705d91c239d193c}} 
+\index{Entity@{Entity}!Get\+Entity\+Id@{Get\+Entity\+Id}}
+\index{Get\+Entity\+Id@{Get\+Entity\+Id}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Get\+Entity\+Id()}{GetEntityId()}}
+{\footnotesize\ttfamily int Entity\+::\+Get\+Entity\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This will return the \hyperlink{classEntity}{Entity} Id, meaning the type of object (0 represents a drone) 
+
+\begin{DoxyReturn}{Returns}
+integer representing the type of object of the entity 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIEntity_a4359ee47413fa0b2940b3b0336e13861}{I\+Entity}.
+
+\mbox{\Hypertarget{classEntity_a0040a9ca2da893a4eccec20f542220a9}\label{classEntity_a0040a9ca2da893a4eccec20f542220a9}} 
+\index{Entity@{Entity}!Get\+Id@{Get\+Id}}
+\index{Get\+Id@{Get\+Id}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Get\+Id()}{GetId()}}
+{\footnotesize\ttfamily int Entity\+::\+Get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This will return an integer that represents the command in which the object was created. 
+
+\begin{DoxyReturn}{Returns}
+id representing the command number 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIEntity_ac3d60cc2fab1ccb61c1be92373e636d9}{I\+Entity}.
+
+\mbox{\Hypertarget{classEntity_ac6916016f6b9b4b4d18fd988a373fddb}\label{classEntity_ac6916016f6b9b4b4d18fd988a373fddb}} 
+\index{Entity@{Entity}!Get\+Position@{Get\+Position}}
+\index{Get\+Position@{Get\+Position}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Get\+Position()}{GetPosition()}}
+{\footnotesize\ttfamily \hyperlink{classVector3}{Vector3} Entity\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+getter for entity position 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classVector3}{Vector3} object representing the entity position 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIEntity_a9bc32587aab91761fc0e718612498199}{I\+Entity}.
+
+\mbox{\Hypertarget{classEntity_a01b41a1294ffea6e11a897c633a14ef4}\label{classEntity_a01b41a1294ffea6e11a897c633a14ef4}} 
+\index{Entity@{Entity}!Get\+Radius@{Get\+Radius}}
+\index{Get\+Radius@{Get\+Radius}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Get\+Radius()}{GetRadius()}}
+{\footnotesize\ttfamily double Entity\+::\+Get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This will return a double which represents radius of entity (for collision) 
+
+\begin{DoxyReturn}{Returns}
+radius of the entity as a double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEntity_a05d8f23908e47ad19e762754461c62e6}\label{classEntity_a05d8f23908e47ad19e762754461c62e6}} 
+\index{Entity@{Entity}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Get\+Type()}{GetType()}}
+{\footnotesize\ttfamily std\+::string Entity\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This will return a string representing object type \char`\"{}drone\char`\"{}, \char`\"{}hospital\char`\"{}... 
+
+\begin{DoxyReturn}{Returns}
+string representing the type of object of the entity 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIEntity_ac494bb9712d5a03495a1a95afdbd7153}{I\+Entity}.
+
+\mbox{\Hypertarget{classEntity_a9e180b76d5dfa6652edcffaf0aea5ec0}\label{classEntity_a9e180b76d5dfa6652edcffaf0aea5ec0}} 
+\index{Entity@{Entity}!Notify@{Notify}}
+\index{Notify@{Notify}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Notify()}{Notify()}}
+{\footnotesize\ttfamily void Entity\+::\+Notify (\begin{DoxyParamCaption}\item[{picojson\+::object \&}]{notification }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Function that will send a message to the observers of that entity so message gets notified to the UI. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em notification} & message specifying the entity´s state change \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIEntity_acd19cac6fe0e65495f80d1962320e0c3}{I\+Entity}.
+
+\mbox{\Hypertarget{classEntity_abc90e1d87db431ddbabc81776d8bfb04}\label{classEntity_abc90e1d87db431ddbabc81776d8bfb04}} 
+\index{Entity@{Entity}!operator=@{operator=}}
+\index{operator=@{operator=}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily void Entity\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classEntity}{Entity} \&}]{object\+To\+Copy }\end{DoxyParamCaption})}
+
+
+
+Performs a deep copy of the \hyperlink{classEntity}{Entity} object passed in. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object\+To\+Copy} & The \hyperlink{classEntity}{Entity} object to copy from. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEntity_a8e6bb1a529eaa32782d83824861ff29f}\label{classEntity_a8e6bb1a529eaa32782d83824861ff29f}} 
+\index{Entity@{Entity}!Remove\+Observer@{Remove\+Observer}}
+\index{Remove\+Observer@{Remove\+Observer}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Remove\+Observer()}{RemoveObserver()}}
+{\footnotesize\ttfamily void Entity\+::\+Remove\+Observer (\begin{DoxyParamCaption}\item[{\hyperlink{classIObserver}{I\+Observer} $\ast$}]{observer\+\_\+to\+\_\+remove }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Function that will remove an observer from the entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em observer\+\_\+to\+\_\+remove} & observer to be removed if present in the entity entities state changes. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIEntity_a651f1ca9f1e494af74e3f580b1c118d6}{I\+Entity}.
+
+\mbox{\Hypertarget{classEntity_a2cc57041bbb23a4acdf1b2afe1756ac7}\label{classEntity_a2cc57041bbb23a4acdf1b2afe1756ac7}} 
+\index{Entity@{Entity}!Set\+Entity\+Id@{Set\+Entity\+Id}}
+\index{Set\+Entity\+Id@{Set\+Entity\+Id}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Set\+Entity\+Id()}{SetEntityId()}}
+{\footnotesize\ttfamily void Entity\+::\+Set\+Entity\+Id (\begin{DoxyParamCaption}\item[{int}]{id2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This will set the \hyperlink{classEntity}{Entity} Id, meaning the type of object (0 represents a drone) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em id2} & integer representing the type of object of the entity \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIEntity_a3a830862181cb0548d2aca83d908263e}{I\+Entity}.
+
+\mbox{\Hypertarget{classEntity_ac806fc870b7d2419fbd207cf6ca4dd2e}\label{classEntity_ac806fc870b7d2419fbd207cf6ca4dd2e}} 
+\index{Entity@{Entity}!Set\+Id@{Set\+Id}}
+\index{Set\+Id@{Set\+Id}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Set\+Id()}{SetId()}}
+{\footnotesize\ttfamily void Entity\+::\+Set\+Id (\begin{DoxyParamCaption}\item[{int}]{id2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This will set the command \# in which the object was created. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em id2} & the command number as an integer \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIEntity_a8c6af682e07f569ba2f164d214295c67}{I\+Entity}.
+
+\mbox{\Hypertarget{classEntity_acf8bd6d266b147e86248c1ce5d925665}\label{classEntity_acf8bd6d266b147e86248c1ce5d925665}} 
+\index{Entity@{Entity}!Set\+Radius@{Set\+Radius}}
+\index{Set\+Radius@{Set\+Radius}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Set\+Radius()}{SetRadius()}}
+{\footnotesize\ttfamily void Entity\+::\+Set\+Radius (\begin{DoxyParamCaption}\item[{int}]{r }\end{DoxyParamCaption})}
+
+
+
+This will set a double which represents radius of entity (for collision) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em r} & radius of the entity as a double \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEntity_a8d956360ddbff29834d22855a785fe6c}\label{classEntity_a8d956360ddbff29834d22855a785fe6c}} 
+\index{Entity@{Entity}!Set\+Type@{Set\+Type}}
+\index{Set\+Type@{Set\+Type}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Set\+Type()}{SetType()}}
+{\footnotesize\ttfamily void Entity\+::\+Set\+Type (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This will set the object type \char`\"{}drone\char`\"{}, \char`\"{}hospital\char`\"{}... 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em name} & string representing the type of object of the entity \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIEntity_a49b3c54f94a93d4a9f96527ffb8982f5}{I\+Entity}.
+
+\mbox{\Hypertarget{classEntity_a6ae8474b6eb3684f3977dcb5406a3d11}\label{classEntity_a6ae8474b6eb3684f3977dcb5406a3d11}} 
+\index{Entity@{Entity}!Update\+Direction@{Update\+Direction}}
+\index{Update\+Direction@{Update\+Direction}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Update\+Direction()}{UpdateDirection()}}
+{\footnotesize\ttfamily void Entity\+::\+Update\+Direction (\begin{DoxyParamCaption}\item[{const \hyperlink{classVector3}{Vector3} \&}]{new\+Dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the direction of the entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\+Dir} & vector3 representing the new direction of the object \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIEntity_af24054e349dcdaea31a778427a34495d}{I\+Entity}.
+
+\mbox{\Hypertarget{classEntity_ab58e8c31ba272bdd1e945130af43493f}\label{classEntity_ab58e8c31ba272bdd1e945130af43493f}} 
+\index{Entity@{Entity}!Update\+Position@{Update\+Position}}
+\index{Update\+Position@{Update\+Position}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Update\+Position()}{UpdatePosition()}}
+{\footnotesize\ttfamily void Entity\+::\+Update\+Position (\begin{DoxyParamCaption}\item[{const \hyperlink{classVector3}{Vector3} \&}]{new\+Dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the position of the entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\+Dir} & vector3 representing the new position of the object \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIEntity_ad30f6845c8747534e7607ca97addbdc6}{I\+Entity}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/src/\+Entity/\hyperlink{Entity_8h}{Entity.\+h}\item 
+/home/user/repo/project/src/\+Entity/\hyperlink{Entity_8cc}{Entity.\+cc}\end{DoxyCompactItemize}

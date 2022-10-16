@@ -1,0 +1,53 @@
+G-\/\+S\+AR is a simulation of a drone with an attached camera being used for the search and rescue of one or more subjects. The onboard camera is used to take aerial pictures of a landscape, a sub-\/application analyzes the images using image filtering, and when the subject is detected in an image the coordinates of the subject are sent to the drone for investigation. Once the drone has found the subject, a larger rescue done is sent to the coordinates of the drone to rescue the subject. The rescued subject is then flown to a local hospital.
+
+This application is a proof-\/of-\/concept of how the use of drones in a search and rescue situation can be utilized. Where humans might have problems navigating in rural areas, after a natural disaster event, etc. a drone can be launched quickly and in almost any location on Earth. As tablet and smartphone processors have advanced, the general application could be used in remote areas without power to conduct search and rescues. This tool could be used as a foundation for new life saving search and rescue capabilities that come with the use of this technology.
+
+\subsection*{Learn About G-\/\+S\+AR}
+
+Below you will find quick links to get an overview of this application, learn how to download the source code to get started, and how to contribute new features to the codebase.
+\begin{DoxyEnumerate}
+\item \hyperlink{overview}{Overview}
+\begin{DoxyItemize}
+\item Learn more about the overall structure of G-\/\+S\+AR and its subsystems.
+\end{DoxyItemize}
+\item \hyperlink{getting-started}{Getting Started}
+\begin{DoxyItemize}
+\item Learn more about how to clone, build, and run this project.
+\end{DoxyItemize}
+\item \hyperlink{contributing}{How to Contribute}
+\begin{DoxyItemize}
+\item Learn more about the process of contributing new features to the open-\/source codebase.
+\end{DoxyItemize}
+\item \hyperlink{image-processing}{Image Processing}
+\begin{DoxyItemize}
+\item Learn more about command-\/line image processing application that is apart of this codebase.
+\end{DoxyItemize}
+\item \hyperlink{simulation}{Simulation}
+\begin{DoxyItemize}
+\item Learn more about rescue simulation application that is apart of this codebase.
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+
+\subsection*{Open Source Dependencies}
+
+This project does use the following header files from the \href{https://github.com/nothings/stb}{\tt stb library}\+:
+\begin{DoxyItemize}
+\item stb\+\_\+image.\+h
+\item stb\+\_\+image\+\_\+write.\+h
+\end{DoxyItemize}
+
+These header files are public domain C image loading and image writing libraries. Credit to the team at \href{http://nothings.org}{\tt nothings} for this great work!
+
+This project uses the Open\+CV library for image processing within the \hyperlink{classObjectDetector}{Object\+Detector} class used for the \hyperlink{classRescueSimulation}{Rescue\+Simulation} \href{https://github.com/opencv/opencv}{\tt Open\+CV library}. Credit to the team at \href{https://opencv.org/}{\tt Open\+CV} for their amazing work!
+
+This project\textquotesingle{}s test suite is built on \href{https://github.com/google/googletest}{\tt Google\+Test}. A big thank you to the team at Google for this test framework foundation!
+
+\subsection*{References}
+
+The general algorithms for the Gaussian, Sobel, Non-\/\+Maximum Suppression, Double Threshold, and Hysteresis filters in the command-\/line Image Processing tool were created using the algorithms defined here\+: \href{https://towardsdatascience.com/canny-edge-detection-step-by-step-in-python-computer-vision-b49c3a2d8123}{\tt https\+://towardsdatascience.\+com/canny-\/edge-\/detection-\/step-\/by-\/step-\/in-\/python-\/computer-\/vision-\/b49c3a2d8123}
+
+Each algorithm was modified based on the specified design of this project. Credit for the general implementation of the algorithms should be awarded to the Towards Data Science group.
+
+\subsection*{Copyright}
+
+\copyright{} 2021 Laura Arias Fernandez, Michael Weiner, and Malik Khadar All rights reserved. 

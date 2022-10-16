@@ -1,0 +1,7 @@
+<map id="ConvolutionFilter" name="ConvolutionFilter">
+<area shape="rect" id="node4" href="$classGaussianFilter.html" title="A ConvolutionFilter that computes a gaussian kernel given a kernel size and sigma. " alt="" coords="5,484,144,576"/>
+<area shape="rect" id="node5" href="$classMeanBlurFilter.html" title="A ConvolutionFilter that computes the mean of all the surrounding pixels and replaces the central pix..." alt="" coords="169,484,309,576"/>
+<area shape="rect" id="node6" href="$classSobelFilter.html" title="A filter that iterates two different kernels over an image to extract horizontal and vertical lines..." alt="" coords="333,484,464,576"/>
+<area shape="rect" id="node2" href="$classRelatedPixelFilter.html" title="Abstract class that defines the virtual methods for all classes derived from RelatedPixelFilter. " alt="" coords="153,145,324,252"/>
+<area shape="rect" id="node3" href="$classFilter.html" title="Abstract class that defines the virtual methods for all filter classes. " alt="" coords="193,5,284,97"/>
+</map>

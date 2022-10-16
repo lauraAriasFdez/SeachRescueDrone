@@ -1,0 +1,286 @@
+\hypertarget{classVector3}{}\section{Vector3 Class Reference}
+\label{classVector3}\index{Vector3@{Vector3}}
+
+
+A class that can be used to represent a 3D Vector.  
+
+
+
+
+{\ttfamily \#include $<$vector3.\+h$>$}
+
+
+
+Collaboration diagram for Vector3\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classVector3__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVector3_a0f49191f7e001e7f7ae1cb49522118b4}{Vector3} ()
+\begin{DoxyCompactList}\small\item\em The default constructor of a 3D Vector. \end{DoxyCompactList}\item 
+\hyperlink{classVector3_ac5631420a11b6fbda5ea620877c7425c}{Vector3} (const double x, const double y, const double z)
+\begin{DoxyCompactList}\small\item\em Constructor of a Double Threshold \hyperlink{classFilter}{Filter} with a specified x, y, and z component values. \end{DoxyCompactList}\item 
+\hyperlink{classVector3}{Vector3} \hyperlink{classVector3_ae8a28dd5a00fa5a2bf5427b0f7a59e58}{operator+} (const \hyperlink{classVector3}{Vector3} \&vec)
+\begin{DoxyCompactList}\small\item\em Operator overload for the addition of two \hyperlink{classVector3}{Vector3} objects. \end{DoxyCompactList}\item 
+\hyperlink{classVector3}{Vector3} \hyperlink{classVector3_a71264029df074d12dbcd57a95a136fd6}{operator-\/} (const \hyperlink{classVector3}{Vector3} \&vec)
+\begin{DoxyCompactList}\small\item\em Operator overload for the subtraction of two \hyperlink{classVector3}{Vector3} objects. \end{DoxyCompactList}\item 
+\hyperlink{classVector3}{Vector3} \hyperlink{classVector3_af53c537196154cdc5c3caf6cb9990719}{operator$\ast$} (const double val)
+\begin{DoxyCompactList}\small\item\em Operator overload for the multiplication of a scalar across an instance of a \hyperlink{classVector3}{Vector3} object. \end{DoxyCompactList}\item 
+\hyperlink{classVector3}{Vector3} \hyperlink{classVector3_af3ab78e4a06b41bd2b3f455301697a13}{operator/} (const double val)
+\begin{DoxyCompactList}\small\item\em Operator overload for the division of a scalar across an instance of a \hyperlink{classVector3}{Vector3} object. \end{DoxyCompactList}\item 
+double \hyperlink{classVector3_a96e6e436600d1420250ef2868854988d}{Magnitude} () const
+\begin{DoxyCompactList}\small\item\em A method that returns the magnitude of a \hyperlink{classVector3}{Vector3} object. \end{DoxyCompactList}\item 
+double \hyperlink{classVector3_a0d6027056f981cfe6a12d2ffaad0cf51}{Distance} (const \hyperlink{classVector3}{Vector3} \&point2) const
+\begin{DoxyCompactList}\small\item\em A method that returns the distance between the current instance of \hyperlink{classVector3}{Vector3} and point2. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classVector3_ab4e0ba9b985cd5cf0e8960d1e449581e}\label{classVector3_ab4e0ba9b985cd5cf0e8960d1e449581e}} 
+void \hyperlink{classVector3_ab4e0ba9b985cd5cf0e8960d1e449581e}{Print} ()
+\begin{DoxyCompactList}\small\item\em A method that prints the the \hyperlink{classVector3}{Vector3} object to the command line in the form of \mbox{[}x, y, z\mbox{]}. \end{DoxyCompactList}\item 
+double \hyperlink{classVector3_ad4607794c0c8cc99b3be516b69d95030}{GetX} () const
+\begin{DoxyCompactList}\small\item\em A method that returns the x-\/component of a \hyperlink{classVector3}{Vector3} object. \end{DoxyCompactList}\item 
+double \hyperlink{classVector3_a31995bcdcdd4363a5e467f4ade0abf9b}{GetY} () const
+\begin{DoxyCompactList}\small\item\em A method that returns the y-\/component of a \hyperlink{classVector3}{Vector3} object. \end{DoxyCompactList}\item 
+double \hyperlink{classVector3_a4212c6c9c1c49feedf6de46522286e45}{GetZ} () const
+\begin{DoxyCompactList}\small\item\em A method that returns the z-\/component of a \hyperlink{classVector3}{Vector3} object. \end{DoxyCompactList}\item 
+void \hyperlink{classVector3_a11008100f53bc216fa17e3f80fd8e26e}{SetX} (const double val)
+\begin{DoxyCompactList}\small\item\em A method that can set the x-\/component of an instance of the \hyperlink{classVector3}{Vector3} class. \end{DoxyCompactList}\item 
+void \hyperlink{classVector3_a93488ef1d624926521480f5d45270e5d}{SetY} (const double val)
+\begin{DoxyCompactList}\small\item\em A method that can set the y-\/component of an instance of the \hyperlink{classVector3}{Vector3} class. \end{DoxyCompactList}\item 
+void \hyperlink{classVector3_a69c1d50b5ec7c02d4d8ecfc19030e996}{SetZ} (const double val)
+\begin{DoxyCompactList}\small\item\em A method that can set the z-\/component of an instance of the \hyperlink{classVector3}{Vector3} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class that can be used to represent a 3D Vector. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classVector3_a0f49191f7e001e7f7ae1cb49522118b4}\label{classVector3_a0f49191f7e001e7f7ae1cb49522118b4}} 
+\index{Vector3@{Vector3}!Vector3@{Vector3}}
+\index{Vector3@{Vector3}!Vector3@{Vector3}}
+\subsubsection{\texorpdfstring{Vector3()}{Vector3()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Vector3\+::\+Vector3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The default constructor of a 3D Vector. 
+
+\begin{DoxyReturn}{Returns}
+Returns an instance of \hyperlink{classVector3}{Vector3} object whose vector components are all 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVector3_ac5631420a11b6fbda5ea620877c7425c}\label{classVector3_ac5631420a11b6fbda5ea620877c7425c}} 
+\index{Vector3@{Vector3}!Vector3@{Vector3}}
+\index{Vector3@{Vector3}!Vector3@{Vector3}}
+\subsubsection{\texorpdfstring{Vector3()}{Vector3()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Vector3\+::\+Vector3 (\begin{DoxyParamCaption}\item[{const double}]{x,  }\item[{const double}]{y,  }\item[{const double}]{z }\end{DoxyParamCaption})}
+
+
+
+Constructor of a Double Threshold \hyperlink{classFilter}{Filter} with a specified x, y, and z component values. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & A double value that represents the value of the x-\/component of the 3D Vector. \\
+\hline
+\mbox{\tt in}  & {\em y} & A double value that represents the value of the y-\/component of the 3D Vector. \\
+\hline
+\mbox{\tt in}  & {\em z} & A double value that represents the value of the z-\/component of the 3D Vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an instance of \hyperlink{classVector3}{Vector3} object with the specific x, y, and z components. 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classVector3_a0d6027056f981cfe6a12d2ffaad0cf51}\label{classVector3_a0d6027056f981cfe6a12d2ffaad0cf51}} 
+\index{Vector3@{Vector3}!Distance@{Distance}}
+\index{Distance@{Distance}!Vector3@{Vector3}}
+\subsubsection{\texorpdfstring{Distance()}{Distance()}}
+{\footnotesize\ttfamily double Vector3\+::\+Distance (\begin{DoxyParamCaption}\item[{const \hyperlink{classVector3}{Vector3} \&}]{point2 }\end{DoxyParamCaption}) const}
+
+
+
+A method that returns the distance between the current instance of \hyperlink{classVector3}{Vector3} and point2. 
+
+\begin{DoxyReturn}{Returns}
+Returns the distance between the current instance of \hyperlink{classVector3}{Vector3} and point2. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVector3_ad4607794c0c8cc99b3be516b69d95030}\label{classVector3_ad4607794c0c8cc99b3be516b69d95030}} 
+\index{Vector3@{Vector3}!GetX@{GetX}}
+\index{GetX@{GetX}!Vector3@{Vector3}}
+\subsubsection{\texorpdfstring{Get\+X()}{GetX()}}
+{\footnotesize\ttfamily double Vector3\+::\+GetX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+A method that returns the x-\/component of a \hyperlink{classVector3}{Vector3} object. 
+
+\begin{DoxyReturn}{Returns}
+Returns the double value of the x-\/component of the current \hyperlink{classVector3}{Vector3} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVector3_a31995bcdcdd4363a5e467f4ade0abf9b}\label{classVector3_a31995bcdcdd4363a5e467f4ade0abf9b}} 
+\index{Vector3@{Vector3}!GetY@{GetY}}
+\index{GetY@{GetY}!Vector3@{Vector3}}
+\subsubsection{\texorpdfstring{Get\+Y()}{GetY()}}
+{\footnotesize\ttfamily double Vector3\+::\+GetY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+A method that returns the y-\/component of a \hyperlink{classVector3}{Vector3} object. 
+
+\begin{DoxyReturn}{Returns}
+Returns the double value of the y-\/component of the current \hyperlink{classVector3}{Vector3} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVector3_a4212c6c9c1c49feedf6de46522286e45}\label{classVector3_a4212c6c9c1c49feedf6de46522286e45}} 
+\index{Vector3@{Vector3}!GetZ@{GetZ}}
+\index{GetZ@{GetZ}!Vector3@{Vector3}}
+\subsubsection{\texorpdfstring{Get\+Z()}{GetZ()}}
+{\footnotesize\ttfamily double Vector3\+::\+GetZ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+A method that returns the z-\/component of a \hyperlink{classVector3}{Vector3} object. 
+
+\begin{DoxyReturn}{Returns}
+Returns the double value of the z-\/component of the current \hyperlink{classVector3}{Vector3} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVector3_a96e6e436600d1420250ef2868854988d}\label{classVector3_a96e6e436600d1420250ef2868854988d}} 
+\index{Vector3@{Vector3}!Magnitude@{Magnitude}}
+\index{Magnitude@{Magnitude}!Vector3@{Vector3}}
+\subsubsection{\texorpdfstring{Magnitude()}{Magnitude()}}
+{\footnotesize\ttfamily double Vector3\+::\+Magnitude (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+A method that returns the magnitude of a \hyperlink{classVector3}{Vector3} object. 
+
+\begin{DoxyReturn}{Returns}
+Returns the double value of the magnitude of the vector. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVector3_af53c537196154cdc5c3caf6cb9990719}\label{classVector3_af53c537196154cdc5c3caf6cb9990719}} 
+\index{Vector3@{Vector3}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vector3@{Vector3}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \hyperlink{classVector3}{Vector3} Vector3\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const double}]{val }\end{DoxyParamCaption})}
+
+
+
+Operator overload for the multiplication of a scalar across an instance of a \hyperlink{classVector3}{Vector3} object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em val} & A constant scalar double that will be multipled across each of the x, y, and z components of the \hyperlink{classVector3}{Vector3}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an instance of \hyperlink{classVector3}{Vector3} object whose x, y, and z components are equal to their original values multiplied by the value of val. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVector3_ae8a28dd5a00fa5a2bf5427b0f7a59e58}\label{classVector3_ae8a28dd5a00fa5a2bf5427b0f7a59e58}} 
+\index{Vector3@{Vector3}!operator+@{operator+}}
+\index{operator+@{operator+}!Vector3@{Vector3}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \hyperlink{classVector3}{Vector3} Vector3\+::operator+ (\begin{DoxyParamCaption}\item[{const \hyperlink{classVector3}{Vector3} \&}]{vec }\end{DoxyParamCaption})}
+
+
+
+Operator overload for the addition of two \hyperlink{classVector3}{Vector3} objects. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em vec} & A constant reference to the \hyperlink{classVector3}{Vector3} that should be added to the current \hyperlink{classVector3}{Vector3} object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an instance of \hyperlink{classVector3}{Vector3} object whose x, y, and z components are equal to the sum of the two input vectors. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVector3_a71264029df074d12dbcd57a95a136fd6}\label{classVector3_a71264029df074d12dbcd57a95a136fd6}} 
+\index{Vector3@{Vector3}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vector3@{Vector3}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \hyperlink{classVector3}{Vector3} Vector3\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \hyperlink{classVector3}{Vector3} \&}]{vec }\end{DoxyParamCaption})}
+
+
+
+Operator overload for the subtraction of two \hyperlink{classVector3}{Vector3} objects. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em vec} & A constant reference to the \hyperlink{classVector3}{Vector3} that should be subtracted from the current \hyperlink{classVector3}{Vector3} object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an instance of \hyperlink{classVector3}{Vector3} object whose x, y, and z components are equal to the difference of the two input vectors. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVector3_af3ab78e4a06b41bd2b3f455301697a13}\label{classVector3_af3ab78e4a06b41bd2b3f455301697a13}} 
+\index{Vector3@{Vector3}!operator/@{operator/}}
+\index{operator/@{operator/}!Vector3@{Vector3}}
+\subsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily \hyperlink{classVector3}{Vector3} Vector3\+::operator/ (\begin{DoxyParamCaption}\item[{const double}]{val }\end{DoxyParamCaption})}
+
+
+
+Operator overload for the division of a scalar across an instance of a \hyperlink{classVector3}{Vector3} object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em val} & A constant scalar double that will be divided across each of the x, y, and z components of the \hyperlink{classVector3}{Vector3}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an instance of \hyperlink{classVector3}{Vector3} object whose x, y, and z components are equal to their original values multiplied by the value of val. Note\+: Trying to divide by zero will return a new instance of a \hyperlink{classVector3}{Vector3} object with the same x, y, and z components. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVector3_a11008100f53bc216fa17e3f80fd8e26e}\label{classVector3_a11008100f53bc216fa17e3f80fd8e26e}} 
+\index{Vector3@{Vector3}!SetX@{SetX}}
+\index{SetX@{SetX}!Vector3@{Vector3}}
+\subsubsection{\texorpdfstring{Set\+X()}{SetX()}}
+{\footnotesize\ttfamily void Vector3\+::\+SetX (\begin{DoxyParamCaption}\item[{const double}]{val }\end{DoxyParamCaption})}
+
+
+
+A method that can set the x-\/component of an instance of the \hyperlink{classVector3}{Vector3} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em val} & A constant double that holds the new value that the x-\/component of the vector should be set to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVector3_a93488ef1d624926521480f5d45270e5d}\label{classVector3_a93488ef1d624926521480f5d45270e5d}} 
+\index{Vector3@{Vector3}!SetY@{SetY}}
+\index{SetY@{SetY}!Vector3@{Vector3}}
+\subsubsection{\texorpdfstring{Set\+Y()}{SetY()}}
+{\footnotesize\ttfamily void Vector3\+::\+SetY (\begin{DoxyParamCaption}\item[{const double}]{val }\end{DoxyParamCaption})}
+
+
+
+A method that can set the y-\/component of an instance of the \hyperlink{classVector3}{Vector3} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em val} & A constant double that holds the new value that the y-\/component of the vector should be set to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVector3_a69c1d50b5ec7c02d4d8ecfc19030e996}\label{classVector3_a69c1d50b5ec7c02d4d8ecfc19030e996}} 
+\index{Vector3@{Vector3}!SetZ@{SetZ}}
+\index{SetZ@{SetZ}!Vector3@{Vector3}}
+\subsubsection{\texorpdfstring{Set\+Z()}{SetZ()}}
+{\footnotesize\ttfamily void Vector3\+::\+SetZ (\begin{DoxyParamCaption}\item[{const double}]{val }\end{DoxyParamCaption})}
+
+
+
+A method that can set the z-\/component of an instance of the \hyperlink{classVector3}{Vector3} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em val} & A constant double that holds the new value that the z-\/component of the vector should be set to. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/src/\hyperlink{vector3_8h}{vector3.\+h}\item 
+/home/user/repo/project/src/\hyperlink{vector3_8cc}{vector3.\+cc}\end{DoxyCompactItemize}

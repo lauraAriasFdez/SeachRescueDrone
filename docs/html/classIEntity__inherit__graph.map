@@ -1,0 +1,9 @@
+<map id="IEntity" name="IEntity">
+<area shape="rect" id="node2" href="$classEntity.html" title="{Entity\n|# observers\l# id\l# entity_id\l# type\l# position\l# direction\l# radius\l# cameras\l|+ Entity()\l+ Entity()\l+ ~Entity()\l+ Entity()\l+ operator=()\l+ AddObserver()\l+ RemoveObserver()\l+ Notify()\l+ GetRadius()\l+ SetRadius()\land 13 more...\l}" alt="" coords="259,336,418,663"/>
+<area shape="rect" id="node3" href="$classHospital.html" title="{Hospital\n||+ Hospital()\l+ Hospital()\l}" alt="" coords="5,821,107,913"/>
+<area shape="rect" id="node4" href="$classIDrone.html" title="{IDrone\n|# velocity\l# lastPictureTime\l# time\l# robot_position_if_found\l# search\l# perform\l# locationsToVisit\l|+ IDrone()\l+ IDrone()\l+ UpdateManualMovement()\l+ Update()\l+ ResetPatrol()\l+ GetVelocity()\l+ UpdateVelocity()\l+ GetPropellerSpeed()\l+ SetJoystick()\l+ GetSearchStatus()\land 7 more...\l}" alt="" coords="131,711,341,1023"/>
+<area shape="rect" id="node7" href="$classRechargeStation.html" title="{RechargeStation\n||+ RechargeStation()\l+ RechargeStation()\l}" alt="" coords="365,821,518,913"/>
+<area shape="rect" id="node8" href="$classRobot.html" title="{Robot\n|# isRescued\l|+ Robot()\l+ Robot()\l+ GetIsRescued()\l+ SetIsRescued()\l}" alt="" coords="542,806,677,927"/>
+<area shape="rect" id="node5" href="$classBatteryDecorator.html" title="{BatteryDecorator\n||+ BatteryDecorator()\l+ ~BatteryDecorator()\l+ Update()\l+ GetBatteryLevel()\l+ UpdateManualMovement()\l+ ResetPatrol()\l+ GetVelocity()\l+ UpdateVelocity()\l+ GetPropellerSpeed()\l+ SetJoystick()\land 21 more...\l}" alt="" coords="13,1071,224,1295"/>
+<area shape="rect" id="node6" href="$classDrone.html" title="{Drone\n||+ Drone()\l+ Drone()\l+ ~Drone()\l+ UpdateManualMovement()\l+ Update()\l+ ResetPatrol()\l+ GetVelocity()\l+ UpdateVelocity()\l+ GetPropellerSpeed()\l+ SetJoystick()\land 8 more...\l}" alt="" coords="248,1071,459,1295"/>
+</map>

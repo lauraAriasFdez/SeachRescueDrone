@@ -1,0 +1,56 @@
+\hypertarget{classDroneFactory}{}\section{Drone\+Factory Class Reference}
+\label{classDroneFactory}\index{Drone\+Factory@{Drone\+Factory}}
+
+
+Inheritance diagram for Drone\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classDroneFactory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Drone\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classDroneFactory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIEntity}{I\+Entity} $\ast$ \hyperlink{classDroneFactory_a058b7be67ed594854ab9605236fa5c7e}{Create\+Entity} (picojson\+::object \&object, \hyperlink{classICameraController}{I\+Camera\+Controller} \&camera\+Controller)
+\begin{DoxyCompactList}\small\item\em creates a \hyperlink{classDrone}{Drone} entity based on the picson object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDroneFactory_a058b7be67ed594854ab9605236fa5c7e}\label{classDroneFactory_a058b7be67ed594854ab9605236fa5c7e}} 
+\index{Drone\+Factory@{Drone\+Factory}!Create\+Entity@{Create\+Entity}}
+\index{Create\+Entity@{Create\+Entity}!Drone\+Factory@{Drone\+Factory}}
+\subsubsection{\texorpdfstring{Create\+Entity()}{CreateEntity()}}
+{\footnotesize\ttfamily \hyperlink{classIEntity}{I\+Entity} $\ast$ Drone\+Factory\+::\+Create\+Entity (\begin{DoxyParamCaption}\item[{picojson\+::object \&}]{object,  }\item[{\hyperlink{classICameraController}{I\+Camera\+Controller} \&}]{camera\+Controller }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+creates a \hyperlink{classDrone}{Drone} entity based on the picson object 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object} & json object representing the entity that needs to be created\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classDrone}{Drone} entity object or nullpointer 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classEntityFactory_a7f579ca02f15935e6901e5c955c9726a}{Entity\+Factory}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/src/\+Factory/\hyperlink{DroneFactory_8h}{Drone\+Factory.\+h}\item 
+/home/user/repo/project/src/\+Factory/\hyperlink{DroneFactory_8cc}{Drone\+Factory.\+cc}\end{DoxyCompactItemize}

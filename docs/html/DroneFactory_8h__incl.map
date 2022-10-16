@@ -1,0 +1,20 @@
+<map id="/home/user/repo/project/src/Factory/DroneFactory.h" name="/home/user/repo/project/src/Factory/DroneFactory.h">
+<area shape="rect" id="node2" href="$Drone_8h.html" title="../Entity/Drone.h" alt="" coords="346,169,473,196"/>
+<area shape="rect" id="node12" href="$vector3_8h.html" title="../vector3.h" alt="" coords="262,565,357,591"/>
+<area shape="rect" id="node22" href="$camera__controller_8h_source.html" title="../camera_controller.h" alt="" coords="973,565,1136,591"/>
+<area shape="rect" id="node30" href="$EntityFactory_8h.html" title="EntityFactory.h" alt="" coords="1212,393,1329,420"/>
+<area shape="rect" id="node31" href="$BatteryDecorator_8h.html" title="../Decorator/BatteryDecorator.h" alt="" coords="445,95,670,121"/>
+<area shape="rect" id="node4" href="$IDrone_8h.html" title="IDrone.h" alt="" coords="517,244,595,271"/>
+<area shape="rect" id="node23" href="$CameraResult_8h.html" title="CameraResult.h" alt="" coords="817,475,943,502"/>
+<area shape="rect" id="node28" href="$Patrol_8h.html" title="../Movement/Patrol.h" alt="" coords="145,244,301,271"/>
+<area shape="rect" id="node29" href="$Beeline_8h.html" title="../Movement/Beeline.h" alt="" coords="325,244,493,271"/>
+<area shape="rect" id="node5" href="$Entity_8h.html" title="Entity.h" alt="" coords="521,319,591,345"/>
+<area shape="rect" id="node26" href="$IMovement_8h.html" title="../Movement/IMovement.h" alt="" coords="153,319,345,345"/>
+<area shape="rect" id="node6" href="$IEntity_8h.html" title="IEntity.h" alt="" coords="1313,475,1388,502"/>
+<area shape="rect" id="node14" href="$Camera_8h.html" title="../Camera/Camera.h" alt="" coords="480,393,632,420"/>
+<area shape="rect" id="node10" href="$IObserver_8h.html" title="../Observer/IObserver.h" alt="" coords="1464,565,1635,591"/>
+<area shape="rect" id="node15" href="$src_2ImageProcessing_2image_8h_source.html" title="../ImageProcessing\l/image.h" alt="" coords="597,468,742,509"/>
+<area shape="rect" id="node16" href="$src_2ImageProcessing_2color_8h_source.html" title="color.h" alt="" coords="747,565,813,591"/>
+<area shape="rect" id="node17" href="$ObjectDetector_8h.html" title="../ObjectDetector/Object\lDetector.h" alt="" coords="533,557,712,599"/>
+<area shape="rect" id="node24" href="$base64_8h_source.html" title="../util/base64.h" alt="" coords="1018,475,1137,502"/>
+</map>

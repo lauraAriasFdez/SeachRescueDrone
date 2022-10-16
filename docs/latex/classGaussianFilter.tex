@@ -1,0 +1,79 @@
+\hypertarget{classGaussianFilter}{}\section{Gaussian\+Filter Class Reference}
+\label{classGaussianFilter}\index{Gaussian\+Filter@{Gaussian\+Filter}}
+
+
+A \hyperlink{classConvolutionFilter}{Convolution\+Filter} that computes a gaussian kernel given a kernel size and sigma.  
+
+
+
+
+{\ttfamily \#include $<$gaussian\+\_\+filter.\+h$>$}
+
+
+
+Inheritance diagram for Gaussian\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classGaussianFilter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Gaussian\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classGaussianFilter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGaussianFilter_a45e674167d95fda302e9e2344f8d690c}\label{classGaussianFilter_a45e674167d95fda302e9e2344f8d690c}} 
+\hyperlink{classGaussianFilter_a45e674167d95fda302e9e2344f8d690c}{Gaussian\+Filter} (int size, float sigma)
+\begin{DoxyCompactList}\small\item\em Constructor that is called in parent constructor passing the 1 kernels needed for the filter, calls the Gaussian\+Kernel method to generate the kernel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classColor}{Color} $>$ \hyperlink{classGaussianFilter_af8bf2d0f68642e6232f8b73ef1bee512}{Apply\+At\+Pixel} (const std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$ original, int x, int y)
+\begin{DoxyCompactList}\small\item\em method that applies the mean blur filter to a single pixel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classConvolutionFilter}{Convolution\+Filter} that computes a gaussian kernel given a kernel size and sigma. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGaussianFilter_af8bf2d0f68642e6232f8b73ef1bee512}\label{classGaussianFilter_af8bf2d0f68642e6232f8b73ef1bee512}} 
+\index{Gaussian\+Filter@{Gaussian\+Filter}!Apply\+At\+Pixel@{Apply\+At\+Pixel}}
+\index{Apply\+At\+Pixel@{Apply\+At\+Pixel}!Gaussian\+Filter@{Gaussian\+Filter}}
+\subsubsection{\texorpdfstring{Apply\+At\+Pixel()}{ApplyAtPixel()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{classColor}{Color} $>$ Gaussian\+Filter\+::\+Apply\+At\+Pixel (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$}]{original,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+method that applies the mean blur filter to a single pixel. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em original} & A vector of input images to apply the filter over. \\
+\hline
+\mbox{\tt in}  & {\em x} & An integer representing the width in which the image color pixel is located, and the pixel to which the filter should be applied. \\
+\hline
+\mbox{\tt in}  & {\em y} & An integer representing the height in which the image color pixel is located, and the pixel to which the filter should be applied.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A unique pointer array containing a \hyperlink{classColor}{Color} for each filtered image the filter should produce as an output, for the mean blur filter the vector should only contain one color object. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classConvolutionFilter_abc4b4ffef2b69fc2b7164e96af6cf186}{Convolution\+Filter}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{gaussian__filter_8h}{gaussian\+\_\+filter.\+h}\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{gaussian__filter_8cc}{gaussian\+\_\+filter.\+cc}\end{DoxyCompactItemize}

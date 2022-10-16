@@ -1,0 +1,14 @@
+<map id="/home/user/repo/project/src/Entity/Robot.cc" name="/home/user/repo/project/src/Entity/Robot.cc">
+<area shape="rect" id="node2" href="$Robot_8h.html" title="Robot.h" alt="" coords="1381,95,1451,121"/>
+<area shape="rect" id="node3" href="$Entity_8h.html" title="Entity.h" alt="" coords="1207,169,1278,196"/>
+<area shape="rect" id="node4" href="$IEntity_8h.html" title="IEntity.h" alt="" coords="1420,326,1495,353"/>
+<area shape="rect" id="node13" href="$Camera_8h.html" title="../Camera/Camera.h" alt="" coords="1057,244,1209,271"/>
+<area shape="rect" id="node8" href="$IObserver_8h.html" title="../Observer/IObserver.h" alt="" coords="1495,415,1665,442"/>
+<area shape="rect" id="node10" href="$vector3_8h.html" title="../vector3.h" alt="" coords="986,415,1081,442"/>
+<area shape="rect" id="node14" href="$src_2ImageProcessing_2image_8h_source.html" title="../ImageProcessing\l/image.h" alt="" coords="799,319,945,360"/>
+<area shape="rect" id="node15" href="$src_2ImageProcessing_2color_8h_source.html" title="color.h" alt="" coords="881,415,946,442"/>
+<area shape="rect" id="node16" href="$ObjectDetector_8h.html" title="../ObjectDetector/Object\lDetector.h" alt="" coords="495,408,673,449"/>
+<area shape="rect" id="node21" href="$camera__controller_8h_source.html" title="../camera_controller.h" alt="" coords="1207,415,1369,442"/>
+<area shape="rect" id="node22" href="$CameraResult_8h.html" title="CameraResult.h" alt="" coords="1071,326,1196,353"/>
+<area shape="rect" id="node23" href="$base64_8h_source.html" title="../util/base64.h" alt="" coords="1583,326,1702,353"/>
+</map>

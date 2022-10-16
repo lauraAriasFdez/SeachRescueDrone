@@ -1,0 +1,19 @@
+<map id="/home/user/repo/project/src/Decorator/BatteryDecorator.cc" name="/home/user/repo/project/src/Decorator/BatteryDecorator.cc">
+<area shape="rect" id="node2" href="$BatteryDecorator_8h.html" title="BatteryDecorator.h" alt="" coords="1138,95,1283,121"/>
+<area shape="rect" id="node5" href="$IDrone_8h.html" title="../Entity/IDrone.h" alt="" coords="1299,244,1429,271"/>
+<area shape="rect" id="node28" href="$Drone_8h.html" title="../Entity/Drone.h" alt="" coords="1198,169,1325,196"/>
+<area shape="rect" id="node6" href="$Entity_8h.html" title="Entity.h" alt="" coords="919,319,990,345"/>
+<area shape="rect" id="node12" href="$vector3_8h.html" title="../vector3.h" alt="" coords="1197,565,1291,591"/>
+<area shape="rect" id="node26" href="$IMovement_8h.html" title="../Movement/IMovement.h" alt="" coords="1401,319,1593,345"/>
+<area shape="rect" id="node7" href="$IEntity_8h.html" title="IEntity.h" alt="" coords="365,475,440,502"/>
+<area shape="rect" id="node14" href="$Camera_8h.html" title="../Camera/Camera.h" alt="" coords="797,393,949,420"/>
+<area shape="rect" id="node10" href="$IObserver_8h.html" title="../Observer/IObserver.h" alt="" coords="144,565,315,591"/>
+<area shape="rect" id="node15" href="$src_2ImageProcessing_2image_8h_source.html" title="../ImageProcessing\l/image.h" alt="" coords="801,468,946,509"/>
+<area shape="rect" id="node16" href="$src_2ImageProcessing_2color_8h_source.html" title="color.h" alt="" coords="881,565,946,591"/>
+<area shape="rect" id="node17" href="$ObjectDetector_8h.html" title="../ObjectDetector/Object\lDetector.h" alt="" coords="627,557,805,599"/>
+<area shape="rect" id="node22" href="$camera__controller_8h_source.html" title="../camera_controller.h" alt="" coords="440,565,603,591"/>
+<area shape="rect" id="node23" href="$CameraResult_8h.html" title="CameraResult.h" alt="" coords="1123,475,1248,502"/>
+<area shape="rect" id="node24" href="$base64_8h_source.html" title="../util/base64.h" alt="" coords="134,475,253,502"/>
+<area shape="rect" id="node29" href="$Patrol_8h.html" title="../Movement/Patrol.h" alt="" coords="1646,244,1802,271"/>
+<area shape="rect" id="node30" href="$Beeline_8h.html" title="../Movement/Beeline.h" alt="" coords="1453,244,1621,271"/>
+</map>

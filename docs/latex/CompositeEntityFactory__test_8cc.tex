@@ -1,0 +1,64 @@
+\hypertarget{CompositeEntityFactory__test_8cc}{}\section{/home/user/repo/project/tests/\+Composite\+Entity\+Factory\+\_\+test.cc File Reference}
+\label{CompositeEntityFactory__test_8cc}\index{/home/user/repo/project/tests/\+Composite\+Entity\+Factory\+\_\+test.\+cc@{/home/user/repo/project/tests/\+Composite\+Entity\+Factory\+\_\+test.\+cc}}
+{\ttfamily \#include \char`\"{}gtest/gtest.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gmock/gmock.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../src/camera\+\_\+controller.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../src/\+Factory/\+Composite\+Entity\+Factory.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../src/\+Factory/\+Entity\+Factory.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../src/\+Factory/\+Drone\+Factory.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../src/\+Factory/\+Robot\+Factory.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../src/\+Factory/\+Recharge\+Station\+Factory.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../src/\+Factory/\+Hospital\+Factory.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../src/vector3.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$picojson.\+h$>$}\newline
+Include dependency graph for Composite\+Entity\+Factory\+\_\+test.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{CompositeEntityFactory__test_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classMockCameraController}{Mock\+Camera\+Controller}
+\item 
+class \hyperlink{classCompositeEntityFactoryTest}{Composite\+Entity\+Factory\+Test}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{CompositeEntityFactory__test_8cc_a105e517636742008a26441cbb9acdd50}\label{CompositeEntityFactory__test_8cc_a105e517636742008a26441cbb9acdd50}} 
+{\bfseries T\+E\+S\+T\+\_\+F} (\hyperlink{classCompositeEntityFactoryTest}{Composite\+Entity\+Factory\+Test}, Drone\+Creation\+Test)
+\item 
+\mbox{\Hypertarget{CompositeEntityFactory__test_8cc_a713025156c4a94d9798ed8c9b3ff945d}\label{CompositeEntityFactory__test_8cc_a713025156c4a94d9798ed8c9b3ff945d}} 
+{\bfseries T\+E\+S\+T\+\_\+F} (\hyperlink{classCompositeEntityFactoryTest}{Composite\+Entity\+Factory\+Test}, Robot\+Creation\+Test)
+\item 
+\mbox{\Hypertarget{CompositeEntityFactory__test_8cc_a70c4cebd4dd341901f782519bc538668}\label{CompositeEntityFactory__test_8cc_a70c4cebd4dd341901f782519bc538668}} 
+{\bfseries T\+E\+S\+T\+\_\+F} (\hyperlink{classCompositeEntityFactoryTest}{Composite\+Entity\+Factory\+Test}, Recharge\+Station\+Creation\+Test)
+\item 
+\mbox{\Hypertarget{CompositeEntityFactory__test_8cc_aede8dd1040c004bdd9664f5bb10ccc0c}\label{CompositeEntityFactory__test_8cc_aede8dd1040c004bdd9664f5bb10ccc0c}} 
+{\bfseries T\+E\+S\+T\+\_\+F} (\hyperlink{classCompositeEntityFactoryTest}{Composite\+Entity\+Factory\+Test}, Hospital\+Creation\+Test)
+\item 
+\mbox{\Hypertarget{CompositeEntityFactory__test_8cc_a59b5ee6478a939c8454f25fae705f65a}\label{CompositeEntityFactory__test_8cc_a59b5ee6478a939c8454f25fae705f65a}} 
+{\bfseries T\+E\+S\+T\+\_\+F} (\hyperlink{classCompositeEntityFactoryTest}{Composite\+Entity\+Factory\+Test}, Empty\+Composite\+Factory\+Creates\+No\+Entities)
+\item 
+\mbox{\Hypertarget{CompositeEntityFactory__test_8cc_aa190e35a68418237cb4498b6b0accecc}\label{CompositeEntityFactory__test_8cc_aa190e35a68418237cb4498b6b0accecc}} 
+{\bfseries T\+E\+S\+T\+\_\+F} (\hyperlink{classCompositeEntityFactoryTest}{Composite\+Entity\+Factory\+Test}, Composite\+Factory\+With\+Only\+Drone\+Factory\+Creates\+Only\+Drone\+Entity)
+\item 
+\mbox{\Hypertarget{CompositeEntityFactory__test_8cc_a29cb21de49b65a62ec2759f7ab1a131e}\label{CompositeEntityFactory__test_8cc_a29cb21de49b65a62ec2759f7ab1a131e}} 
+{\bfseries T\+E\+S\+T\+\_\+F} (\hyperlink{classCompositeEntityFactoryTest}{Composite\+Entity\+Factory\+Test}, Composite\+Factory\+With\+Only\+Robot\+Factory\+Creates\+Only\+Robot\+Entity)
+\item 
+\mbox{\Hypertarget{CompositeEntityFactory__test_8cc_a1afb5ef6046761158a2ac769bdde7f02}\label{CompositeEntityFactory__test_8cc_a1afb5ef6046761158a2ac769bdde7f02}} 
+{\bfseries T\+E\+S\+T\+\_\+F} (\hyperlink{classCompositeEntityFactoryTest}{Composite\+Entity\+Factory\+Test}, Composite\+Factory\+With\+Only\+Recharge\+Station\+Factory\+Creates\+Only\+Recharge\+Station\+Entity)
+\item 
+\mbox{\Hypertarget{CompositeEntityFactory__test_8cc_a536e043d877a73ffea5a1981df70a1da}\label{CompositeEntityFactory__test_8cc_a536e043d877a73ffea5a1981df70a1da}} 
+{\bfseries T\+E\+S\+T\+\_\+F} (\hyperlink{classCompositeEntityFactoryTest}{Composite\+Entity\+Factory\+Test}, Composite\+Factory\+With\+Only\+Hospital\+Factory\+Creates\+Only\+Hospital\+Entity)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyCopyright}{Copyright}
+2021 Laura Arias Fernadez, Michael Weiner, and Malik Khadar. All rights reserved. 
+\end{DoxyCopyright}

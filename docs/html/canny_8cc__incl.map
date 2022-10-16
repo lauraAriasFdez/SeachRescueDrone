@@ -1,0 +1,16 @@
+<map id="/home/user/repo/project/ImageProcessing/canny.cc" name="/home/user/repo/project/ImageProcessing/canny.cc">
+<area shape="rect" id="node2" href="$canny_8h.html" title="canny.h" alt="" coords="86,244,157,271"/>
+<area shape="rect" id="node8" href="$greyscale__filter_8h.html" title="greyscale_filter.h" alt="" coords="93,95,227,121"/>
+<area shape="rect" id="node10" href="$gaussian__filter_8h.html" title="gaussian_filter.h" alt="" coords="672,95,800,121"/>
+<area shape="rect" id="node14" href="$sobel__filter_8h.html" title="sobel_filter.h" alt="" coords="825,95,930,121"/>
+<area shape="rect" id="node17" href="$non__max__sup__filter_8h.html" title="non_max_sup_filter.h" alt="" coords="387,169,547,196"/>
+<area shape="rect" id="node18" href="$double__threshold__filter_8h.html" title="double_threshold_filter.h" alt="" coords="251,95,434,121"/>
+<area shape="rect" id="node19" href="$hysteresis__filter_8h.html" title="hysteresis_filter.h" alt="" coords="510,95,647,121"/>
+<area shape="rect" id="node3" href="$filter_8h.html" title="filter.h" alt="" coords="237,319,299,345"/>
+<area shape="rect" id="node5" href="$ImageProcessing_2image_8h_source.html" title="image.h" alt="" coords="281,393,356,420"/>
+<area shape="rect" id="node6" href="$ImageProcessing_2color_8h_source.html" title="color.h" alt="" coords="298,468,363,495"/>
+<area shape="rect" id="node9" href="$simple__filter_8h.html" title="simple_filter.h" alt="" coords="211,169,325,196"/>
+<area shape="rect" id="node11" href="$convolution__filter_8h.html" title="convolution_filter.h" alt="" coords="644,169,791,196"/>
+<area shape="rect" id="node12" href="$related__pixel__filter_8h.html" title="related_pixel_filter.h" alt="" coords="429,244,584,271"/>
+<area shape="rect" id="node13" href="$kernel_8h.html" title="kernel.h" alt="" coords="415,319,489,345"/>
+</map>

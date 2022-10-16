@@ -1,0 +1,100 @@
+\hypertarget{classHysteresisFilter}{}\section{Hysteresis\+Filter Class Reference}
+\label{classHysteresisFilter}\index{Hysteresis\+Filter@{Hysteresis\+Filter}}
+
+
+A class that can be used to apply a Hysteresis \hyperlink{classFilter}{Filter} to an instance of the \hyperlink{classImage}{Image} class.  
+
+
+
+
+{\ttfamily \#include $<$hysteresis\+\_\+filter.\+h$>$}
+
+
+
+Inheritance diagram for Hysteresis\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classHysteresisFilter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Hysteresis\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classHysteresisFilter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHysteresisFilter_add3251eef42f477d14fb9fae1ba40e95}{Hysteresis\+Filter} (float weak\+Value, float strong\+Value)
+\begin{DoxyCompactList}\small\item\em Constructor of a \hyperlink{classHysteresisFilter}{Hysteresis\+Filter} with a specified weak and strong value to classify pixels with. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classColor}{Color} $>$ \hyperlink{classHysteresisFilter_a43990169f3f075ba8063c21ae83a0fc3}{Apply\+At\+Pixel} (const std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$ original, int x, int y)
+\begin{DoxyCompactList}\small\item\em Modify an image by applying the effects of a Hysteresis filter to the pixel located at (x, y) in an instance of the \hyperlink{classImage}{Image} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class that can be used to apply a Hysteresis \hyperlink{classFilter}{Filter} to an instance of the \hyperlink{classImage}{Image} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHysteresisFilter_add3251eef42f477d14fb9fae1ba40e95}\label{classHysteresisFilter_add3251eef42f477d14fb9fae1ba40e95}} 
+\index{Hysteresis\+Filter@{Hysteresis\+Filter}!Hysteresis\+Filter@{Hysteresis\+Filter}}
+\index{Hysteresis\+Filter@{Hysteresis\+Filter}!Hysteresis\+Filter@{Hysteresis\+Filter}}
+\subsubsection{\texorpdfstring{Hysteresis\+Filter()}{HysteresisFilter()}}
+{\footnotesize\ttfamily Hysteresis\+Filter\+::\+Hysteresis\+Filter (\begin{DoxyParamCaption}\item[{float}]{weak\+Value = {\ttfamily 25.0},  }\item[{float}]{strong\+Value = {\ttfamily 255.0} }\end{DoxyParamCaption})}
+
+
+
+Constructor of a \hyperlink{classHysteresisFilter}{Hysteresis\+Filter} with a specified weak and strong value to classify pixels with. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em weak\+Value} & A float value that represents the weak threshold values to classify pixels. \\
+\hline
+\mbox{\tt in}  & {\em strong\+Value} & A float value that represents the high threshold values to classify pixels.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of a \hyperlink{classHysteresisFilter}{Hysteresis\+Filter} with a specified weak and strong value to classify pixels with. 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classHysteresisFilter_a43990169f3f075ba8063c21ae83a0fc3}\label{classHysteresisFilter_a43990169f3f075ba8063c21ae83a0fc3}} 
+\index{Hysteresis\+Filter@{Hysteresis\+Filter}!Apply\+At\+Pixel@{Apply\+At\+Pixel}}
+\index{Apply\+At\+Pixel@{Apply\+At\+Pixel}!Hysteresis\+Filter@{Hysteresis\+Filter}}
+\subsubsection{\texorpdfstring{Apply\+At\+Pixel()}{ApplyAtPixel()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{classColor}{Color} $>$ Hysteresis\+Filter\+::\+Apply\+At\+Pixel (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$}]{original,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Modify an image by applying the effects of a Hysteresis filter to the pixel located at (x, y) in an instance of the \hyperlink{classImage}{Image} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em original} & A vector of pointers to instances of the \hyperlink{classImage}{Image} class to be able to access the pixels of the original image. \\
+\hline
+\mbox{\tt in}  & {\em x} & An integer representing the x-\/coordinate of the pixel in the image. \\
+\hline
+\mbox{\tt in}  & {\em y} & An integer representing the y-\/coordinate of the pixel in the image.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of instances of the \hyperlink{classColor}{Color} class with each \hyperlink{classColor}{Color} object in the vector representing a new \hyperlink{classColor}{Color} for a different pixel in the image. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRelatedPixelFilter_a4701695c3b2ca7fdcc41b3d03c5840df}{Related\+Pixel\+Filter}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{hysteresis__filter_8h}{hysteresis\+\_\+filter.\+h}\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{hysteresis__filter_8cc}{hysteresis\+\_\+filter.\+cc}\end{DoxyCompactItemize}

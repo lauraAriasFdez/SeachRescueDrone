@@ -1,0 +1,621 @@
+\hypertarget{classBatteryDecorator}{}\section{Battery\+Decorator Class Reference}
+\label{classBatteryDecorator}\index{Battery\+Decorator@{Battery\+Decorator}}
+
+
+Inheritance diagram for Battery\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classBatteryDecorator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Battery\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classBatteryDecorator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBatteryDecorator_a4bf9b42cd8a12a058107911c6a8ce2cf}{Battery\+Decorator} (\hyperlink{classIDrone}{I\+Drone} $\ast$drone\+\_\+obj, double level=1000)
+\begin{DoxyCompactList}\small\item\em constructor, sets battery level \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBatteryDecorator_a0036d03d5fc869eb39e55734d1e5bb87}\label{classBatteryDecorator_a0036d03d5fc869eb39e55734d1e5bb87}} 
+\hyperlink{classBatteryDecorator_a0036d03d5fc869eb39e55734d1e5bb87}{$\sim$\+Battery\+Decorator} ()
+\begin{DoxyCompactList}\small\item\em A destructor for all \hyperlink{classBatteryDecorator}{Battery\+Decorator} instances. \end{DoxyCompactList}\item 
+void \hyperlink{classBatteryDecorator_a92ea38b63e41d61d7392cb58a53fa8d9}{Update} (double dt)
+\begin{DoxyCompactList}\small\item\em Calculates the new position of the drone based on Euler´s integration. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBatteryDecorator_abf1c1655d13fbaae30cc31b56dcb18c7}\label{classBatteryDecorator_abf1c1655d13fbaae30cc31b56dcb18c7}} 
+float \hyperlink{classBatteryDecorator_abf1c1655d13fbaae30cc31b56dcb18c7}{Get\+Battery\+Level} ()
+\begin{DoxyCompactList}\small\item\em Returns the battery level of the drone. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classBatteryDecorator_a45babf9bc5484acb95701d361e89de9b}{Update\+Manual\+Movement} (double dt)
+\begin{DoxyCompactList}\small\item\em Moves based on keyboard inputs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBatteryDecorator_a36bd4557608043a6934b8c5d73ad511e}\label{classBatteryDecorator_a36bd4557608043a6934b8c5d73ad511e}} 
+virtual void \hyperlink{classBatteryDecorator_a36bd4557608043a6934b8c5d73ad511e}{Reset\+Patrol} ()
+\begin{DoxyCompactList}\small\item\em Calculates the new patrol movement if we are still searching for the robot and have switch between manual and automatic movement. \end{DoxyCompactList}\item 
+virtual \hyperlink{classVector3}{Vector3} \hyperlink{classBatteryDecorator_a978565b772172669437ffec923349f32}{Get\+Velocity} () const
+\begin{DoxyCompactList}\small\item\em getter for the velocity of the drone \end{DoxyCompactList}\item 
+virtual void \hyperlink{classBatteryDecorator_aad635fd483288cdcc46892da5265ca49}{Update\+Velocity} (const \hyperlink{classVector3}{Vector3} \&new\+Dir)
+\begin{DoxyCompactList}\small\item\em Updates the velocity of the drone. \end{DoxyCompactList}\item 
+virtual double \hyperlink{classBatteryDecorator_a361154605b803347aea2422cae7d0183}{Get\+Propeller\+Speed} (int index)
+\begin{DoxyCompactList}\small\item\em getter for the speed of one of the legs of the drone \end{DoxyCompactList}\item 
+virtual void \hyperlink{classBatteryDecorator_abb1ece4f26ac33daefd53a56180721eb}{Set\+Joystick} (double x, double y, double z, double rotate)
+\begin{DoxyCompactList}\small\item\em setter for the direction of the drone based on manual movement \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classBatteryDecorator_aa0358ef7a9aee0f4942d32ad15ce4675}{Get\+Search\+Status} () const
+\begin{DoxyCompactList}\small\item\em getter for the state of drone´s search (robot found or Not) \end{DoxyCompactList}\item 
+virtual void \hyperlink{classBatteryDecorator_a41d8c8512cf82484120a9f3f951c4c2b}{Set\+Search\+Status} (bool status)
+\begin{DoxyCompactList}\small\item\em setter for the state of drone´s search (robot found or Not) \end{DoxyCompactList}\item 
+virtual float \hyperlink{classBatteryDecorator_a661b3722c37ce7d9690e50724eac863e}{Get\+Last\+Picture\+Time} () const
+\begin{DoxyCompactList}\small\item\em getter for the last time drone took a pic \end{DoxyCompactList}\item 
+virtual void \hyperlink{classBatteryDecorator_abcaad479f82c6b8fcef4b511fb702d61}{Set\+Last\+Picture\+Time} (float time\+Pic)
+\begin{DoxyCompactList}\small\item\em setter for the last time drone took a pic \end{DoxyCompactList}\item 
+virtual float \hyperlink{classBatteryDecorator_a87cb6d468b6cd418775b4e01308fc0bf}{Get\+Time} () const
+\begin{DoxyCompactList}\small\item\em getter for the time elapsed \end{DoxyCompactList}\item 
+virtual void \hyperlink{classBatteryDecorator_abf7e2a2b4634330de27e7072236ffc5f}{Set\+Time} (float t)
+\begin{DoxyCompactList}\small\item\em setter for the time elapsed \end{DoxyCompactList}\item 
+int \hyperlink{classBatteryDecorator_a0a9d1aedcbbff75c0a88612cb4604fb3}{Get\+Id} ()
+\begin{DoxyCompactList}\small\item\em This will return an integer that represents the command in which the object was created. \end{DoxyCompactList}\item 
+int \hyperlink{classBatteryDecorator_a38fb935ea609ef4e38ebb50e70200a43}{Get\+Entity\+Id} ()
+\begin{DoxyCompactList}\small\item\em This will return the \hyperlink{classEntity}{Entity} Id, meaning the type of object (0 represents a drone) \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classBatteryDecorator_a606b100a52321dee5c36fe3942f8c396}{Get\+Type} ()
+\begin{DoxyCompactList}\small\item\em This will return a string representing object type \char`\"{}drone\char`\"{}, \char`\"{}hospital\char`\"{}... \end{DoxyCompactList}\item 
+void \hyperlink{classBatteryDecorator_aafe8d17f609556cfcb5537e38adc66f2}{Set\+Id} (int id2)
+\begin{DoxyCompactList}\small\item\em This will set the command \# in which the object was created. \end{DoxyCompactList}\item 
+void \hyperlink{classBatteryDecorator_a59bc5191357fdeb9a52ee6121d79b12d}{Set\+Entity\+Id} (int id2)
+\begin{DoxyCompactList}\small\item\em This will set the \hyperlink{classEntity}{Entity} Id, meaning the type of object (0 represents a drone) \end{DoxyCompactList}\item 
+void \hyperlink{classBatteryDecorator_a815d1943eef8e5f147158a043fe02825}{Set\+Type} (std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em This will set the object type \char`\"{}drone\char`\"{}, \char`\"{}hospital\char`\"{}... \end{DoxyCompactList}\item 
+void \hyperlink{classBatteryDecorator_a42dfc0dc6cd4423f8113609ea7f5e938}{Update\+Direction} (const \hyperlink{classVector3}{Vector3} \&new\+Dir)
+\begin{DoxyCompactList}\small\item\em Updates the direction of the entity. \end{DoxyCompactList}\item 
+void \hyperlink{classBatteryDecorator_a7c338ca278f03c5c0fcea39885fc7d43}{Update\+Position} (const \hyperlink{classVector3}{Vector3} \&new\+Dir)
+\begin{DoxyCompactList}\small\item\em Updates the position of the entity. \end{DoxyCompactList}\item 
+\hyperlink{classVector3}{Vector3} \hyperlink{classBatteryDecorator_aaf2487adf2d58e855268877427cf5ba9}{Get\+Position} () const
+\begin{DoxyCompactList}\small\item\em getter for entity position \end{DoxyCompactList}\item 
+\hyperlink{classVector3}{Vector3} \hyperlink{classBatteryDecorator_a8487174df54456fe29406927f0542720}{Get\+Direction} () const
+\begin{DoxyCompactList}\small\item\em getter for entity direction \end{DoxyCompactList}\item 
+void \hyperlink{classBatteryDecorator_a25470bba4af4e6c112a858584a38fcdd}{Add\+Camera} (\hyperlink{classCamera}{Camera} $\ast$new\+\_\+camera)
+\begin{DoxyCompactList}\small\item\em Function that will add a camera to the vector of cameras of the entity. \end{DoxyCompactList}\item 
+\hyperlink{classCamera}{Camera} $\ast$ \hyperlink{classBatteryDecorator_ad65baa2cd098b990a49bdff7c0fde62c}{Get\+Camera} (int idx)
+\begin{DoxyCompactList}\small\item\em Get the idx camera from the cameras of the entity. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classBatteryDecorator_a47475a9179285e30e8c18316cebdac9f}{Get\+Data} (float dt)
+\begin{DoxyCompactList}\small\item\em A method to get the pertinent data of an \hyperlink{classEntity}{Entity} to be written to C\+SV file. \end{DoxyCompactList}\item 
+\hyperlink{classVector3}{Vector3} \hyperlink{classBatteryDecorator_ac9f7223d439db341e9765ea3d5584f4e}{Get\+Robot\+Pos} () const
+\begin{DoxyCompactList}\small\item\em A method to get the robot x y z position. \end{DoxyCompactList}\item 
+void \hyperlink{classBatteryDecorator_a183e98816461760d499366e112e5d0a6}{Set\+Robot\+Pos} (\hyperlink{classVector3}{Vector3} pos)
+\begin{DoxyCompactList}\small\item\em A method to set the robot x y z position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBatteryDecorator_a4bf9b42cd8a12a058107911c6a8ce2cf}\label{classBatteryDecorator_a4bf9b42cd8a12a058107911c6a8ce2cf}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Battery\+Decorator@{Battery\+Decorator}}
+\index{Battery\+Decorator@{Battery\+Decorator}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Battery\+Decorator()}{BatteryDecorator()}}
+{\footnotesize\ttfamily Battery\+Decorator\+::\+Battery\+Decorator (\begin{DoxyParamCaption}\item[{\hyperlink{classIDrone}{I\+Drone} $\ast$}]{drone\+\_\+obj,  }\item[{double}]{level = {\ttfamily 1000} }\end{DoxyParamCaption})}
+
+
+
+constructor, sets battery level 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em drone\+\_\+obj} & I\+Drone$\ast$ base drone to be decorated \\
+\hline
+\mbox{\tt in}  & {\em level} & double amount of battery that the drone starts with \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classBatteryDecorator_a25470bba4af4e6c112a858584a38fcdd}\label{classBatteryDecorator_a25470bba4af4e6c112a858584a38fcdd}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Add\+Camera@{Add\+Camera}}
+\index{Add\+Camera@{Add\+Camera}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Add\+Camera()}{AddCamera()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::\+Add\+Camera (\begin{DoxyParamCaption}\item[{\hyperlink{classCamera}{Camera} $\ast$}]{new\+\_\+camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Function that will add a camera to the vector of cameras of the entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\+\_\+camera} & New camera object to be added to the vector of cameras of the entity \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classEntity_a9f3c739a3ef623a9febc7801270ba719}{Entity}.
+
+\mbox{\Hypertarget{classBatteryDecorator_ad65baa2cd098b990a49bdff7c0fde62c}\label{classBatteryDecorator_ad65baa2cd098b990a49bdff7c0fde62c}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Get\+Camera@{Get\+Camera}}
+\index{Get\+Camera@{Get\+Camera}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Get\+Camera()}{GetCamera()}}
+{\footnotesize\ttfamily \hyperlink{classCamera}{Camera} $\ast$ Battery\+Decorator\+::\+Get\+Camera (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the idx camera from the cameras of the entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em idx} & integer representing the camera you want to get\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classCamera}{Camera} object pointer 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classEntity_ae09d3e79d0d14c2990b1da52d2268399}{Entity}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a47475a9179285e30e8c18316cebdac9f}\label{classBatteryDecorator_a47475a9179285e30e8c18316cebdac9f}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Get\+Data@{Get\+Data}}
+\index{Get\+Data@{Get\+Data}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Get\+Data()}{GetData()}}
+{\footnotesize\ttfamily std\+::string Battery\+Decorator\+::\+Get\+Data (\begin{DoxyParamCaption}\item[{float}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method to get the pertinent data of an \hyperlink{classEntity}{Entity} to be written to C\+SV file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dt} & A float representing the change in time since the last update\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String Returns a string containing the comma separated data to be written to a C\+SV file. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIEntity_a4d9355e68c6be349f57dc67fc1c036ba}{I\+Entity}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a8487174df54456fe29406927f0542720}\label{classBatteryDecorator_a8487174df54456fe29406927f0542720}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Get\+Direction@{Get\+Direction}}
+\index{Get\+Direction@{Get\+Direction}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Get\+Direction()}{GetDirection()}}
+{\footnotesize\ttfamily \hyperlink{classVector3}{Vector3} Battery\+Decorator\+::\+Get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+getter for entity direction 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classVector3}{Vector3} object representing the entity direction 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIEntity_aa99a8fef8b22195a5113c38ef51f086d}{I\+Entity}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a38fb935ea609ef4e38ebb50e70200a43}\label{classBatteryDecorator_a38fb935ea609ef4e38ebb50e70200a43}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Get\+Entity\+Id@{Get\+Entity\+Id}}
+\index{Get\+Entity\+Id@{Get\+Entity\+Id}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Get\+Entity\+Id()}{GetEntityId()}}
+{\footnotesize\ttfamily int Battery\+Decorator\+::\+Get\+Entity\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This will return the \hyperlink{classEntity}{Entity} Id, meaning the type of object (0 represents a drone) 
+
+\begin{DoxyReturn}{Returns}
+integer representing the type of object of the entity 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIEntity_a4359ee47413fa0b2940b3b0336e13861}{I\+Entity}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a0a9d1aedcbbff75c0a88612cb4604fb3}\label{classBatteryDecorator_a0a9d1aedcbbff75c0a88612cb4604fb3}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Get\+Id@{Get\+Id}}
+\index{Get\+Id@{Get\+Id}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Get\+Id()}{GetId()}}
+{\footnotesize\ttfamily int Battery\+Decorator\+::\+Get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This will return an integer that represents the command in which the object was created. 
+
+\begin{DoxyReturn}{Returns}
+id representing the command number 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIEntity_ac3d60cc2fab1ccb61c1be92373e636d9}{I\+Entity}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a661b3722c37ce7d9690e50724eac863e}\label{classBatteryDecorator_a661b3722c37ce7d9690e50724eac863e}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Get\+Last\+Picture\+Time@{Get\+Last\+Picture\+Time}}
+\index{Get\+Last\+Picture\+Time@{Get\+Last\+Picture\+Time}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Get\+Last\+Picture\+Time()}{GetLastPictureTime()}}
+{\footnotesize\ttfamily float Battery\+Decorator\+::\+Get\+Last\+Picture\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+getter for the last time drone took a pic 
+
+\begin{DoxyReturn}{Returns}
+float representing time elapsed since that picture 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIDrone_a112d19971ac7d94dba9e2f25ad667c0d}{I\+Drone}.
+
+\mbox{\Hypertarget{classBatteryDecorator_aaf2487adf2d58e855268877427cf5ba9}\label{classBatteryDecorator_aaf2487adf2d58e855268877427cf5ba9}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Get\+Position@{Get\+Position}}
+\index{Get\+Position@{Get\+Position}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Get\+Position()}{GetPosition()}}
+{\footnotesize\ttfamily \hyperlink{classVector3}{Vector3} Battery\+Decorator\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+getter for entity position 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classVector3}{Vector3} object representing the entity position 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIEntity_a9bc32587aab91761fc0e718612498199}{I\+Entity}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a361154605b803347aea2422cae7d0183}\label{classBatteryDecorator_a361154605b803347aea2422cae7d0183}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Get\+Propeller\+Speed@{Get\+Propeller\+Speed}}
+\index{Get\+Propeller\+Speed@{Get\+Propeller\+Speed}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Get\+Propeller\+Speed()}{GetPropellerSpeed()}}
+{\footnotesize\ttfamily double Battery\+Decorator\+::\+Get\+Propeller\+Speed (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+getter for the speed of one of the legs of the drone 
+
+\begin{DoxyReturn}{Returns}
+double representing the speed of the index propeller 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIDrone_a60a9a7eb90bf13100d66cb47b99830ed}{I\+Drone}.
+
+\mbox{\Hypertarget{classBatteryDecorator_ac9f7223d439db341e9765ea3d5584f4e}\label{classBatteryDecorator_ac9f7223d439db341e9765ea3d5584f4e}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Get\+Robot\+Pos@{Get\+Robot\+Pos}}
+\index{Get\+Robot\+Pos@{Get\+Robot\+Pos}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Get\+Robot\+Pos()}{GetRobotPos()}}
+{\footnotesize\ttfamily \hyperlink{classVector3}{Vector3} Battery\+Decorator\+::\+Get\+Robot\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method to get the robot x y z position. 
+
+\begin{DoxyReturn}{Returns}
+Vector representing position where robot found 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIDrone_a1c3f5e712a97625c74c35952b930d68d}{I\+Drone}.
+
+\mbox{\Hypertarget{classBatteryDecorator_aa0358ef7a9aee0f4942d32ad15ce4675}\label{classBatteryDecorator_aa0358ef7a9aee0f4942d32ad15ce4675}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Get\+Search\+Status@{Get\+Search\+Status}}
+\index{Get\+Search\+Status@{Get\+Search\+Status}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Get\+Search\+Status()}{GetSearchStatus()}}
+{\footnotesize\ttfamily bool Battery\+Decorator\+::\+Get\+Search\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+getter for the state of drone´s search (robot found or Not) 
+
+\begin{DoxyReturn}{Returns}
+boolean true if we have found robot and are moving torwards it, false otherwise 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIDrone_aed9abde2152408ef3483da57f24c4006}{I\+Drone}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a87cb6d468b6cd418775b4e01308fc0bf}\label{classBatteryDecorator_a87cb6d468b6cd418775b4e01308fc0bf}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Get\+Time@{Get\+Time}}
+\index{Get\+Time@{Get\+Time}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Get\+Time()}{GetTime()}}
+{\footnotesize\ttfamily float Battery\+Decorator\+::\+Get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+getter for the time elapsed 
+
+\begin{DoxyReturn}{Returns}
+float representing time elapsed (sum of updates dt´s) 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIDrone_a18809d1b0626ba66984ef3a91ffb644c}{I\+Drone}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a606b100a52321dee5c36fe3942f8c396}\label{classBatteryDecorator_a606b100a52321dee5c36fe3942f8c396}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Get\+Type()}{GetType()}}
+{\footnotesize\ttfamily std\+::string Battery\+Decorator\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This will return a string representing object type \char`\"{}drone\char`\"{}, \char`\"{}hospital\char`\"{}... 
+
+\begin{DoxyReturn}{Returns}
+string representing the type of object of the entity 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIEntity_ac494bb9712d5a03495a1a95afdbd7153}{I\+Entity}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a978565b772172669437ffec923349f32}\label{classBatteryDecorator_a978565b772172669437ffec923349f32}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Get\+Velocity@{Get\+Velocity}}
+\index{Get\+Velocity@{Get\+Velocity}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Get\+Velocity()}{GetVelocity()}}
+{\footnotesize\ttfamily \hyperlink{classVector3}{Vector3} Battery\+Decorator\+::\+Get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+getter for the velocity of the drone 
+
+\begin{DoxyReturn}{Returns}
+vector3 representing the velocity of the drone 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIDrone_abad6c0adb60d6deceb13f30687fed57b}{I\+Drone}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a59bc5191357fdeb9a52ee6121d79b12d}\label{classBatteryDecorator_a59bc5191357fdeb9a52ee6121d79b12d}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Set\+Entity\+Id@{Set\+Entity\+Id}}
+\index{Set\+Entity\+Id@{Set\+Entity\+Id}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Set\+Entity\+Id()}{SetEntityId()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::\+Set\+Entity\+Id (\begin{DoxyParamCaption}\item[{int}]{id2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This will set the \hyperlink{classEntity}{Entity} Id, meaning the type of object (0 represents a drone) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em id2} & integer representing the type of object of the entity \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIEntity_a3a830862181cb0548d2aca83d908263e}{I\+Entity}.
+
+\mbox{\Hypertarget{classBatteryDecorator_aafe8d17f609556cfcb5537e38adc66f2}\label{classBatteryDecorator_aafe8d17f609556cfcb5537e38adc66f2}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Set\+Id@{Set\+Id}}
+\index{Set\+Id@{Set\+Id}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Set\+Id()}{SetId()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::\+Set\+Id (\begin{DoxyParamCaption}\item[{int}]{id2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This will set the command \# in which the object was created. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em id2} & the command number as an integer \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIEntity_a8c6af682e07f569ba2f164d214295c67}{I\+Entity}.
+
+\mbox{\Hypertarget{classBatteryDecorator_abb1ece4f26ac33daefd53a56180721eb}\label{classBatteryDecorator_abb1ece4f26ac33daefd53a56180721eb}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Set\+Joystick@{Set\+Joystick}}
+\index{Set\+Joystick@{Set\+Joystick}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Set\+Joystick()}{SetJoystick()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::\+Set\+Joystick (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z,  }\item[{double}]{rotate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+setter for the direction of the drone based on manual movement 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & double representing the direction on the x direction \\
+\hline
+\mbox{\tt in}  & {\em y} & double representing the direction on the y direction \\
+\hline
+\mbox{\tt in}  & {\em z} & double representing the direction on the z direction \\
+\hline
+\mbox{\tt in}  & {\em rotate} & double representing the rotation value of drone \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIDrone_a8414edd320f25869fb04a880eae0d554}{I\+Drone}.
+
+\mbox{\Hypertarget{classBatteryDecorator_abcaad479f82c6b8fcef4b511fb702d61}\label{classBatteryDecorator_abcaad479f82c6b8fcef4b511fb702d61}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Set\+Last\+Picture\+Time@{Set\+Last\+Picture\+Time}}
+\index{Set\+Last\+Picture\+Time@{Set\+Last\+Picture\+Time}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Set\+Last\+Picture\+Time()}{SetLastPictureTime()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::\+Set\+Last\+Picture\+Time (\begin{DoxyParamCaption}\item[{float}]{time\+Pic }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+setter for the last time drone took a pic 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em time\+Pic} & float representing time since last\+Picture \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIDrone_aace45f6d9a77bfc8c61bd0ffc30a3b8e}{I\+Drone}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a183e98816461760d499366e112e5d0a6}\label{classBatteryDecorator_a183e98816461760d499366e112e5d0a6}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Set\+Robot\+Pos@{Set\+Robot\+Pos}}
+\index{Set\+Robot\+Pos@{Set\+Robot\+Pos}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Set\+Robot\+Pos()}{SetRobotPos()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::\+Set\+Robot\+Pos (\begin{DoxyParamCaption}\item[{\hyperlink{classVector3}{Vector3}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method to set the robot x y z position. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pos} & Vector representing position where robot found \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIDrone_a5851e679bf3c915e93165377cb5c8815}{I\+Drone}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a41d8c8512cf82484120a9f3f951c4c2b}\label{classBatteryDecorator_a41d8c8512cf82484120a9f3f951c4c2b}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Set\+Search\+Status@{Set\+Search\+Status}}
+\index{Set\+Search\+Status@{Set\+Search\+Status}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Set\+Search\+Status()}{SetSearchStatus()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::\+Set\+Search\+Status (\begin{DoxyParamCaption}\item[{bool}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+setter for the state of drone´s search (robot found or Not) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em status} & boolean true if we have found robot and are moving torwards it, false otherwise \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIDrone_ac6f580814e7091ea64ecf2a7137b8120}{I\+Drone}.
+
+\mbox{\Hypertarget{classBatteryDecorator_abf7e2a2b4634330de27e7072236ffc5f}\label{classBatteryDecorator_abf7e2a2b4634330de27e7072236ffc5f}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Set\+Time@{Set\+Time}}
+\index{Set\+Time@{Set\+Time}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Set\+Time()}{SetTime()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::\+Set\+Time (\begin{DoxyParamCaption}\item[{float}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+setter for the time elapsed 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em t} & float representing time elapsed (sum of updates dt´s) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIDrone_a0ca36885fd79fbf2efa3909771218d56}{I\+Drone}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a815d1943eef8e5f147158a043fe02825}\label{classBatteryDecorator_a815d1943eef8e5f147158a043fe02825}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Set\+Type@{Set\+Type}}
+\index{Set\+Type@{Set\+Type}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Set\+Type()}{SetType()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::\+Set\+Type (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This will set the object type \char`\"{}drone\char`\"{}, \char`\"{}hospital\char`\"{}... 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em name} & string representing the type of object of the entity \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIEntity_a49b3c54f94a93d4a9f96527ffb8982f5}{I\+Entity}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a92ea38b63e41d61d7392cb58a53fa8d9}\label{classBatteryDecorator_a92ea38b63e41d61d7392cb58a53fa8d9}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Update@{Update}}
+\index{Update@{Update}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Calculates the new position of the drone based on Euler´s integration. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dt} & period of time it has elapsed since last update \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIDrone_a6d840d60cda9a985b94af42ef54520b7}{I\+Drone}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a42dfc0dc6cd4423f8113609ea7f5e938}\label{classBatteryDecorator_a42dfc0dc6cd4423f8113609ea7f5e938}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Update\+Direction@{Update\+Direction}}
+\index{Update\+Direction@{Update\+Direction}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Update\+Direction()}{UpdateDirection()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::\+Update\+Direction (\begin{DoxyParamCaption}\item[{const \hyperlink{classVector3}{Vector3} \&}]{new\+Dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the direction of the entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\+Dir} & vector3 representing the new direction of the object \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIEntity_af24054e349dcdaea31a778427a34495d}{I\+Entity}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a45babf9bc5484acb95701d361e89de9b}\label{classBatteryDecorator_a45babf9bc5484acb95701d361e89de9b}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Update\+Manual\+Movement@{Update\+Manual\+Movement}}
+\index{Update\+Manual\+Movement@{Update\+Manual\+Movement}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Update\+Manual\+Movement()}{UpdateManualMovement()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::\+Update\+Manual\+Movement (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Moves based on keyboard inputs. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dt} & period of time it has elapsed since last update \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIDrone_a82486b4192f6ccf8b3d93fbb9101f2dd}{I\+Drone}.
+
+\mbox{\Hypertarget{classBatteryDecorator_a7c338ca278f03c5c0fcea39885fc7d43}\label{classBatteryDecorator_a7c338ca278f03c5c0fcea39885fc7d43}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Update\+Position@{Update\+Position}}
+\index{Update\+Position@{Update\+Position}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Update\+Position()}{UpdatePosition()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::\+Update\+Position (\begin{DoxyParamCaption}\item[{const \hyperlink{classVector3}{Vector3} \&}]{new\+Dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the position of the entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\+Dir} & vector3 representing the new position of the object \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIEntity_ad30f6845c8747534e7607ca97addbdc6}{I\+Entity}.
+
+\mbox{\Hypertarget{classBatteryDecorator_aad635fd483288cdcc46892da5265ca49}\label{classBatteryDecorator_aad635fd483288cdcc46892da5265ca49}} 
+\index{Battery\+Decorator@{Battery\+Decorator}!Update\+Velocity@{Update\+Velocity}}
+\index{Update\+Velocity@{Update\+Velocity}!Battery\+Decorator@{Battery\+Decorator}}
+\subsubsection{\texorpdfstring{Update\+Velocity()}{UpdateVelocity()}}
+{\footnotesize\ttfamily void Battery\+Decorator\+::\+Update\+Velocity (\begin{DoxyParamCaption}\item[{const \hyperlink{classVector3}{Vector3} \&}]{new\+Dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the velocity of the drone. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\+Dir} & vector3 representing the new velocity of the object \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIDrone_a5cc88b8205adaeea8f71c822d08e1607}{I\+Drone}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/src/\+Decorator/\hyperlink{BatteryDecorator_8h}{Battery\+Decorator.\+h}\item 
+/home/user/repo/project/src/\+Decorator/\hyperlink{BatteryDecorator_8cc}{Battery\+Decorator.\+cc}\end{DoxyCompactItemize}

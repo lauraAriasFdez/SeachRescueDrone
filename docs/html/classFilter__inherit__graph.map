@@ -1,0 +1,14 @@
+<map id="Filter" name="Filter">
+<area shape="rect" id="node2" href="$classCanny.html" title="A filter that applies the greyscale, gaussian, sobel, non&#45;max suppression, double threshold..." alt="" coords="315,160,399,237"/>
+<area shape="rect" id="node3" href="$classRelatedPixelFilter.html" title="Abstract class that defines the virtual methods for all classes derived from RelatedPixelFilter. " alt="" coords="424,145,595,252"/>
+<area shape="rect" id="node10" href="$classSimpleFilter.html" title="An abstract class that represents a filter that applies a change on an individual pixel exclusively b..." alt="" coords="819,145,954,252"/>
+<area shape="rect" id="node4" href="$classConvolutionFilter.html" title="ConvolutionFilter is an abstract Filter class with a convolution kernel. In order to compute the valu..." alt="" coords="155,300,323,436"/>
+<area shape="rect" id="node8" href="$classHysteresisFilter.html" title="A class that can be used to apply a Hysteresis Filter to an instance of the Image class..." alt="" coords="347,322,495,414"/>
+<area shape="rect" id="node9" href="$classNonMaxSupFilter.html" title="A Filter class that eliminates wide and fuzzy edges in an image. It only keeps the strongest pixel in..." alt="" coords="519,322,675,414"/>
+<area shape="rect" id="node5" href="$classGaussianFilter.html" title="A ConvolutionFilter that computes a gaussian kernel given a kernel size and sigma. " alt="" coords="5,484,144,576"/>
+<area shape="rect" id="node6" href="$classMeanBlurFilter.html" title="A ConvolutionFilter that computes the mean of all the surrounding pixels and replaces the central pix..." alt="" coords="169,484,309,576"/>
+<area shape="rect" id="node7" href="$classSobelFilter.html" title="A filter that iterates two different kernels over an image to extract horizontal and vertical lines..." alt="" coords="333,484,464,576"/>
+<area shape="rect" id="node11" href="$classDoubleThresholdFilter.html" title="A class that can be used to apply a Double Threshold Filter to an Image. " alt="" coords="700,307,889,429"/>
+<area shape="rect" id="node12" href="$classGreyScaleFilter.html" title="Greyscale filter is a SimpleFilter that sets RGB vales for each pixel in an image to be the luminance..." alt="" coords="913,329,1044,407"/>
+<area shape="rect" id="node13" href="$classThresholdFilter.html" title="A Threshold filter is a SimpleFilter that compares the luminance of a pixel and compares that luminan..." alt="" coords="1069,315,1211,421"/>
+</map>

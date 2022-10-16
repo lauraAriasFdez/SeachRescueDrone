@@ -1,0 +1,4 @@
+<map id="GreyScaleFilter" name="GreyScaleFilter">
+<area shape="rect" id="node2" href="$classSimpleFilter.html" title="An abstract class that represents a filter that applies a change on an individual pixel exclusively b..." alt="" coords="5,145,140,252"/>
+<area shape="rect" id="node3" href="$classFilter.html" title="Abstract class that defines the virtual methods for all filter classes. " alt="" coords="27,5,118,97"/>
+</map>

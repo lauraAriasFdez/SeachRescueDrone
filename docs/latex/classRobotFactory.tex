@@ -1,0 +1,56 @@
+\hypertarget{classRobotFactory}{}\section{Robot\+Factory Class Reference}
+\label{classRobotFactory}\index{Robot\+Factory@{Robot\+Factory}}
+
+
+Inheritance diagram for Robot\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classRobotFactory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Robot\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classRobotFactory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIEntity}{I\+Entity} $\ast$ \hyperlink{classRobotFactory_abcf3e19faf1d87fe2393b275b07c3549}{Create\+Entity} (picojson\+::object \&object, \hyperlink{classICameraController}{I\+Camera\+Controller} \&camera\+Controller)
+\begin{DoxyCompactList}\small\item\em creates a \hyperlink{classRobot}{Robot} entity based on the picson object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRobotFactory_abcf3e19faf1d87fe2393b275b07c3549}\label{classRobotFactory_abcf3e19faf1d87fe2393b275b07c3549}} 
+\index{Robot\+Factory@{Robot\+Factory}!Create\+Entity@{Create\+Entity}}
+\index{Create\+Entity@{Create\+Entity}!Robot\+Factory@{Robot\+Factory}}
+\subsubsection{\texorpdfstring{Create\+Entity()}{CreateEntity()}}
+{\footnotesize\ttfamily \hyperlink{classIEntity}{I\+Entity} $\ast$ Robot\+Factory\+::\+Create\+Entity (\begin{DoxyParamCaption}\item[{picojson\+::object \&}]{object,  }\item[{\hyperlink{classICameraController}{I\+Camera\+Controller} \&}]{camera\+Controller }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+creates a \hyperlink{classRobot}{Robot} entity based on the picson object 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object} & json object representing the entity that needs to be created\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classRobot}{Robot} entity object or nullpointer 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classEntityFactory_a7f579ca02f15935e6901e5c955c9726a}{Entity\+Factory}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/src/\+Factory/\hyperlink{RobotFactory_8h}{Robot\+Factory.\+h}\item 
+/home/user/repo/project/src/\+Factory/Robot\+Factory.\+cc\end{DoxyCompactItemize}

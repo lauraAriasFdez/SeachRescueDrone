@@ -1,0 +1,99 @@
+\hypertarget{classSimpleFilter}{}\section{Simple\+Filter Class Reference}
+\label{classSimpleFilter}\index{Simple\+Filter@{Simple\+Filter}}
+
+
+An abstract class that represents a filter that applies a change on an individual pixel exclusively based on that pixel.  
+
+
+
+
+{\ttfamily \#include $<$simple\+\_\+filter.\+h$>$}
+
+
+
+Inheritance diagram for Simple\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSimpleFilter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Simple\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classSimpleFilter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classSimpleFilter_a4400a0f97e26e84a33befd537fb4fea8}{Apply} (std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$ original, std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$ filtered)
+\begin{DoxyCompactList}\small\item\em A method that goes through every pixel and applies a simple filter over each pixel. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSimpleFilter_a0d1cc3e825db8f8fda3b01ed0e6d64fa}\label{classSimpleFilter_a0d1cc3e825db8f8fda3b01ed0e6d64fa}} 
+virtual \hyperlink{classSimpleFilter_a0d1cc3e825db8f8fda3b01ed0e6d64fa}{$\sim$\+Simple\+Filter} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor that is needed for polymorphism since derived classes constructors need to be called. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classColor}{Color} \hyperlink{classSimpleFilter_aa12dc75dac8932ce03a9c9a3c7964b30}{Apply\+At\+Pixel} (const \hyperlink{classImage}{Image} $\ast$image, const \hyperlink{classColor}{Color} \&pixel)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to apply the derived filter to one single pixel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An abstract class that represents a filter that applies a change on an individual pixel exclusively based on that pixel. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSimpleFilter_a4400a0f97e26e84a33befd537fb4fea8}\label{classSimpleFilter_a4400a0f97e26e84a33befd537fb4fea8}} 
+\index{Simple\+Filter@{Simple\+Filter}!Apply@{Apply}}
+\index{Apply@{Apply}!Simple\+Filter@{Simple\+Filter}}
+\subsubsection{\texorpdfstring{Apply()}{Apply()}}
+{\footnotesize\ttfamily void Simple\+Filter\+::\+Apply (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$}]{original,  }\item[{std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$}]{filtered }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method that goes through every pixel and applies a simple filter over each pixel. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em original} & A vector of input images to apply the filter to. \\
+\hline
+\mbox{\tt in}  & {\em filtered} & A vector of output images that have all had a filered applied to its pixels. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classFilter_afab0d50af44a19a370ebe46c69b8ff4e}{Filter}.
+
+\mbox{\Hypertarget{classSimpleFilter_aa12dc75dac8932ce03a9c9a3c7964b30}\label{classSimpleFilter_aa12dc75dac8932ce03a9c9a3c7964b30}} 
+\index{Simple\+Filter@{Simple\+Filter}!Apply\+At\+Pixel@{Apply\+At\+Pixel}}
+\index{Apply\+At\+Pixel@{Apply\+At\+Pixel}!Simple\+Filter@{Simple\+Filter}}
+\subsubsection{\texorpdfstring{Apply\+At\+Pixel()}{ApplyAtPixel()}}
+{\footnotesize\ttfamily virtual \hyperlink{classColor}{Color} Simple\+Filter\+::\+Apply\+At\+Pixel (\begin{DoxyParamCaption}\item[{const \hyperlink{classImage}{Image} $\ast$}]{image,  }\item[{const \hyperlink{classColor}{Color} \&}]{pixel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Pure virtual method to apply the derived filter to one single pixel. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em image} & A constant pointer to an instance of the \hyperlink{classImage}{Image} class. \\
+\hline
+\mbox{\tt in}  & {\em pixel} & A \hyperlink{classColor}{Color} object representing the pixel to apply the filter over.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{classColor}{Color} object representing the pixel being filtered. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classDoubleThresholdFilter_a1ae6e4b94ecfa8c9e978b5da897c136d}{Double\+Threshold\+Filter}, \hyperlink{classThresholdFilter_a98db75bfcd26f1f274ce4014d3de1baa}{Threshold\+Filter}, and \hyperlink{classGreyScaleFilter_a4b86977b204bf2699c4d138d6d0a1116}{Grey\+Scale\+Filter}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{simple__filter_8h}{simple\+\_\+filter.\+h}\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{simple__filter_8cc}{simple\+\_\+filter.\+cc}\end{DoxyCompactItemize}

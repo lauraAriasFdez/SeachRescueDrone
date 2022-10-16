@@ -1,0 +1,18 @@
+<map id="/home/user/repo/project/src/Decorator/BatteryDecorator.h" name="/home/user/repo/project/src/Decorator/BatteryDecorator.h">
+<area shape="rect" id="node4" href="$IDrone_8h.html" title="../Entity/IDrone.h" alt="" coords="1299,169,1429,196"/>
+<area shape="rect" id="node27" href="$Drone_8h.html" title="../Entity/Drone.h" alt="" coords="1198,95,1325,121"/>
+<area shape="rect" id="node5" href="$Entity_8h.html" title="Entity.h" alt="" coords="919,244,990,271"/>
+<area shape="rect" id="node11" href="$vector3_8h.html" title="../vector3.h" alt="" coords="1197,490,1291,517"/>
+<area shape="rect" id="node25" href="$IMovement_8h.html" title="../Movement/IMovement.h" alt="" coords="1401,244,1593,271"/>
+<area shape="rect" id="node6" href="$IEntity_8h.html" title="IEntity.h" alt="" coords="365,401,440,427"/>
+<area shape="rect" id="node13" href="$Camera_8h.html" title="../Camera/Camera.h" alt="" coords="797,319,949,345"/>
+<area shape="rect" id="node9" href="$IObserver_8h.html" title="../Observer/IObserver.h" alt="" coords="144,490,315,517"/>
+<area shape="rect" id="node14" href="$src_2ImageProcessing_2image_8h_source.html" title="../ImageProcessing\l/image.h" alt="" coords="801,393,946,435"/>
+<area shape="rect" id="node15" href="$src_2ImageProcessing_2color_8h_source.html" title="color.h" alt="" coords="881,490,946,517"/>
+<area shape="rect" id="node16" href="$ObjectDetector_8h.html" title="../ObjectDetector/Object\lDetector.h" alt="" coords="627,483,805,524"/>
+<area shape="rect" id="node21" href="$camera__controller_8h_source.html" title="../camera_controller.h" alt="" coords="440,490,603,517"/>
+<area shape="rect" id="node22" href="$CameraResult_8h.html" title="CameraResult.h" alt="" coords="1123,401,1248,427"/>
+<area shape="rect" id="node23" href="$base64_8h_source.html" title="../util/base64.h" alt="" coords="134,401,253,427"/>
+<area shape="rect" id="node28" href="$Patrol_8h.html" title="../Movement/Patrol.h" alt="" coords="1646,169,1802,196"/>
+<area shape="rect" id="node29" href="$Beeline_8h.html" title="../Movement/Beeline.h" alt="" coords="1453,169,1621,196"/>
+</map>

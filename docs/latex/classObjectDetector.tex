@@ -1,0 +1,77 @@
+\hypertarget{classObjectDetector}{}\section{Object\+Detector Class Reference}
+\label{classObjectDetector}\index{Object\+Detector@{Object\+Detector}}
+
+
+A class used to detect the orange \hyperlink{classRobot}{Robot} within a given image.  
+
+
+
+
+{\ttfamily \#include $<$Object\+Detector.\+h$>$}
+
+
+
+Collaboration diagram for Object\+Detector\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{classObjectDetector__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classObjectDetector_a604cad611c81493d4e376b3d1fe186f3}\label{classObjectDetector_a604cad611c81493d4e376b3d1fe186f3}} 
+\hyperlink{classObjectDetector_a604cad611c81493d4e376b3d1fe186f3}{Object\+Detector} ()
+\begin{DoxyCompactList}\small\item\em A constructor for an instance of the \hyperlink{classObjectDetector}{Object\+Detector} class. \end{DoxyCompactList}\item 
+bool \hyperlink{classObjectDetector_a55190dc7b44f92778ef0dc0e7f9fea84}{Found} (cv\+::\+Mat im)
+\begin{DoxyCompactList}\small\item\em Checks to see if the orange robot is found in the image. \end{DoxyCompactList}\item 
+void \hyperlink{classObjectDetector_a64e8323f779d53b5d957a1b533624440}{Get\+Robot\+Pos} (int \&robot\+\_\+x, int \&robot\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Transfers the (x, y) pixel number of where the robot is found. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class used to detect the orange \hyperlink{classRobot}{Robot} within a given image. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classObjectDetector_a55190dc7b44f92778ef0dc0e7f9fea84}\label{classObjectDetector_a55190dc7b44f92778ef0dc0e7f9fea84}} 
+\index{Object\+Detector@{Object\+Detector}!Found@{Found}}
+\index{Found@{Found}!Object\+Detector@{Object\+Detector}}
+\subsubsection{\texorpdfstring{Found()}{Found()}}
+{\footnotesize\ttfamily bool Object\+Detector\+::\+Found (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{im }\end{DoxyParamCaption})}
+
+
+
+Checks to see if the orange robot is found in the image. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em im} & An img (in Open\+CV Matrix representation) that will be used to look for the robot.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if robot found, otherwise False is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classObjectDetector_a64e8323f779d53b5d957a1b533624440}\label{classObjectDetector_a64e8323f779d53b5d957a1b533624440}} 
+\index{Object\+Detector@{Object\+Detector}!Get\+Robot\+Pos@{Get\+Robot\+Pos}}
+\index{Get\+Robot\+Pos@{Get\+Robot\+Pos}!Object\+Detector@{Object\+Detector}}
+\subsubsection{\texorpdfstring{Get\+Robot\+Pos()}{GetRobotPos()}}
+{\footnotesize\ttfamily void Object\+Detector\+::\+Get\+Robot\+Pos (\begin{DoxyParamCaption}\item[{int \&}]{robot\+\_\+x,  }\item[{int \&}]{robot\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+Transfers the (x, y) pixel number of where the robot is found. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em robot\+\_\+x} & reference to an integer containing the x component of the pixel in the image where the robot can be found \\
+\hline
+\mbox{\tt in}  & {\em robot\+\_\+y} & reference to an integer containing the y component of the pixel in the image where the robot can be found \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/src/\+Object\+Detector/\hyperlink{ObjectDetector_8h}{Object\+Detector.\+h}\item 
+/home/user/repo/project/src/\+Object\+Detector/\hyperlink{ObjectDetector_8cc}{Object\+Detector.\+cc}\end{DoxyCompactItemize}

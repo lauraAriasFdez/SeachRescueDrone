@@ -1,0 +1,16 @@
+<map id="/home/user/repo/project/src/Factory/HospitalFactory.cc" name="/home/user/repo/project/src/Factory/HospitalFactory.cc">
+<area shape="rect" id="node2" href="$HospitalFactory_8h.html" title="HospitalFactory.h" alt="" coords="387,95,520,121"/>
+<area shape="rect" id="node3" href="$Hospital_8h.html" title="../Entity/Hospital.h" alt="" coords="327,169,470,196"/>
+<area shape="rect" id="node26" href="$EntityFactory_8h.html" title="EntityFactory.h" alt="" coords="449,319,567,345"/>
+<area shape="rect" id="node4" href="$Entity_8h.html" title="Entity.h" alt="" coords="767,244,838,271"/>
+<area shape="rect" id="node5" href="$IEntity_8h.html" title="IEntity.h" alt="" coords="367,401,441,427"/>
+<area shape="rect" id="node14" href="$Camera_8h.html" title="../Camera/Camera.h" alt="" coords="939,319,1091,345"/>
+<area shape="rect" id="node9" href="$IObserver_8h.html" title="../Observer/IObserver.h" alt="" coords="144,490,315,517"/>
+<area shape="rect" id="node11" href="$vector3_8h.html" title="../vector3.h" alt="" coords="1254,490,1349,517"/>
+<area shape="rect" id="node15" href="$src_2ImageProcessing_2image_8h_source.html" title="../ImageProcessing\l/image.h" alt="" coords="1102,393,1247,435"/>
+<area shape="rect" id="node16" href="$src_2ImageProcessing_2color_8h_source.html" title="color.h" alt="" coords="882,490,947,517"/>
+<area shape="rect" id="node17" href="$ObjectDetector_8h.html" title="../ObjectDetector/Object\lDetector.h" alt="" coords="977,483,1156,524"/>
+<area shape="rect" id="node22" href="$camera__controller_8h_source.html" title="../camera_controller.h" alt="" coords="491,490,653,517"/>
+<area shape="rect" id="node23" href="$CameraResult_8h.html" title="CameraResult.h" alt="" coords="952,401,1077,427"/>
+<area shape="rect" id="node24" href="$base64_8h_source.html" title="../util/base64.h" alt="" coords="661,401,779,427"/>
+</map>

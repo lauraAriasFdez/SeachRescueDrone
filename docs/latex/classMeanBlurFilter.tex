@@ -1,0 +1,79 @@
+\hypertarget{classMeanBlurFilter}{}\section{Mean\+Blur\+Filter Class Reference}
+\label{classMeanBlurFilter}\index{Mean\+Blur\+Filter@{Mean\+Blur\+Filter}}
+
+
+A \hyperlink{classConvolutionFilter}{Convolution\+Filter} that computes the mean of all the surrounding pixels and replaces the central pixel by the avg value.  
+
+
+
+
+{\ttfamily \#include $<$mean\+\_\+blur\+\_\+filter.\+h$>$}
+
+
+
+Inheritance diagram for Mean\+Blur\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classMeanBlurFilter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Mean\+Blur\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classMeanBlurFilter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMeanBlurFilter_a506584ed32d9343588264ec8e1ba3a83}\label{classMeanBlurFilter_a506584ed32d9343588264ec8e1ba3a83}} 
+\hyperlink{classMeanBlurFilter_a506584ed32d9343588264ec8e1ba3a83}{Mean\+Blur\+Filter} ()
+\begin{DoxyCompactList}\small\item\em Constructor that call in parent constructor passing the kernels needed for the filter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classColor}{Color} $>$ \hyperlink{classMeanBlurFilter_a59f554dae7213e726db9235979eef86b}{Apply\+At\+Pixel} (const std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$ original, int x, int y)
+\begin{DoxyCompactList}\small\item\em A method that applies the mean blur filter to a single pixel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classConvolutionFilter}{Convolution\+Filter} that computes the mean of all the surrounding pixels and replaces the central pixel by the avg value. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMeanBlurFilter_a59f554dae7213e726db9235979eef86b}\label{classMeanBlurFilter_a59f554dae7213e726db9235979eef86b}} 
+\index{Mean\+Blur\+Filter@{Mean\+Blur\+Filter}!Apply\+At\+Pixel@{Apply\+At\+Pixel}}
+\index{Apply\+At\+Pixel@{Apply\+At\+Pixel}!Mean\+Blur\+Filter@{Mean\+Blur\+Filter}}
+\subsubsection{\texorpdfstring{Apply\+At\+Pixel()}{ApplyAtPixel()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{classColor}{Color} $>$ Mean\+Blur\+Filter\+::\+Apply\+At\+Pixel (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$}]{original,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+A method that applies the mean blur filter to a single pixel. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em original} & A vector of input images to apply the filter over. \\
+\hline
+\mbox{\tt in}  & {\em x} & An integer representing the width in which the image color pixel is located, and the pixel to which the filter should be applied. \\
+\hline
+\mbox{\tt in}  & {\em y} & An integer representing the height in which the image color pixel is located, and the pixel to which the filter should be applied.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A unique pointer array containing a \hyperlink{classColor}{Color} for each filtered image the filter should produce as an output, for the mean blur filter the vector should only contain one \hyperlink{classColor}{Color} object. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classConvolutionFilter_abc4b4ffef2b69fc2b7164e96af6cf186}{Convolution\+Filter}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{mean__blur__filter_8h}{mean\+\_\+blur\+\_\+filter.\+h}\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{mean__blur__filter_8cc}{mean\+\_\+blur\+\_\+filter.\+cc}\end{DoxyCompactItemize}

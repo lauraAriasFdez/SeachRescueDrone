@@ -1,0 +1,6 @@
+<map id="SimpleFilter" name="SimpleFilter">
+<area shape="rect" id="node3" href="$classDoubleThresholdFilter.html" title="A class that can be used to apply a Double Threshold Filter to an Image. " alt="" coords="5,300,195,421"/>
+<area shape="rect" id="node4" href="$classGreyScaleFilter.html" title="Greyscale filter is a SimpleFilter that sets RGB vales for each pixel in an image to be the luminance..." alt="" coords="219,322,349,399"/>
+<area shape="rect" id="node5" href="$classThresholdFilter.html" title="A Threshold filter is a SimpleFilter that compares the luminance of a pixel and compares that luminan..." alt="" coords="374,307,517,414"/>
+<area shape="rect" id="node2" href="$classFilter.html" title="Abstract class that defines the virtual methods for all filter classes. " alt="" coords="239,5,329,97"/>
+</map>

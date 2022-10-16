@@ -1,0 +1,4 @@
+<map id="IMovement" name="IMovement">
+<area shape="rect" id="node2" href="$classBeeline.html" title="A class that enables a Beeline movement strategy. " alt="" coords="5,131,101,223"/>
+<area shape="rect" id="node3" href="$classPatrol.html" title="A class that enables a Patrol movement strategy. " alt="" coords="126,131,210,223"/>
+</map>

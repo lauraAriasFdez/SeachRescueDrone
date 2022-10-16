@@ -1,0 +1,29 @@
+<map id="/home/user/repo/project/src/Simulation/RescueSimulation.h" name="/home/user/repo/project/src/Simulation/RescueSimulation.h">
+<area shape="rect" id="node2" href="$vector3_8h.html" title="../vector3.h" alt="" coords="637,669,731,695"/>
+<area shape="rect" id="node6" href="$DataCollector_8h.html" title="../DataCollector/DataCollector.h" alt="" coords="2241,497,2468,524"/>
+<area shape="rect" id="node9" href="$IEntity_8h.html" title="../Entity/IEntity.h" alt="" coords="1937,497,2065,524"/>
+<area shape="rect" id="node13" href="$IDrone_8h.html" title="../Entity/IDrone.h" alt="" coords="467,341,597,367"/>
+<area shape="rect" id="node28" href="$Robot_8h.html" title="../Entity/Robot.h" alt="" coords="1691,341,1816,367"/>
+<area shape="rect" id="node29" href="$Drone_8h.html" title="../Entity/Drone.h" alt="" coords="470,251,597,278"/>
+<area shape="rect" id="node32" href="$BatteryDecorator_8h.html" title="../Decorator/BatteryDecorator.h" alt="" coords="573,169,798,196"/>
+<area shape="rect" id="node33" href="$DroneFactory_8h.html" title="../Factory/DroneFactory.h" alt="" coords="867,95,1048,121"/>
+<area shape="rect" id="node35" href="$CompositeEntityFactory_8h.html" title="../Factory/CompositeEntity\lFactory.h" alt="" coords="2485,333,2678,375"/>
+<area shape="rect" id="node36" href="$HospitalFactory_8h.html" title="../Factory/HospitalFactory.h" alt="" coords="1818,251,2014,278"/>
+<area shape="rect" id="node38" href="$RobotFactory_8h.html" title="../Factory/RobotFactory.h" alt="" coords="1564,251,1743,278"/>
+<area shape="rect" id="node39" href="$RechargeStationFactory_8h.html" title="../Factory/RechargeStation\lFactory.h" alt="" coords="1298,244,1489,285"/>
+<area shape="rect" id="node11" href="$IObserver_8h.html" title="../Observer/IObserver.h" alt="" coords="1743,579,1913,606"/>
+<area shape="rect" id="node14" href="$Entity_8h.html" title="Entity.h" alt="" coords="1610,423,1681,449"/>
+<area shape="rect" id="node26" href="$IMovement_8h.html" title="../Movement/IMovement.h" alt="" coords="252,423,444,449"/>
+<area shape="rect" id="node15" href="$Camera_8h.html" title="../Camera/Camera.h" alt="" coords="1163,497,1315,524"/>
+<area shape="rect" id="node16" href="$src_2ImageProcessing_2image_8h_source.html" title="../ImageProcessing\l/image.h" alt="" coords="1327,572,1473,613"/>
+<area shape="rect" id="node17" href="$src_2ImageProcessing_2color_8h_source.html" title="color.h" alt="" coords="1602,669,1667,695"/>
+<area shape="rect" id="node18" href="$ObjectDetector_8h.html" title="../ObjectDetector/Object\lDetector.h" alt="" coords="1212,661,1391,703"/>
+<area shape="rect" id="node23" href="$camera__controller_8h_source.html" title="../camera_controller.h" alt="" coords="1415,669,1577,695"/>
+<area shape="rect" id="node24" href="$CameraResult_8h.html" title="CameraResult.h" alt="" coords="721,579,847,606"/>
+<area shape="rect" id="node25" href="$base64_8h_source.html" title="../util/base64.h" alt="" coords="1549,579,1667,606"/>
+<area shape="rect" id="node30" href="$Patrol_8h.html" title="../Movement/Patrol.h" alt="" coords="286,341,442,367"/>
+<area shape="rect" id="node31" href="$Beeline_8h.html" title="../Movement/Beeline.h" alt="" coords="93,341,261,367"/>
+<area shape="rect" id="node34" href="$EntityFactory_8h.html" title="EntityFactory.h" alt="" coords="1748,423,1865,449"/>
+<area shape="rect" id="node37" href="$Hospital_8h.html" title="../Entity/Hospital.h" alt="" coords="1891,341,2034,367"/>
+<area shape="rect" id="node40" href="$RechargeStation_8h.html" title="../Entity/RechargeStation.h" alt="" coords="1219,341,1413,367"/>
+</map>

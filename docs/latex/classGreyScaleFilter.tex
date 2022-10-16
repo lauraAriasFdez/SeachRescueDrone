@@ -1,0 +1,71 @@
+\hypertarget{classGreyScaleFilter}{}\section{Grey\+Scale\+Filter Class Reference}
+\label{classGreyScaleFilter}\index{Grey\+Scale\+Filter@{Grey\+Scale\+Filter}}
+
+
+Greyscale filter is a \hyperlink{classSimpleFilter}{Simple\+Filter} that sets R\+GB vales for each pixel in an image to be the luminance of the pixel.  
+
+
+
+
+{\ttfamily \#include $<$greyscale\+\_\+filter.\+h$>$}
+
+
+
+Inheritance diagram for Grey\+Scale\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classGreyScaleFilter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Grey\+Scale\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classGreyScaleFilter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classColor}{Color} \hyperlink{classGreyScaleFilter_a4b86977b204bf2699c4d138d6d0a1116}{Apply\+At\+Pixel} (const \hyperlink{classImage}{Image} $\ast$image, const \hyperlink{classColor}{Color} \&pixel)
+\begin{DoxyCompactList}\small\item\em Applies the filter to one single pixel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Greyscale filter is a \hyperlink{classSimpleFilter}{Simple\+Filter} that sets R\+GB vales for each pixel in an image to be the luminance of the pixel. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGreyScaleFilter_a4b86977b204bf2699c4d138d6d0a1116}\label{classGreyScaleFilter_a4b86977b204bf2699c4d138d6d0a1116}} 
+\index{Grey\+Scale\+Filter@{Grey\+Scale\+Filter}!Apply\+At\+Pixel@{Apply\+At\+Pixel}}
+\index{Apply\+At\+Pixel@{Apply\+At\+Pixel}!Grey\+Scale\+Filter@{Grey\+Scale\+Filter}}
+\subsubsection{\texorpdfstring{Apply\+At\+Pixel()}{ApplyAtPixel()}}
+{\footnotesize\ttfamily \hyperlink{classColor}{Color} Grey\+Scale\+Filter\+::\+Apply\+At\+Pixel (\begin{DoxyParamCaption}\item[{const \hyperlink{classImage}{Image} $\ast$}]{image,  }\item[{const \hyperlink{classColor}{Color} \&}]{pixel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Applies the filter to one single pixel. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em image} & A constant pointer to an instance of the \hyperlink{classImage}{Image} class. \\
+\hline
+\mbox{\tt in}  & {\em pixel} & \hyperlink{classColor}{Color} object representing the pixel to apply the Gray\+Scale filter.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{classColor}{Color} object representing the pixel after the filter has been applied. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classSimpleFilter_aa12dc75dac8932ce03a9c9a3c7964b30}{Simple\+Filter}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{greyscale__filter_8h}{greyscale\+\_\+filter.\+h}\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{greyscale__filter_8cc}{greyscale\+\_\+filter.\+cc}\end{DoxyCompactItemize}

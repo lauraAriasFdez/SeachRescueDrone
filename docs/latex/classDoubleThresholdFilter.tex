@@ -1,0 +1,128 @@
+\hypertarget{classDoubleThresholdFilter}{}\section{Double\+Threshold\+Filter Class Reference}
+\label{classDoubleThresholdFilter}\index{Double\+Threshold\+Filter@{Double\+Threshold\+Filter}}
+
+
+A class that can be used to apply a Double Threshold \hyperlink{classFilter}{Filter} to an \hyperlink{classImage}{Image}.  
+
+
+
+
+{\ttfamily \#include $<$double\+\_\+threshold\+\_\+filter.\+h$>$}
+
+
+
+Inheritance diagram for Double\+Threshold\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classDoubleThresholdFilter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Double\+Threshold\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classDoubleThresholdFilter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDoubleThresholdFilter_abd3b482cd8a1f554e819ced5fe36699f}{Double\+Threshold\+Filter} (float low\+Threshold\+Ratio, float high\+Threshold\+Ratio)
+\begin{DoxyCompactList}\small\item\em Constructor of a Double Threshold \hyperlink{classFilter}{Filter} with a specified low-\/threshold and high-\/threshold. \end{DoxyCompactList}\item 
+float \hyperlink{classDoubleThresholdFilter_a3417a9655273bcf69280aaee6666d25b}{Get\+Low\+Threshold} ()
+\begin{DoxyCompactList}\small\item\em Get the value of the low-\/threshold for an instance of the \hyperlink{classDoubleThresholdFilter}{Double\+Threshold\+Filter} class. \end{DoxyCompactList}\item 
+float \hyperlink{classDoubleThresholdFilter_aedbed79b6c46e2a8c76616294ee2be9d}{Get\+High\+Threshold} ()
+\begin{DoxyCompactList}\small\item\em Get the value of the high-\/threshold for an instance of the \hyperlink{classDoubleThresholdFilter}{Double\+Threshold\+Filter} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classColor}{Color} \hyperlink{classDoubleThresholdFilter_a1ae6e4b94ecfa8c9e978b5da897c136d}{Apply\+At\+Pixel} (const \hyperlink{classImage}{Image} $\ast$image, const \hyperlink{classColor}{Color} \&pixel)
+\begin{DoxyCompactList}\small\item\em Modify the pixel of an image to apply the effects of a Double Threshold filter on that image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class that can be used to apply a Double Threshold \hyperlink{classFilter}{Filter} to an \hyperlink{classImage}{Image}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDoubleThresholdFilter_abd3b482cd8a1f554e819ced5fe36699f}\label{classDoubleThresholdFilter_abd3b482cd8a1f554e819ced5fe36699f}} 
+\index{Double\+Threshold\+Filter@{Double\+Threshold\+Filter}!Double\+Threshold\+Filter@{Double\+Threshold\+Filter}}
+\index{Double\+Threshold\+Filter@{Double\+Threshold\+Filter}!Double\+Threshold\+Filter@{Double\+Threshold\+Filter}}
+\subsubsection{\texorpdfstring{Double\+Threshold\+Filter()}{DoubleThresholdFilter()}}
+{\footnotesize\ttfamily Double\+Threshold\+Filter\+::\+Double\+Threshold\+Filter (\begin{DoxyParamCaption}\item[{float}]{low\+Threshold\+Ratio,  }\item[{float}]{high\+Threshold\+Ratio }\end{DoxyParamCaption})}
+
+
+
+Constructor of a Double Threshold \hyperlink{classFilter}{Filter} with a specified low-\/threshold and high-\/threshold. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em low\+Threshold\+Ratio} & A float value that represents the low-\/threshold value. \\
+\hline
+\mbox{\tt in}  & {\em high\+Threshold\+Ratio} & A float value that represents the high-\/threshold value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an instance of a \hyperlink{classDoubleThresholdFilter}{Double\+Threshold\+Filter} with the specified low-\/threshold and high-\/threshold values. 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDoubleThresholdFilter_a1ae6e4b94ecfa8c9e978b5da897c136d}\label{classDoubleThresholdFilter_a1ae6e4b94ecfa8c9e978b5da897c136d}} 
+\index{Double\+Threshold\+Filter@{Double\+Threshold\+Filter}!Apply\+At\+Pixel@{Apply\+At\+Pixel}}
+\index{Apply\+At\+Pixel@{Apply\+At\+Pixel}!Double\+Threshold\+Filter@{Double\+Threshold\+Filter}}
+\subsubsection{\texorpdfstring{Apply\+At\+Pixel()}{ApplyAtPixel()}}
+{\footnotesize\ttfamily \hyperlink{classColor}{Color} Double\+Threshold\+Filter\+::\+Apply\+At\+Pixel (\begin{DoxyParamCaption}\item[{const \hyperlink{classImage}{Image} $\ast$}]{image,  }\item[{const \hyperlink{classColor}{Color} \&}]{pixel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Modify the pixel of an image to apply the effects of a Double Threshold filter on that image. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em image} & A constant pointer to an instance of the \hyperlink{classImage}{Image} class. \\
+\hline
+\mbox{\tt in}  & {\em pixel} & A reference to an instance of the \hyperlink{classColor}{Color} class that represents the pixel of an image to apply the Double Threshold filter to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an instance of the \hyperlink{classColor}{Color} class representing the new \hyperlink{classColor}{Color} that the pixel in the image will be changed to after applying the Double Threshold filter. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classSimpleFilter_aa12dc75dac8932ce03a9c9a3c7964b30}{Simple\+Filter}.
+
+\mbox{\Hypertarget{classDoubleThresholdFilter_aedbed79b6c46e2a8c76616294ee2be9d}\label{classDoubleThresholdFilter_aedbed79b6c46e2a8c76616294ee2be9d}} 
+\index{Double\+Threshold\+Filter@{Double\+Threshold\+Filter}!Get\+High\+Threshold@{Get\+High\+Threshold}}
+\index{Get\+High\+Threshold@{Get\+High\+Threshold}!Double\+Threshold\+Filter@{Double\+Threshold\+Filter}}
+\subsubsection{\texorpdfstring{Get\+High\+Threshold()}{GetHighThreshold()}}
+{\footnotesize\ttfamily float Double\+Threshold\+Filter\+::\+Get\+High\+Threshold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the value of the high-\/threshold for an instance of the \hyperlink{classDoubleThresholdFilter}{Double\+Threshold\+Filter} class. 
+
+\begin{DoxyReturn}{Returns}
+Returns an a float containing the value of the high-\/threshold set for this Double Threshold filter. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDoubleThresholdFilter_a3417a9655273bcf69280aaee6666d25b}\label{classDoubleThresholdFilter_a3417a9655273bcf69280aaee6666d25b}} 
+\index{Double\+Threshold\+Filter@{Double\+Threshold\+Filter}!Get\+Low\+Threshold@{Get\+Low\+Threshold}}
+\index{Get\+Low\+Threshold@{Get\+Low\+Threshold}!Double\+Threshold\+Filter@{Double\+Threshold\+Filter}}
+\subsubsection{\texorpdfstring{Get\+Low\+Threshold()}{GetLowThreshold()}}
+{\footnotesize\ttfamily float Double\+Threshold\+Filter\+::\+Get\+Low\+Threshold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the value of the low-\/threshold for an instance of the \hyperlink{classDoubleThresholdFilter}{Double\+Threshold\+Filter} class. 
+
+\begin{DoxyReturn}{Returns}
+Returns an a float containing the value of the low-\/threshold set for this Double Threshold filter. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{double__threshold__filter_8h}{double\+\_\+threshold\+\_\+filter.\+h}\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{double__threshold__filter_8cc}{double\+\_\+threshold\+\_\+filter.\+cc}\end{DoxyCompactItemize}

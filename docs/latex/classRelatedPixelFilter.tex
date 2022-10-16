@@ -1,0 +1,101 @@
+\hypertarget{classRelatedPixelFilter}{}\section{Related\+Pixel\+Filter Class Reference}
+\label{classRelatedPixelFilter}\index{Related\+Pixel\+Filter@{Related\+Pixel\+Filter}}
+
+
+Abstract class that defines the virtual methods for all classes derived from \hyperlink{classRelatedPixelFilter}{Related\+Pixel\+Filter}.  
+
+
+
+
+{\ttfamily \#include $<$related\+\_\+pixel\+\_\+filter.\+h$>$}
+
+
+
+Inheritance diagram for Related\+Pixel\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRelatedPixelFilter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Related\+Pixel\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classRelatedPixelFilter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classRelatedPixelFilter_a4f78d98d7f5ddc55f1e5e0f029b2bfbe}{Apply} (std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$ original, std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$ filtered)
+\begin{DoxyCompactList}\small\item\em A method that goes through every pixel and applies the filter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRelatedPixelFilter_afb57fae40e73094219014ab2ab393515}\label{classRelatedPixelFilter_afb57fae40e73094219014ab2ab393515}} 
+virtual \hyperlink{classRelatedPixelFilter_afb57fae40e73094219014ab2ab393515}{$\sim$\+Related\+Pixel\+Filter} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor that is needed for polymorphism since derived classes constructors need to be called. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::vector$<$ \hyperlink{classColor}{Color} $>$ \hyperlink{classRelatedPixelFilter_a4701695c3b2ca7fdcc41b3d03c5840df}{Apply\+At\+Pixel} (const std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$ original, int x, int y)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to apply the derived filter to one single pixel taking into consideration surrounding pixels. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class that defines the virtual methods for all classes derived from \hyperlink{classRelatedPixelFilter}{Related\+Pixel\+Filter}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRelatedPixelFilter_a4f78d98d7f5ddc55f1e5e0f029b2bfbe}\label{classRelatedPixelFilter_a4f78d98d7f5ddc55f1e5e0f029b2bfbe}} 
+\index{Related\+Pixel\+Filter@{Related\+Pixel\+Filter}!Apply@{Apply}}
+\index{Apply@{Apply}!Related\+Pixel\+Filter@{Related\+Pixel\+Filter}}
+\subsubsection{\texorpdfstring{Apply()}{Apply()}}
+{\footnotesize\ttfamily void Related\+Pixel\+Filter\+::\+Apply (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$}]{original,  }\item[{std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$}]{filtered }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method that goes through every pixel and applies the filter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em original} & A vector of input images to apply the filter to. \\
+\hline
+{\em filtered} & A vector of output images that stores images that have had the filter applied to them. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classFilter_afab0d50af44a19a370ebe46c69b8ff4e}{Filter}.
+
+\mbox{\Hypertarget{classRelatedPixelFilter_a4701695c3b2ca7fdcc41b3d03c5840df}\label{classRelatedPixelFilter_a4701695c3b2ca7fdcc41b3d03c5840df}} 
+\index{Related\+Pixel\+Filter@{Related\+Pixel\+Filter}!Apply\+At\+Pixel@{Apply\+At\+Pixel}}
+\index{Apply\+At\+Pixel@{Apply\+At\+Pixel}!Related\+Pixel\+Filter@{Related\+Pixel\+Filter}}
+\subsubsection{\texorpdfstring{Apply\+At\+Pixel()}{ApplyAtPixel()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$\hyperlink{classColor}{Color}$>$ Related\+Pixel\+Filter\+::\+Apply\+At\+Pixel (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$}]{original,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Pure virtual method to apply the derived filter to one single pixel taking into consideration surrounding pixels. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em original} & A vector of input images to apply the filter over. \\
+\hline
+\mbox{\tt in}  & {\em x} & An integer representing the x-\/position of the pixel the filter should be applied to. \\
+\hline
+\mbox{\tt in}  & {\em y} & An integer representing the y-\/position of the pixel the filter should be applied to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A unique pointer array containing a \hyperlink{classColor}{Color} for each filtered image the filter should produce as an output. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classConvolutionFilter_abc4b4ffef2b69fc2b7164e96af6cf186}{Convolution\+Filter}, \hyperlink{classGaussianFilter_af8bf2d0f68642e6232f8b73ef1bee512}{Gaussian\+Filter}, \hyperlink{classSobelFilter_a7ce32ba94d87a008e7344863c442a1bb}{Sobel\+Filter}, \hyperlink{classNonMaxSupFilter_a00c4dcab5fe613124051d7a782284df3}{Non\+Max\+Sup\+Filter}, \hyperlink{classHysteresisFilter_a43990169f3f075ba8063c21ae83a0fc3}{Hysteresis\+Filter}, and \hyperlink{classMeanBlurFilter_a59f554dae7213e726db9235979eef86b}{Mean\+Blur\+Filter}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{related__pixel__filter_8h}{related\+\_\+pixel\+\_\+filter.\+h}\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{related__pixel__filter_8cc}{related\+\_\+pixel\+\_\+filter.\+cc}\end{DoxyCompactItemize}

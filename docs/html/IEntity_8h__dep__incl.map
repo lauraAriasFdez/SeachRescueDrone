@@ -1,0 +1,27 @@
+<map id="/home/user/repo/project/src/Entity/IEntity.h" name="/home/user/repo/project/src/Entity/IEntity.h">
+<area shape="rect" id="node2" href="$Entity_8h.html" title="/home/user/repo/project\l/src/Entity/Entity.h" alt="" coords="939,95,1116,136"/>
+<area shape="rect" id="node8" href="$RescueSimulation_8h.html" title="/home/user/repo/project\l/src/Simulation/RescueSimulation.h" alt="" coords="787,571,1038,612"/>
+<area shape="rect" id="node24" href="$EntityFactory_8h.html" title="/home/user/repo/project\l/src/Factory/EntityFactory.h" alt="" coords="1203,184,1398,225"/>
+<area shape="rect" id="node3" href="$IDrone_8h.html" title="/home/user/repo/project\l/src/Entity/IDrone.h" alt="" coords="345,184,523,225"/>
+<area shape="rect" id="node14" href="$Entity_8cc.html" title="/home/user/repo/project\l/src/Entity/Entity.cc" alt="" coords="547,184,724,225"/>
+<area shape="rect" id="node15" href="$Hospital_8h.html" title="/home/user/repo/project\l/src/Entity/Hospital.h" alt="" coords="1001,184,1179,225"/>
+<area shape="rect" id="node18" href="$RechargeStation_8h.html" title="/home/user/repo/project\l/src/Entity/RechargeStation.h" alt="" coords="1473,184,1683,225"/>
+<area shape="rect" id="node19" href="$RechargeStationFactory_8h.html" title="/home/user/repo/project\l/src/Factory/RechargeStation\lFactory.h" alt="" coords="1371,273,1577,329"/>
+<area shape="rect" id="node21" href="$Robot_8h.html" title="/home/user/repo/project\l/src/Entity/Robot.h" alt="" coords="748,184,925,225"/>
+<area shape="rect" id="node23" href="$RobotFactory_8h.html" title="/home/user/repo/project\l/src/Factory/RobotFactory.h" alt="" coords="866,281,1061,322"/>
+<area shape="rect" id="node4" href="$BatteryDecorator_8h.html" title="/home/user/repo/project\l/src/Decorator/BatteryDecorator.h" alt="" coords="314,385,554,426"/>
+<area shape="rect" id="node12" href="$Drone_8h.html" title="/home/user/repo/project\l/src/Entity/Drone.h" alt="" coords="156,281,333,322"/>
+<area shape="rect" id="node5" href="$BatteryDecorator_8cc.html" title="/home/user/repo/project\l/src/Decorator/BatteryDecorator.cc" alt="" coords="553,481,800,523"/>
+<area shape="rect" id="node6" href="$DroneFactory_8h.html" title="/home/user/repo/project\l/src/Factory/DroneFactory.h" alt="" coords="283,481,479,523"/>
+<area shape="rect" id="node7" href="$DroneFactory_8cc.html" title="/home/user/repo/project\l/src/Factory/DroneFactory.cc" alt="" coords="279,571,482,612"/>
+<area shape="rect" id="node9" href="$web__app_8h.html" title="/home/user/repo/project\l/src/web_app.h" alt="" coords="703,660,880,701"/>
+<area shape="rect" id="node11" href="$RescueSimulation_8cc.html" title="/home/user/repo/project\l/src/Simulation/RescueSimulation.cc" alt="" coords="904,660,1161,701"/>
+<area shape="rect" id="node10" href="$web__app_8cc.html" title="/home/user/repo/project\l/src/web_app.cc" alt="" coords="703,749,880,791"/>
+<area shape="rect" id="node13" href="$Drone_8cc.html" title="/home/user/repo/project\l/src/Entity/Drone.cc" alt="" coords="29,385,207,426"/>
+<area shape="rect" id="node16" href="$HospitalFactory_8h.html" title="/home/user/repo/project\l/src/Factory/HospitalFactory.h" alt="" coords="1135,281,1346,322"/>
+<area shape="rect" id="node17" href="$HospitalFactory_8cc.html" title="/home/user/repo/project\l/src/Factory/HospitalFactory.cc" alt="" coords="976,385,1193,426"/>
+<area shape="rect" id="node20" href="$RechargeStationFactory_8cc.html" title="/home/user/repo/project\l/src/Factory/RechargeStation\lFactory.cc" alt="" coords="1269,377,1476,433"/>
+<area shape="rect" id="node22" href="$Robot_8cc.html" title="/home/user/repo/project\l/src/Entity/Robot.cc" alt="" coords="613,281,791,322"/>
+<area shape="rect" id="node25" href="$CompositeEntityFactory_8h.html" title="/home/user/repo/project\l/src/Factory/CompositeEntity\lFactory.h" alt="" coords="1602,273,1810,329"/>
+<area shape="rect" id="node26" href="$CompositeEntityFactory_8cc.html" title="/home/user/repo/project\l/src/Factory/CompositeEntity\lFactory.cc" alt="" coords="1602,377,1810,433"/>
+</map>

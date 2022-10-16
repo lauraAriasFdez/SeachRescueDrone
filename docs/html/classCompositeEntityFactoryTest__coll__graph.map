@@ -1,0 +1,6 @@
+<map id="CompositeEntityFactoryTest" name="CompositeEntityFactoryTest">
+<area shape="rect" id="node3" href="$classEntityFactory.html" title="{EntityFactory\n||+ ~EntityFactory()\l+ CreateEntity()\l}" alt="" coords="113,20,255,112"/>
+<area shape="rect" id="node4" href="$classCompositeEntityFactory.html" title="{CompositeEntityFactory\n||+ CompositeEntityFactory()\l+ ~CompositeEntityFactory()\l+ CompositeEntityFactory()\l+ operator=()\l+ CreateEntity()\l+ AddFactory()\l}" alt="" coords="291,176,504,327"/>
+<area shape="rect" id="node5" href="$classMockCameraController.html" title="{MockCameraController\n||+ MOCK_METHOD()\l+ MOCK_METHOD()\l+ MOCK_METHOD()\l}" alt="" coords="528,198,699,305"/>
+<area shape="rect" id="node6" href="$classICameraController.html" title="The Camera Controller class controls and allows for monitoring of all cameras. " alt="" coords="525,5,702,127"/>
+</map>

@@ -1,0 +1,96 @@
+\hypertarget{classThresholdFilter}{}\section{Threshold\+Filter Class Reference}
+\label{classThresholdFilter}\index{Threshold\+Filter@{Threshold\+Filter}}
+
+
+A Threshold filter is a \hyperlink{classSimpleFilter}{Simple\+Filter} that compares the luminance of a pixel and compares that luminance to a threshold. If the luminance is larger than the threshold the pixel is set to white, else it is set to black.  
+
+
+
+
+{\ttfamily \#include $<$threshold\+\_\+filter.\+h$>$}
+
+
+
+Inheritance diagram for Threshold\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classThresholdFilter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Threshold\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classThresholdFilter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classThresholdFilter_a12ba3301d876524d9790d20d4125774a}\label{classThresholdFilter_a12ba3301d876524d9790d20d4125774a}} 
+\hyperlink{classThresholdFilter_a12ba3301d876524d9790d20d4125774a}{Threshold\+Filter} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classThresholdFilter_ac13253e54ab2cb9470c912dfc90c71e9}{Threshold\+Filter} (float threshold)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classColor}{Color} \hyperlink{classThresholdFilter_a98db75bfcd26f1f274ce4014d3de1baa}{Apply\+At\+Pixel} (const \hyperlink{classImage}{Image} $\ast$image, const \hyperlink{classColor}{Color} \&pixel)
+\begin{DoxyCompactList}\small\item\em Applies the filter to a single pixel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Threshold filter is a \hyperlink{classSimpleFilter}{Simple\+Filter} that compares the luminance of a pixel and compares that luminance to a threshold. If the luminance is larger than the threshold the pixel is set to white, else it is set to black. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classThresholdFilter_ac13253e54ab2cb9470c912dfc90c71e9}\label{classThresholdFilter_ac13253e54ab2cb9470c912dfc90c71e9}} 
+\index{Threshold\+Filter@{Threshold\+Filter}!Threshold\+Filter@{Threshold\+Filter}}
+\index{Threshold\+Filter@{Threshold\+Filter}!Threshold\+Filter@{Threshold\+Filter}}
+\subsubsection{\texorpdfstring{Threshold\+Filter()}{ThresholdFilter()}}
+{\footnotesize\ttfamily Threshold\+Filter\+::\+Threshold\+Filter (\begin{DoxyParamCaption}\item[{float}]{threshold }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em threshold} & The threshold for the filter. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classThresholdFilter_a98db75bfcd26f1f274ce4014d3de1baa}\label{classThresholdFilter_a98db75bfcd26f1f274ce4014d3de1baa}} 
+\index{Threshold\+Filter@{Threshold\+Filter}!Apply\+At\+Pixel@{Apply\+At\+Pixel}}
+\index{Apply\+At\+Pixel@{Apply\+At\+Pixel}!Threshold\+Filter@{Threshold\+Filter}}
+\subsubsection{\texorpdfstring{Apply\+At\+Pixel()}{ApplyAtPixel()}}
+{\footnotesize\ttfamily \hyperlink{classColor}{Color} Threshold\+Filter\+::\+Apply\+At\+Pixel (\begin{DoxyParamCaption}\item[{const \hyperlink{classImage}{Image} $\ast$}]{image,  }\item[{const \hyperlink{classColor}{Color} \&}]{pixel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Applies the filter to a single pixel. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em image} & A constant pointer to an instance of the \hyperlink{classImage}{Image} class. \\
+\hline
+\mbox{\tt in}  & {\em pixel} & A \hyperlink{classColor}{Color} object representing the pixel to apply the Thereshold filter over.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classColor}{Color} object representing the pixel that is having a filter applied filtered. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classSimpleFilter_aa12dc75dac8932ce03a9c9a3c7964b30}{Simple\+Filter}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{threshold__filter_8h}{threshold\+\_\+filter.\+h}\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{threshold__filter_8cc}{threshold\+\_\+filter.\+cc}\end{DoxyCompactItemize}

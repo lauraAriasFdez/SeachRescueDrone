@@ -1,0 +1,120 @@
+\hypertarget{classConvolutionFilter}{}\section{Convolution\+Filter Class Reference}
+\label{classConvolutionFilter}\index{Convolution\+Filter@{Convolution\+Filter}}
+
+
+\hyperlink{classConvolutionFilter}{Convolution\+Filter} is an abstract \hyperlink{classFilter}{Filter} class with a convolution kernel. In order to compute the value of each pixel, surrounding pixels are multiplied by kernel values and then their values are added together.  
+
+
+
+
+{\ttfamily \#include $<$convolution\+\_\+filter.\+h$>$}
+
+
+
+Inheritance diagram for Convolution\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classConvolutionFilter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Convolution\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classConvolutionFilter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classConvolutionFilter_a7a92bc98d0d607a0be58874db37c3e1b}\label{classConvolutionFilter_a7a92bc98d0d607a0be58874db37c3e1b}} 
+\hyperlink{classConvolutionFilter_a7a92bc98d0d607a0be58874db37c3e1b}{Convolution\+Filter} ()
+\begin{DoxyCompactList}\small\item\em Empty convolution filter constructor. \end{DoxyCompactList}\item 
+\hyperlink{classConvolutionFilter_af9356cfa9f768fbf7c97b51e7867ce12}{Convolution\+Filter} (std\+::unique\+\_\+ptr$<$ float\mbox{[}$\,$\mbox{]}$>$ matrix, int width, int height, int kernel\+\_\+num)
+\begin{DoxyCompactList}\small\item\em Constructor of a Convolution \hyperlink{classFilter}{Filter} with a specified kernels. It is assumed that all kernels in the filter have the same dimensions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classConvolutionFilter_a8d14d7b0f063528641be7fca0f1cd9dc}\label{classConvolutionFilter_a8d14d7b0f063528641be7fca0f1cd9dc}} 
+virtual \hyperlink{classConvolutionFilter_a8d14d7b0f063528641be7fca0f1cd9dc}{$\sim$\+Convolution\+Filter} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor that is needed for polymorphism since derived classes constructors need to be called. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::vector$<$ \hyperlink{classColor}{Color} $>$ \hyperlink{classConvolutionFilter_abc4b4ffef2b69fc2b7164e96af6cf186}{Apply\+At\+Pixel} (const std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$ original, int x, int y)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to apply the derived filter to one single pixel taking into consideration surrounding pixels. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classConvolutionFilter_ac78d47b9a00d813a527e48ccce62e7dc}\label{classConvolutionFilter_ac78d47b9a00d813a527e48ccce62e7dc}} 
+std\+::vector$<$ \hyperlink{classKernel}{Kernel} $>$ {\bfseries kernel\+\_\+filter}
+\item 
+\mbox{\Hypertarget{classConvolutionFilter_aea4c4b00b3a15b3ba75ae2ce9ce141a2}\label{classConvolutionFilter_aea4c4b00b3a15b3ba75ae2ce9ce141a2}} 
+int {\bfseries kernel\+\_\+num}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classConvolutionFilter}{Convolution\+Filter} is an abstract \hyperlink{classFilter}{Filter} class with a convolution kernel. In order to compute the value of each pixel, surrounding pixels are multiplied by kernel values and then their values are added together. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classConvolutionFilter_af9356cfa9f768fbf7c97b51e7867ce12}\label{classConvolutionFilter_af9356cfa9f768fbf7c97b51e7867ce12}} 
+\index{Convolution\+Filter@{Convolution\+Filter}!Convolution\+Filter@{Convolution\+Filter}}
+\index{Convolution\+Filter@{Convolution\+Filter}!Convolution\+Filter@{Convolution\+Filter}}
+\subsubsection{\texorpdfstring{Convolution\+Filter()}{ConvolutionFilter()}}
+{\footnotesize\ttfamily Convolution\+Filter\+::\+Convolution\+Filter (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ float\mbox{[}$\,$\mbox{]}$>$}]{matrix,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{kernel\+\_\+num }\end{DoxyParamCaption})}
+
+
+
+Constructor of a Convolution \hyperlink{classFilter}{Filter} with a specified kernels. It is assumed that all kernels in the filter have the same dimensions. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em matrix} & A float unique pointer array containing all the values of each of the kernels. \\
+\hline
+\mbox{\tt in}  & {\em width} & An integer value that represents the width of a kernel. \\
+\hline
+\mbox{\tt in}  & {\em height} & An integer value that represents the height of a kernel. \\
+\hline
+\mbox{\tt in}  & {\em kernel\+\_\+num} & An integer value that represents the number of a kernels that this convolution filter holds. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classConvolutionFilter_abc4b4ffef2b69fc2b7164e96af6cf186}\label{classConvolutionFilter_abc4b4ffef2b69fc2b7164e96af6cf186}} 
+\index{Convolution\+Filter@{Convolution\+Filter}!Apply\+At\+Pixel@{Apply\+At\+Pixel}}
+\index{Apply\+At\+Pixel@{Apply\+At\+Pixel}!Convolution\+Filter@{Convolution\+Filter}}
+\subsubsection{\texorpdfstring{Apply\+At\+Pixel()}{ApplyAtPixel()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$\hyperlink{classColor}{Color}$>$ Convolution\+Filter\+::\+Apply\+At\+Pixel (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$}]{original,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Pure virtual method to apply the derived filter to one single pixel taking into consideration surrounding pixels. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em original} & A vector of input images to apply the filter over. \\
+\hline
+\mbox{\tt in}  & {\em x} & An integer representing the width in which the image color pixel is located, and the pixel to which the filter should be applied. \\
+\hline
+\mbox{\tt in}  & {\em x} & An integer representing the height in which the image color pixel is located, and the pixel to which the filter should be applied.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A unique pointer array containing a color for each filtered image the filter should produce as an output 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRelatedPixelFilter_a4701695c3b2ca7fdcc41b3d03c5840df}{Related\+Pixel\+Filter}.
+
+
+
+Implemented in \hyperlink{classGaussianFilter_af8bf2d0f68642e6232f8b73ef1bee512}{Gaussian\+Filter}, \hyperlink{classSobelFilter_a7ce32ba94d87a008e7344863c442a1bb}{Sobel\+Filter}, and \hyperlink{classMeanBlurFilter_a59f554dae7213e726db9235979eef86b}{Mean\+Blur\+Filter}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{convolution__filter_8h}{convolution\+\_\+filter.\+h}\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{convolution__filter_8cc}{convolution\+\_\+filter.\+cc}\end{DoxyCompactItemize}

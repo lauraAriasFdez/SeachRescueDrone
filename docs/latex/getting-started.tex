@@ -1,0 +1,122 @@
+\subsection*{Building and Running Project}
+
+This project has been built using C++ while also being portable for various operating systems and machines with the use of Docker.
+
+Using this project is achieved by obtaining the source code, meeting the base system requirements, compiling the source code, and then running an image filter on an image that you supply!
+
+\subsubsection*{System Requirements}
+
+Docker is the only hard system requirement for this project. {\bfseries Make sure that your system has Docker installed before proceeding.}
+
+Installation instructions for Docker can be found here\+: \href{https://docs.docker.com/get-docker/}{\tt https\+://docs.\+docker.\+com/get-\/docker/}.
+
+Docker provides the system requirements needed to run Docker on all of the major operating systems here\+:
+\begin{DoxyItemize}
+\item \href{https://docs.docker.com/desktop/windows/install/}{\tt Docker System Requirements for Windows}
+\begin{DoxyItemize}
+\item W\+SL 2 Backend and Hyper-\/V Backend and Windows Containers installation options are available
+\end{DoxyItemize}
+\item \href{https://docs.docker.com/desktop/mac/install/#system-requirements}{\tt Docker System Requirements for mac\+OS}
+\begin{DoxyItemize}
+\item Macs with Intel Chipssets and Macs with Apple Silicon So\+Cs installation options are available
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsubsection*{Obtaining the Source Code}
+
+This code is available within a Github repository found here\+: \href{https://github.umn.edu/umn-csci-3081-f21/repo-team-54}{\tt https\+://github.\+umn.\+edu/umn-\/csci-\/3081-\/f21/repo-\/team-\/54}.
+
+Visit the repository and {\ttfamily clone} the repo into a directory on your local machine. If you have git installed on your machine, create a directory where you would like to save the source code and run the following command to obtain a local copy of the codebase on your machine\+: {\ttfamily git clone \href{https://github.umn.edu/umn-csci-3081-f21/repo-team-54.git}{\tt https\+://github.\+umn.\+edu/umn-\/csci-\/3081-\/f21/repo-\/team-\/54.\+git}}
+
+\subsubsection*{Running Source Code in Docker Development Environment}
+
+Once your have installed Docker on your machine and you have cloned the source code from Githib onto your local machine, you are now ready to run the compile and run the project source code.
+
+\paragraph*{Build Docker Development Environment}
+
+The project provides a Dockerfile to handle most everything with Docker. To build your Docker environment\+:
+\begin{DoxyEnumerate}
+\item Start Docker Desktop on your local machine.
+\item Navigate to the directory on your local machine where you have stored the source code.
+\item Enter the command {\ttfamily bin/build-\/env.\+sh}. This will run the Docker file to build an image with all of the dependnecies needed for the project to run successfully.
+\begin{DoxyEnumerate}
+\item {\bfseries Note\+:} This process could take several minutes and only has to be done once. On future start ups of your Docker container, skip to step 4.
+\end{DoxyEnumerate}
+\item Remain at the root of the directory on your local machine where the project source code is. Run the command {\ttfamily bin/run-\/env.\+sh}. This will place you into a Docker container capable of complining and running the project.
+\begin{DoxyEnumerate}
+\item {\bfseries Note\+:} The directory space in the Docker container is identical to that of the directory on your local machine where you stored the source code for this project.
+\end{DoxyEnumerate}
+\item {\bfseries When} you wan to exit your Docker container run the command {\ttfamily exit}.
+\begin{DoxyEnumerate}
+\item {\bfseries Note\+:} Your Docker container will be deleted upon exiting. Don\textquotesingle{}t worry -\/ we will handle the clean up for you.
+\end{DoxyEnumerate}
+\item When you want to re-\/start your Docker container, repeat steps 1, 2, and 4.
+\end{DoxyEnumerate}
+
+\paragraph*{Running the Rescue Simulation}
+
+
+\begin{DoxyEnumerate}
+\item Start run the Docker container using the instructions in the {\bfseries Build Docker Environment} above.
+\item Within your Docker container, navigate into the {\ttfamily project/src/} directory where the source code for the simulation is located. This can be done by running the {\ttfamily cd project/src/} command.
+\item Run the command {\ttfamily make clean \&\& make -\/j} to compile all of the source code required to run the simulation.
+\item You are now ready to run the project using the following command\+: {\ttfamily ./build/web-\/app $<$port$>$ $<$web-\/server-\/directory$>$}
+\begin{DoxyEnumerate}
+\item {\ttfamily $<$port$>$} is the port that you want to run the webserver on (e.\+g. {\ttfamily 8081})
+\item {\ttfamily $<$web-\/server-\/directory$>$} is relative path to a directory containing all of the H\+T\+ML, JS, and C\+SS files needed for the webserver (e.\+g. {\ttfamily web/})
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}
+
+By running the following command from the {\ttfamily project/src/} directory\+: {\ttfamily ./build/web-\/app 8081 web/}, the simulation will start. The simulation can be viewed on a local web browser on your machine at \href{http://127.0.0.1:8081/}{\tt 127.\+0.\+0.\+1\+:8081}.
+
+\paragraph*{Running an Image Filter on An Image (Command-\/\+Line Tool)}
+
+
+\begin{DoxyEnumerate}
+\item Start run the Docker container using the instructions in the {\bfseries Build Docker Environment} above.
+\item Within your Docker container, navigate into the {\ttfamily project/\+Image\+Processing/} directory where the source code is located. This can be done by running the {\ttfamily cd project/\+Image\+Processing/} command.
+\item Run the command {\ttfamily make clean \&\& make -\/j} to compile all of the source code required to run the image processor.
+\item You are now ready to run the project using the following command\+: {\ttfamily ./image\+\_\+processor $<$input\+Image$>$ $<$filter$>$ $<$output\+Image$>$}
+\begin{DoxyEnumerate}
+\item {\ttfamily $<$input\+Image$>$} is a string that represents the relative path to the image that you want to apply a filter to (e.\+g. {\ttfamily \char`\"{}data/dog.\+png\char`\"{}})
+\item {\ttfamily $<$filter$>$} is a string that represents the type of filter that you want to apply to your image. The filter options include\+:
+\begin{DoxyEnumerate}
+\item greyscale -\/ Applies a Greyscale filter to the {\ttfamily $<$input\+Image$>$} specified.
+\item threshold -\/ Applies a Threshold filter with a threshold of 0.\+50 to the {\ttfamily $<$input\+Image$>$} specified.
+\item threshold-\/low -\/ Applies a Threshold filter with a threshold of 0.\+25 to the {\ttfamily $<$input\+Image$>$} specified.
+\item threshold-\/high -\/ Applies a Threshold filter with a threshold of 0.\+75 to the {\ttfamily $<$input\+Image$>$} specified.
+\item mean\+\_\+blur -\/ Applies a Mean Blur filter to the {\ttfamily $<$input\+Image$>$} specified.
+\item gaussian -\/ Applies a Gaussian Blur filter with a kernel size of 5 and a sigma value of 2 to the {\ttfamily $<$input\+Image$>$} specified.
+\item double\+\_\+threshold\+\_\+filter -\/ Applies a Double Threshold filter with a low threshold ratio of 0.\+10 and a high threshold ratio of 0.\+20 to the {\ttfamily $<$input\+Image$>$} specified.
+\item hysteresis\+\_\+filter -\/ Applies a Hysteresis filter with a weak threshold of 25.\+0 and a strong threshold of 255.\+0 to the {\ttfamily $<$input\+Image$>$} specified.
+\item canny-\/edge-\/detect -\/ Applies a Canny Edge Detection to the {\ttfamily $<$input\+Image$>$} specified.
+\end{DoxyEnumerate}
+\item {\ttfamily $<$output\+Image$>$} is a string that represents the relative path and file name of the image that will be generated by applying the specificed filter.
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}
+
+As an example, assume that in the directory on your local machine that stores this project\textquotesingle{}s source code you add a directory named {\ttfamily data} to store the images that you want to apply filters to. By running the following command from the {\ttfamily project/\+Image\+Processing/} directory\+: {\ttfamily ./image\+\_\+processor \char`\"{}data/dog.\+png\char`\"{} canny-\/edge-\/detect \char`\"{}data/dog-\/canny.\+png\char`\"{}}, the project will find the image named dog.\+png in the {\ttfamily data} directory one level up from the {\ttfamily project} directory. The program will then run a Canny Edge Detection on the {\ttfamily dog.\+png} image and the resulting output image will be saved in the {\ttfamily data} directory with the name of {\ttfamily dog-\/canny.\+png}.
+
+\paragraph*{Running the Test Suite}
+
+This application does come with a test suite built on Google\textquotesingle{}s Test application suite. These test can be run anytime to check that existing functionality is working and that any new functionality is not breaking existing functionality. To compile and run the tests\+:
+\begin{DoxyEnumerate}
+\item Start run the Docker container using the instructions in the {\bfseries Build Docker Environment} above.
+\item Within your Docker container, navigate into the {\ttfamily project/tests/} directory where the test source code for the project is located. This can be done by running the {\ttfamily cd project/tests/} command.
+\item Run the command {\ttfamily make clean \&\& make -\/j} to compile all of the source code required to run the simulation.
+\item You are now ready to run test suite using the following command\+: {\ttfamily ./build/test-\/app}
+\end{DoxyEnumerate}
+
+The test-\/suite will run and all tests should be have a passing state.
+
+\subsubsection*{Run Compiled Project in Docker}
+
+The compiled project source code is also available in a pre-\/built Docker Image.
+
+To use this pre-\/built Docker Image, Docker needs to be installed on your system. View the {\bfseries System Requirements} section at the top of this page for resources to help get Docker installed on your machine..
+
+Once Docker is installed on your system, you can view the pre-\/built image at \href{https://hub.docker.com/r/michaelweiner/sim}{\tt https\+://hub.\+docker.\+com/r/michaelweiner/sim}. The Docker Hub listing has a {\ttfamily R\+E\+A\+D\+ME} that walks you through how to pull the latest version of the Docker Image and get it running on your machine.
+
+\subsection*{Copyright}
+
+\copyright{} 2021 Laura Arias Fernandez, Michael Weiner, and Malik Khadar All rights reserved. 

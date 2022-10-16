@@ -1,0 +1,58 @@
+\hypertarget{classEntityFactory}{}\section{Entity\+Factory Class Reference}
+\label{classEntityFactory}\index{Entity\+Factory@{Entity\+Factory}}
+
+
+Inheritance diagram for Entity\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEntityFactory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Entity\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classEntityFactory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEntityFactory_ae3246f06fa101178803f76582323d4ad}\label{classEntityFactory_ae3246f06fa101178803f76582323d4ad}} 
+virtual \hyperlink{classEntityFactory_ae3246f06fa101178803f76582323d4ad}{$\sim$\+Entity\+Factory} ()=default
+\begin{DoxyCompactList}\small\item\em virtual destructor since composite Factory needs to be called and that is a subclass \end{DoxyCompactList}\item 
+virtual \hyperlink{classIEntity}{I\+Entity} $\ast$ \hyperlink{classEntityFactory_a7f579ca02f15935e6901e5c955c9726a}{Create\+Entity} (picojson\+::object \&object, \hyperlink{classICameraController}{I\+Camera\+Controller} \&camera\+Controller)=0
+\begin{DoxyCompactList}\small\item\em creates an entity based on the picson object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEntityFactory_a7f579ca02f15935e6901e5c955c9726a}\label{classEntityFactory_a7f579ca02f15935e6901e5c955c9726a}} 
+\index{Entity\+Factory@{Entity\+Factory}!Create\+Entity@{Create\+Entity}}
+\index{Create\+Entity@{Create\+Entity}!Entity\+Factory@{Entity\+Factory}}
+\subsubsection{\texorpdfstring{Create\+Entity()}{CreateEntity()}}
+{\footnotesize\ttfamily virtual \hyperlink{classIEntity}{I\+Entity}$\ast$ Entity\+Factory\+::\+Create\+Entity (\begin{DoxyParamCaption}\item[{picojson\+::object \&}]{object,  }\item[{\hyperlink{classICameraController}{I\+Camera\+Controller} \&}]{camera\+Controller }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+creates an entity based on the picson object 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object} & json object representing the entity that needs to be created\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+entity object or nullpointer 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classCompositeEntityFactory_a97b2f95333369f946d0f3ab2116b5f19}{Composite\+Entity\+Factory}, \hyperlink{classDroneFactory_a058b7be67ed594854ab9605236fa5c7e}{Drone\+Factory}, \hyperlink{classRechargeStationFactory_a5a870c5d317e1ec6932dc2a03d571474}{Recharge\+Station\+Factory}, \hyperlink{classRobotFactory_abcf3e19faf1d87fe2393b275b07c3549}{Robot\+Factory}, and \hyperlink{classHospitalFactory_a03bde29949e311469a3153da4e833622}{Hospital\+Factory}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/src/\+Factory/\hyperlink{EntityFactory_8h}{Entity\+Factory.\+h}\end{DoxyCompactItemize}

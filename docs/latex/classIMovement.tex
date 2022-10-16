@@ -1,0 +1,66 @@
+\hypertarget{classIMovement}{}\section{I\+Movement Class Reference}
+\label{classIMovement}\index{I\+Movement@{I\+Movement}}
+
+
+An Interface for any Movement Strategy.  
+
+
+
+
+{\ttfamily \#include $<$I\+Movement.\+h$>$}
+
+
+
+Inheritance diagram for I\+Movement\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classIMovement__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for I\+Movement\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classIMovement__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classIMovement_abe373c52df6be3a5139ab785b13e8964}{Move} (const \hyperlink{classVector3}{Vector3} \&position, std\+::queue$<$ \hyperlink{classVector3}{Vector3} $>$ \&q)=0
+\begin{DoxyCompactList}\small\item\em A method that adds locations to the queue of \hyperlink{classVector3}{Vector3} locations to be visited. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An Interface for any Movement Strategy. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classIMovement_abe373c52df6be3a5139ab785b13e8964}\label{classIMovement_abe373c52df6be3a5139ab785b13e8964}} 
+\index{I\+Movement@{I\+Movement}!Move@{Move}}
+\index{Move@{Move}!I\+Movement@{I\+Movement}}
+\subsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily virtual void I\+Movement\+::\+Move (\begin{DoxyParamCaption}\item[{const \hyperlink{classVector3}{Vector3} \&}]{position,  }\item[{std\+::queue$<$ \hyperlink{classVector3}{Vector3} $>$ \&}]{q }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A method that adds locations to the queue of \hyperlink{classVector3}{Vector3} locations to be visited. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em position} & A constant reference to a \hyperlink{classVector3}{Vector3} of any location in space. \\
+\hline
+\mbox{\tt in}  & {\em q} & A reference to a queue of \hyperlink{classVector3}{Vector3} objects that represent the locations to be visited in space. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classBeeline_a1af3f739bafa5a305e39f3b7f278b79d}{Beeline}, and \hyperlink{classPatrol_adb1a2e74fc26e331a279262dc1c5b37e}{Patrol}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/src/\+Movement/\hyperlink{IMovement_8h}{I\+Movement.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+<map id="EntityFactory" name="EntityFactory">
+<area shape="rect" id="node2" href="$classCompositeEntityFactory.html" title="{CompositeEntityFactory\n||+ CompositeEntityFactory()\l+ ~CompositeEntityFactory()\l+ CompositeEntityFactory()\l+ operator=()\l+ CreateEntity()\l+ AddFactory()\l}" alt="" coords="5,145,219,296"/>
+<area shape="rect" id="node3" href="$classDroneFactory.html" title="{DroneFactory\n||+ CreateEntity()\l}" alt="" coords="243,182,371,259"/>
+<area shape="rect" id="node4" href="$classHospitalFactory.html" title="{HospitalFactory\n||+ CreateEntity()\l}" alt="" coords="395,182,523,259"/>
+<area shape="rect" id="node5" href="$classRechargeStationFactory.html" title="{RechargeStationFactory\n||+ CreateEntity()\l}" alt="" coords="547,182,722,259"/>
+<area shape="rect" id="node6" href="$classRobotFactory.html" title="{RobotFactory\n||+ CreateEntity()\l}" alt="" coords="747,182,875,259"/>
+</map>

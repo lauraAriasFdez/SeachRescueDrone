@@ -1,0 +1,78 @@
+\hypertarget{classDataCollector}{}\section{Data\+Collector Class Reference}
+\label{classDataCollector}\index{Data\+Collector@{Data\+Collector}}
+
+
+A singleton class that collects and writes data to a C\+SV file.  
+
+
+
+
+{\ttfamily \#include $<$Data\+Collector.\+h$>$}
+
+
+
+Collaboration diagram for Data\+Collector\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{classDataCollector__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classDataCollector_af7d41172cc49dfb689ba91cf2171a5e8}{Log} (const std\+::string \&msg, bool overwrite)
+\begin{DoxyCompactList}\small\item\em A function that takes in a message to write to the C\+SV file and a flag to control if the contents of the file are overwritten. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDataCollector_a88476cb5acca163870167efd5179f253}\label{classDataCollector_a88476cb5acca163870167efd5179f253}} 
+\hyperlink{classDataCollector_a88476cb5acca163870167efd5179f253}{Data\+Collector} (const \hyperlink{classDataCollector}{Data\+Collector} \&)=delete
+\begin{DoxyCompactList}\small\item\em Delete copy constructor to keep \hyperlink{classDataCollector}{Data\+Collector} as a Singleton. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDataCollector_a54763523f38fd4bd3f15b84a35ae8efb}\label{classDataCollector_a54763523f38fd4bd3f15b84a35ae8efb}} 
+void \hyperlink{classDataCollector_a54763523f38fd4bd3f15b84a35ae8efb}{operator=} (const \hyperlink{classDataCollector}{Data\+Collector} \&)=delete
+\begin{DoxyCompactList}\small\item\em Delete assignment operator to keep \hyperlink{classDataCollector}{Data\+Collector} as a Singleton. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classDataCollector}{Data\+Collector} \& \hyperlink{classDataCollector_aa1cf25c127a7261ccaae4fac0fc5645b}{Get\+Instance} ()
+\begin{DoxyCompactList}\small\item\em A static function that returns a reference to the single instance of the \hyperlink{classDataCollector}{Data\+Collector} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A singleton class that collects and writes data to a C\+SV file. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDataCollector_aa1cf25c127a7261ccaae4fac0fc5645b}\label{classDataCollector_aa1cf25c127a7261ccaae4fac0fc5645b}} 
+\index{Data\+Collector@{Data\+Collector}!Get\+Instance@{Get\+Instance}}
+\index{Get\+Instance@{Get\+Instance}!Data\+Collector@{Data\+Collector}}
+\subsubsection{\texorpdfstring{Get\+Instance()}{GetInstance()}}
+{\footnotesize\ttfamily \hyperlink{classDataCollector}{Data\+Collector} \& Data\+Collector\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+A static function that returns a reference to the single instance of the \hyperlink{classDataCollector}{Data\+Collector} class. 
+
+\begin{DoxyReturn}{Returns}
+Returns a reference to the singel instace of the \hyperlink{classDataCollector}{Data\+Collector} class. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataCollector_af7d41172cc49dfb689ba91cf2171a5e8}\label{classDataCollector_af7d41172cc49dfb689ba91cf2171a5e8}} 
+\index{Data\+Collector@{Data\+Collector}!Log@{Log}}
+\index{Log@{Log}!Data\+Collector@{Data\+Collector}}
+\subsubsection{\texorpdfstring{Log()}{Log()}}
+{\footnotesize\ttfamily void Data\+Collector\+::\+Log (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{msg,  }\item[{bool}]{overwrite }\end{DoxyParamCaption})}
+
+
+
+A function that takes in a message to write to the C\+SV file and a flag to control if the contents of the file are overwritten. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em msg} & A constant reference to a string containing the comma separated values to write to the C\+SV file \\
+\hline
+\mbox{\tt in}  & {\em overwrite} & A boolean flag that determines if the contents of the C\+SV file should be overwritten before writing the new msg. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/src/\+Data\+Collector/\hyperlink{DataCollector_8h}{Data\+Collector.\+h}\item 
+/home/user/repo/project/src/\+Data\+Collector/\hyperlink{DataCollector_8cc}{Data\+Collector.\+cc}\end{DoxyCompactItemize}

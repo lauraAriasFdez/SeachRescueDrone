@@ -1,0 +1,12 @@
+<map id="/home/user/repo/project/src/Entity/IDrone.h" name="/home/user/repo/project/src/Entity/IDrone.h">
+<area shape="rect" id="node2" href="$BatteryDecorator_8h.html" title="/home/user/repo/project\l/src/Decorator/BatteryDecorator.h" alt="" coords="95,184,335,225"/>
+<area shape="rect" id="node6" href="$RescueSimulation_8h.html" title="/home/user/repo/project\l/src/Simulation/RescueSimulation.h" alt="" coords="196,363,447,404"/>
+<area shape="rect" id="node10" href="$Drone_8h.html" title="/home/user/repo/project\l/src/Entity/Drone.h" alt="" coords="284,95,461,136"/>
+<area shape="rect" id="node3" href="$BatteryDecorator_8cc.html" title="/home/user/repo/project\l/src/Decorator/BatteryDecorator.cc" alt="" coords="38,273,285,315"/>
+<area shape="rect" id="node4" href="$DroneFactory_8h.html" title="/home/user/repo/project\l/src/Factory/DroneFactory.h" alt="" coords="410,273,606,315"/>
+<area shape="rect" id="node5" href="$DroneFactory_8cc.html" title="/home/user/repo/project\l/src/Factory/DroneFactory.cc" alt="" coords="471,363,674,404"/>
+<area shape="rect" id="node7" href="$web__app_8h.html" title="/home/user/repo/project\l/src/web_app.h" alt="" coords="113,452,290,493"/>
+<area shape="rect" id="node9" href="$RescueSimulation_8cc.html" title="/home/user/repo/project\l/src/Simulation/RescueSimulation.cc" alt="" coords="314,452,572,493"/>
+<area shape="rect" id="node8" href="$web__app_8cc.html" title="/home/user/repo/project\l/src/web_app.cc" alt="" coords="113,541,290,583"/>
+<area shape="rect" id="node11" href="$Drone_8cc.html" title="/home/user/repo/project\l/src/Entity/Drone.cc" alt="" coords="461,184,638,225"/>
+</map>

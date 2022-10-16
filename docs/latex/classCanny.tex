@@ -1,0 +1,67 @@
+\hypertarget{classCanny}{}\section{Canny Class Reference}
+\label{classCanny}\index{Canny@{Canny}}
+
+
+A filter that applies the greyscale, gaussian, sobel, non-\/max suppression, double threshold, and hysteresis filters to an \hyperlink{classImage}{Image}.  
+
+
+
+
+{\ttfamily \#include $<$canny.\+h$>$}
+
+
+
+Inheritance diagram for Canny\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classCanny__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Canny\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classCanny__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCanny_aefadd0d0166f26f76d6bf2cf59dae3aa}{Apply} (std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$ original, std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$ filtered)
+\begin{DoxyCompactList}\small\item\em method that applies all the filters required for canny edge detection \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A filter that applies the greyscale, gaussian, sobel, non-\/max suppression, double threshold, and hysteresis filters to an \hyperlink{classImage}{Image}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCanny_aefadd0d0166f26f76d6bf2cf59dae3aa}\label{classCanny_aefadd0d0166f26f76d6bf2cf59dae3aa}} 
+\index{Canny@{Canny}!Apply@{Apply}}
+\index{Apply@{Apply}!Canny@{Canny}}
+\subsubsection{\texorpdfstring{Apply()}{Apply()}}
+{\footnotesize\ttfamily void Canny\+::\+Apply (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$}]{original,  }\item[{std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$}]{filtered }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+method that applies all the filters required for canny edge detection 
+
+
+\begin{DoxyParams}{Parameters}
+{\em original} & A vector of input images to apply the filter over. \\
+\hline
+{\em filtered} & A vector of output images that displays the original images filtered. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classFilter_afab0d50af44a19a370ebe46c69b8ff4e}{Filter}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{canny_8h}{canny.\+h}\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{canny_8cc}{canny.\+cc}\end{DoxyCompactItemize}

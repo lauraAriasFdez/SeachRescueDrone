@@ -1,0 +1,21 @@
+<map id="/home/user/repo/project/src/Factory/DroneFactory.cc" name="/home/user/repo/project/src/Factory/DroneFactory.cc">
+<area shape="rect" id="node2" href="$DroneFactory_8h.html" title="DroneFactory.h" alt="" coords="498,95,617,121"/>
+<area shape="rect" id="node3" href="$Drone_8h.html" title="../Entity/Drone.h" alt="" coords="346,244,473,271"/>
+<area shape="rect" id="node13" href="$vector3_8h.html" title="../vector3.h" alt="" coords="262,639,357,666"/>
+<area shape="rect" id="node23" href="$camera__controller_8h_source.html" title="../camera_controller.h" alt="" coords="973,639,1136,666"/>
+<area shape="rect" id="node31" href="$EntityFactory_8h.html" title="EntityFactory.h" alt="" coords="1212,468,1329,495"/>
+<area shape="rect" id="node32" href="$BatteryDecorator_8h.html" title="../Decorator/BatteryDecorator.h" alt="" coords="445,169,670,196"/>
+<area shape="rect" id="node5" href="$IDrone_8h.html" title="IDrone.h" alt="" coords="517,319,595,345"/>
+<area shape="rect" id="node24" href="$CameraResult_8h.html" title="CameraResult.h" alt="" coords="817,550,943,577"/>
+<area shape="rect" id="node29" href="$Patrol_8h.html" title="../Movement/Patrol.h" alt="" coords="145,319,301,345"/>
+<area shape="rect" id="node30" href="$Beeline_8h.html" title="../Movement/Beeline.h" alt="" coords="325,319,493,345"/>
+<area shape="rect" id="node6" href="$Entity_8h.html" title="Entity.h" alt="" coords="521,393,591,420"/>
+<area shape="rect" id="node27" href="$IMovement_8h.html" title="../Movement/IMovement.h" alt="" coords="153,393,345,420"/>
+<area shape="rect" id="node7" href="$IEntity_8h.html" title="IEntity.h" alt="" coords="1313,550,1388,577"/>
+<area shape="rect" id="node15" href="$Camera_8h.html" title="../Camera/Camera.h" alt="" coords="480,468,632,495"/>
+<area shape="rect" id="node11" href="$IObserver_8h.html" title="../Observer/IObserver.h" alt="" coords="1464,639,1635,666"/>
+<area shape="rect" id="node16" href="$src_2ImageProcessing_2image_8h_source.html" title="../ImageProcessing\l/image.h" alt="" coords="597,543,742,584"/>
+<area shape="rect" id="node17" href="$src_2ImageProcessing_2color_8h_source.html" title="color.h" alt="" coords="747,639,813,666"/>
+<area shape="rect" id="node18" href="$ObjectDetector_8h.html" title="../ObjectDetector/Object\lDetector.h" alt="" coords="533,632,712,673"/>
+<area shape="rect" id="node25" href="$base64_8h_source.html" title="../util/base64.h" alt="" coords="1018,550,1137,577"/>
+</map>

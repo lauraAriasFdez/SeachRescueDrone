@@ -1,0 +1,6 @@
+<map id="IDrone" name="IDrone">
+<area shape="rect" id="node4" href="$classBatteryDecorator.html" title="{BatteryDecorator\n||+ BatteryDecorator()\l+ ~BatteryDecorator()\l+ Update()\l+ GetBatteryLevel()\l+ UpdateManualMovement()\l+ ResetPatrol()\l+ GetVelocity()\l+ UpdateVelocity()\l+ GetPropellerSpeed()\l+ SetJoystick()\land 21 more...\l}" alt="" coords="5,1071,216,1295"/>
+<area shape="rect" id="node5" href="$classDrone.html" title="{Drone\n||+ Drone()\l+ Drone()\l+ ~Drone()\l+ UpdateManualMovement()\l+ Update()\l+ ResetPatrol()\l+ GetVelocity()\l+ UpdateVelocity()\l+ GetPropellerSpeed()\l+ SetJoystick()\land 8 more...\l}" alt="" coords="240,1071,451,1295"/>
+<area shape="rect" id="node2" href="$classEntity.html" title="{Entity\n|# observers\l# id\l# entity_id\l# type\l# position\l# direction\l# radius\l# cameras\l|+ Entity()\l+ Entity()\l+ ~Entity()\l+ Entity()\l+ operator=()\l+ AddObserver()\l+ RemoveObserver()\l+ Notify()\l+ GetRadius()\l+ SetRadius()\land 13 more...\l}" alt="" coords="149,336,307,663"/>
+<area shape="rect" id="node3" href="$classIEntity.html" title="{IEntity\n||+ AddObserver()\l+ RemoveObserver()\l+ Notify()\l+ ~IEntity()\l+ GetEntityId()\l+ SetEntityId()\l+ GetType()\l+ SetType()\l+ GetId()\l+ SetId()\l+ UpdateDirection()\l+ UpdatePosition()\l+ GetPosition()\l+ GetDirection()\l+ GetData()\l}" alt="" coords="149,5,307,288"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Entity" name="Entity">
+<area shape="rect" id="node2" href="$classIEntity.html" title="{IEntity\n||+ AddObserver()\l+ RemoveObserver()\l+ Notify()\l+ ~IEntity()\l+ GetEntityId()\l+ SetEntityId()\l+ GetType()\l+ SetType()\l+ GetId()\l+ SetId()\l+ UpdateDirection()\l+ UpdatePosition()\l+ GetPosition()\l+ GetDirection()\l+ GetData()\l}" alt="" coords="5,5,164,288"/>
+<area shape="rect" id="node3" href="$classVector3.html" title="A class that can be used to represent a 3D Vector. " alt="" coords="189,5,303,288"/>
+</map>

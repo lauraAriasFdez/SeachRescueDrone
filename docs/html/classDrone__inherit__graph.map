@@ -1,0 +1,5 @@
+<map id="Drone" name="Drone">
+<area shape="rect" id="node2" href="$classIDrone.html" title="{IDrone\n|# velocity\l# lastPictureTime\l# time\l# robot_position_if_found\l# search\l# perform\l# locationsToVisit\l|+ IDrone()\l+ IDrone()\l+ UpdateManualMovement()\l+ Update()\l+ ResetPatrol()\l+ GetVelocity()\l+ UpdateVelocity()\l+ GetPropellerSpeed()\l+ SetJoystick()\l+ GetSearchStatus()\land 7 more...\l}" alt="" coords="5,711,216,1023"/>
+<area shape="rect" id="node3" href="$classEntity.html" title="{Entity\n|# observers\l# id\l# entity_id\l# type\l# position\l# direction\l# radius\l# cameras\l|+ Entity()\l+ Entity()\l+ ~Entity()\l+ Entity()\l+ operator=()\l+ AddObserver()\l+ RemoveObserver()\l+ Notify()\l+ GetRadius()\l+ SetRadius()\land 13 more...\l}" alt="" coords="31,336,190,663"/>
+<area shape="rect" id="node4" href="$classIEntity.html" title="{IEntity\n||+ AddObserver()\l+ RemoveObserver()\l+ Notify()\l+ ~IEntity()\l+ GetEntityId()\l+ SetEntityId()\l+ GetType()\l+ SetType()\l+ GetId()\l+ SetId()\l+ UpdateDirection()\l+ UpdatePosition()\l+ GetPosition()\l+ GetDirection()\l+ GetData()\l}" alt="" coords="31,5,190,288"/>
+</map>

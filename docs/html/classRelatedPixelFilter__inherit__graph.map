@@ -1,0 +1,9 @@
+<map id="RelatedPixelFilter" name="RelatedPixelFilter">
+<area shape="rect" id="node3" href="$classConvolutionFilter.html" title="ConvolutionFilter is an abstract Filter class with a convolution kernel. In order to compute the valu..." alt="" coords="155,300,323,436"/>
+<area shape="rect" id="node7" href="$classHysteresisFilter.html" title="A class that can be used to apply a Hysteresis Filter to an instance of the Image class..." alt="" coords="347,322,495,414"/>
+<area shape="rect" id="node8" href="$classNonMaxSupFilter.html" title="A Filter class that eliminates wide and fuzzy edges in an image. It only keeps the strongest pixel in..." alt="" coords="519,322,675,414"/>
+<area shape="rect" id="node2" href="$classFilter.html" title="Abstract class that defines the virtual methods for all filter classes. " alt="" coords="376,5,467,97"/>
+<area shape="rect" id="node4" href="$classGaussianFilter.html" title="A ConvolutionFilter that computes a gaussian kernel given a kernel size and sigma. " alt="" coords="5,484,144,576"/>
+<area shape="rect" id="node5" href="$classMeanBlurFilter.html" title="A ConvolutionFilter that computes the mean of all the surrounding pixels and replaces the central pix..." alt="" coords="169,484,309,576"/>
+<area shape="rect" id="node6" href="$classSobelFilter.html" title="A filter that iterates two different kernels over an image to extract horizontal and vertical lines..." alt="" coords="333,484,464,576"/>
+</map>

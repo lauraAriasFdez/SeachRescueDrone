@@ -1,0 +1,131 @@
+\hypertarget{classKernel}{}\section{Kernel Class Reference}
+\label{classKernel}\index{Kernel@{Kernel}}
+
+
+Class that represents the convolution kernel for a \hyperlink{classConvolutionFilter}{Convolution\+Filter}.  
+
+
+
+
+{\ttfamily \#include $<$kernel.\+h$>$}
+
+
+
+Collaboration diagram for Kernel\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classKernel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classKernel_a3fc050cfe592b98f4c53fb4433f33856}{Kernel} (float $\ast$matrix, int width, int height)
+\begin{DoxyCompactList}\small\item\em Constructor of a kernel with a specified value of kernel matrix, its width and height. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKernel_ab12b6207cde6479e1a9f1f09b4decb6d}\label{classKernel_ab12b6207cde6479e1a9f1f09b4decb6d}} 
+\hyperlink{classKernel_ab12b6207cde6479e1a9f1f09b4decb6d}{Kernel} (const \hyperlink{classKernel}{Kernel} \&kernel)
+\begin{DoxyCompactList}\small\item\em Copy constructor to perform deep copies of kernels. \end{DoxyCompactList}\item 
+void \hyperlink{classKernel_a82c66f7c3d498d40dbab93e81fd94402}{operator=} (const \hyperlink{classKernel}{Kernel} \&kernel)
+\begin{DoxyCompactList}\small\item\em Equality overload operator to perform deep copes. \end{DoxyCompactList}\item 
+int \hyperlink{classKernel_af7579694a64547d0fa3191a1989674c9}{Get\+Width} () const
+\begin{DoxyCompactList}\small\item\em Get the width of the kernel matrix for an instance of the kernel class. \end{DoxyCompactList}\item 
+int \hyperlink{classKernel_a9130c92e4b917325b6eb45856913e8ff}{Get\+Height} () const
+\begin{DoxyCompactList}\small\item\em Get the height of the kernel matrix for an instance of the kernel class. \end{DoxyCompactList}\item 
+float \hyperlink{classKernel_a104461ffa063598341e8a149a6465acd}{Get\+Kernel\+Component} (int x, int y) const
+\begin{DoxyCompactList}\small\item\em Get the matrix kernel value at of the kernel at a specific with and height. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that represents the convolution kernel for a \hyperlink{classConvolutionFilter}{Convolution\+Filter}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classKernel_a3fc050cfe592b98f4c53fb4433f33856}\label{classKernel_a3fc050cfe592b98f4c53fb4433f33856}} 
+\index{Kernel@{Kernel}!Kernel@{Kernel}}
+\index{Kernel@{Kernel}!Kernel@{Kernel}}
+\subsubsection{\texorpdfstring{Kernel()}{Kernel()}}
+{\footnotesize\ttfamily Kernel\+::\+Kernel (\begin{DoxyParamCaption}\item[{float $\ast$}]{matrix,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+Constructor of a kernel with a specified value of kernel matrix, its width and height. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em matrix} & A float pointer to a 1D matrix containing the values of the kernel. \\
+\hline
+\mbox{\tt in}  & {\em width} & An integer representing the width of the kernel matrix. \\
+\hline
+\mbox{\tt in}  & {\em height} & An integer representing the height of the kernel matrix. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classKernel_a9130c92e4b917325b6eb45856913e8ff}\label{classKernel_a9130c92e4b917325b6eb45856913e8ff}} 
+\index{Kernel@{Kernel}!Get\+Height@{Get\+Height}}
+\index{Get\+Height@{Get\+Height}!Kernel@{Kernel}}
+\subsubsection{\texorpdfstring{Get\+Height()}{GetHeight()}}
+{\footnotesize\ttfamily int Kernel\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the height of the kernel matrix for an instance of the kernel class. 
+
+\begin{DoxyReturn}{Returns}
+An integer containing the height of the kernel. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classKernel_a104461ffa063598341e8a149a6465acd}\label{classKernel_a104461ffa063598341e8a149a6465acd}} 
+\index{Kernel@{Kernel}!Get\+Kernel\+Component@{Get\+Kernel\+Component}}
+\index{Get\+Kernel\+Component@{Get\+Kernel\+Component}!Kernel@{Kernel}}
+\subsubsection{\texorpdfstring{Get\+Kernel\+Component()}{GetKernelComponent()}}
+{\footnotesize\ttfamily float Kernel\+::\+Get\+Kernel\+Component (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption}) const}
+
+
+
+Get the matrix kernel value at of the kernel at a specific with and height. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & An integer representing the x-\/position of the kernel value to return. \\
+\hline
+\mbox{\tt in}  & {\em y} & An integer representing the y-\/position of the kernel value to return.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the float value of the kernel at (x,y). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classKernel_af7579694a64547d0fa3191a1989674c9}\label{classKernel_af7579694a64547d0fa3191a1989674c9}} 
+\index{Kernel@{Kernel}!Get\+Width@{Get\+Width}}
+\index{Get\+Width@{Get\+Width}!Kernel@{Kernel}}
+\subsubsection{\texorpdfstring{Get\+Width()}{GetWidth()}}
+{\footnotesize\ttfamily int Kernel\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the width of the kernel matrix for an instance of the kernel class. 
+
+\begin{DoxyReturn}{Returns}
+An integer containing the with of the kernel. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classKernel_a82c66f7c3d498d40dbab93e81fd94402}\label{classKernel_a82c66f7c3d498d40dbab93e81fd94402}} 
+\index{Kernel@{Kernel}!operator=@{operator=}}
+\index{operator=@{operator=}!Kernel@{Kernel}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily void Kernel\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classKernel}{Kernel} \&}]{kernel }\end{DoxyParamCaption})}
+
+
+
+Equality overload operator to perform deep copes. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em kernel} & Another \hyperlink{classKernel}{Kernel} to copy data from. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{kernel_8h}{kernel.\+h}\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{kernel_8cc}{kernel.\+cc}\end{DoxyCompactItemize}

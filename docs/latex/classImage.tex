@@ -1,0 +1,488 @@
+\hypertarget{classImage}{}\section{Image Class Reference}
+\label{classImage}\index{Image@{Image}}
+
+
+A class that holds content representing a P\+NG image.  
+
+
+
+
+{\ttfamily \#include $<$image.\+h$>$}
+
+
+
+Collaboration diagram for Image\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{classImage__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classImage_a58edd1c45b4faeb5f789b0d036d02313}\label{classImage_a58edd1c45b4faeb5f789b0d036d02313}} 
+\hyperlink{classImage_a58edd1c45b4faeb5f789b0d036d02313}{Image} ()
+\begin{DoxyCompactList}\small\item\em Default constructor accepting no parameters. \end{DoxyCompactList}\item 
+\hyperlink{classImage_a05c964ca59502cc32c30e8ab89b5e920}{Image} (int w, int h)
+\begin{DoxyCompactList}\small\item\em Creates a \char`\"{}blank\char`\"{} image of a given width and height. \end{DoxyCompactList}\item 
+\hyperlink{classImage_a81e88caba6ef6c0ed639bf1f25e9d441}{Image} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Load an image from the hard drive given the filename passed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImage_a7f515a9c20a88c2010a5ace21c263925}\label{classImage_a7f515a9c20a88c2010a5ace21c263925}} 
+{\bfseries Image} (const unsigned char $\ast$data, int length)
+\item 
+\hyperlink{classImage_a34410a36b132ab597a8878d45facc89a}{Image} (const \hyperlink{classImage}{Image} \&image)
+\begin{DoxyCompactList}\small\item\em A copy constructor that allows to copy/duplicate any \hyperlink{classImage}{Image}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImage_a0294f63700543e11c0f0da85601c7ae5}\label{classImage_a0294f63700543e11c0f0da85601c7ae5}} 
+\hyperlink{classImage_a0294f63700543e11c0f0da85601c7ae5}{$\sim$\+Image} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classImage_ae6b1cdd82584ce9fb729c1e062ee088b}{operator=} (const \hyperlink{classImage}{Image} \&image)
+\begin{DoxyCompactList}\small\item\em Deep copy an image passed in as parameter into another object. \end{DoxyCompactList}\item 
+void \hyperlink{classImage_afd027f3a969d6ff41c76a4ab2599d85d}{Save\+As} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em A method that takes in a string (or character array) and saves the \hyperlink{classImage}{Image} object into a P\+NG image. \end{DoxyCompactList}\item 
+int \hyperlink{classImage_a631ead4be012caf49b3209d2ac401214}{Get\+Height} () const
+\item 
+int \hyperlink{classImage_a3da5012d5e314ce03b53d77276232186}{Get\+Width} () const
+\item 
+int \hyperlink{classImage_a8ee1acb5476bf0fecac66f5dfdd47a38}{Get\+Size} () const
+\item 
+float \hyperlink{classImage_a9efc74ed4a9af25d1eb01416ec47e78e}{Get\+Max\+Float\+Val} () const
+\item 
+int \hyperlink{classImage_aec11158c35b24ba60a835c877d791b36}{Get\+Component\+Num} () const
+\item 
+\hyperlink{classColor}{Color} $\ast$ \hyperlink{classImage_a01fc9742fb7bb83f66027d5c9091d477}{Get\+Pixel} (int x, int y) const
+\item 
+\hyperlink{classColor}{Color} $\ast$ \hyperlink{classImage_a1d2472f49fc5cd5458f32fc54affddcf}{Get\+Pixel} (int i) const
+\item 
+void \hyperlink{classImage_a4b464d4f6348e8be2480688d9871ceac}{Set\+Pixel} (int x, int y, const \hyperlink{classColor}{Color} \&pixel)
+\begin{DoxyCompactList}\small\item\em Sets the \hyperlink{classColor}{Color} pixel at the width and height passed as parameter to a new \hyperlink{classColor}{Color} object passed as parameter. \end{DoxyCompactList}\item 
+void \hyperlink{classImage_a9774c194cd627ccb7dfe4165e7e5e996}{Set\+Pixel} (int i, const \hyperlink{classColor}{Color} \&pixel)
+\begin{DoxyCompactList}\small\item\em Sets the \hyperlink{classColor}{Color} pixel at the index passeed as parameter to a new \hyperlink{classColor}{Color} object also passed as a parameter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImage_a58edd1c45b4faeb5f789b0d036d02313}\label{classImage_a58edd1c45b4faeb5f789b0d036d02313}} 
+\hyperlink{classImage_a58edd1c45b4faeb5f789b0d036d02313}{Image} ()
+\begin{DoxyCompactList}\small\item\em Default constructor accepting no parameters. \end{DoxyCompactList}\item 
+\hyperlink{classImage_a05c964ca59502cc32c30e8ab89b5e920}{Image} (int w, int h)
+\begin{DoxyCompactList}\small\item\em Creates a \char`\"{}blank\char`\"{} image of a given width and height. \end{DoxyCompactList}\item 
+\hyperlink{classImage_a81e88caba6ef6c0ed639bf1f25e9d441}{Image} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Load an image from the hard drive given the filename passed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImage_a7f515a9c20a88c2010a5ace21c263925}\label{classImage_a7f515a9c20a88c2010a5ace21c263925}} 
+{\bfseries Image} (const unsigned char $\ast$data, int length)
+\item 
+\hyperlink{classImage_a34410a36b132ab597a8878d45facc89a}{Image} (const \hyperlink{classImage}{Image} \&image)
+\begin{DoxyCompactList}\small\item\em A copy constructor that allows to copy/duplicate any \hyperlink{classImage}{Image}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImage_a0294f63700543e11c0f0da85601c7ae5}\label{classImage_a0294f63700543e11c0f0da85601c7ae5}} 
+\hyperlink{classImage_a0294f63700543e11c0f0da85601c7ae5}{$\sim$\+Image} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classImage_ae6b1cdd82584ce9fb729c1e062ee088b}{operator=} (const \hyperlink{classImage}{Image} \&image)
+\begin{DoxyCompactList}\small\item\em Deep copy an image passed in as parameter into another object. \end{DoxyCompactList}\item 
+void \hyperlink{classImage_afd027f3a969d6ff41c76a4ab2599d85d}{Save\+As} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em A method that takes in a string (or character array) and saves the \hyperlink{classImage}{Image} object into a P\+NG image. \end{DoxyCompactList}\item 
+int \hyperlink{classImage_a631ead4be012caf49b3209d2ac401214}{Get\+Height} () const
+\item 
+int \hyperlink{classImage_a3da5012d5e314ce03b53d77276232186}{Get\+Width} () const
+\item 
+int \hyperlink{classImage_a8ee1acb5476bf0fecac66f5dfdd47a38}{Get\+Size} () const
+\item 
+float \hyperlink{classImage_a9efc74ed4a9af25d1eb01416ec47e78e}{Get\+Max\+Float\+Val} () const
+\item 
+int \hyperlink{classImage_aec11158c35b24ba60a835c877d791b36}{Get\+Component\+Num} () const
+\item 
+\hyperlink{classColor}{Color} $\ast$ \hyperlink{classImage_ae7136a83009449a0238f03efa1027c68}{Get\+Pixel} (int x, int y) const
+\item 
+\hyperlink{classColor}{Color} $\ast$ \hyperlink{classImage_aa54365cbbea7a483c275e8898b1ed119}{Get\+Pixel} (int i) const
+\item 
+void \hyperlink{classImage_a4b464d4f6348e8be2480688d9871ceac}{Set\+Pixel} (int x, int y, const \hyperlink{classColor}{Color} \&pixel)
+\begin{DoxyCompactList}\small\item\em Sets the \hyperlink{classColor}{Color} pixel at the width and height passed as parameter to a new \hyperlink{classColor}{Color} object passed as parameter. \end{DoxyCompactList}\item 
+void \hyperlink{classImage_a9774c194cd627ccb7dfe4165e7e5e996}{Set\+Pixel} (int i, const \hyperlink{classColor}{Color} \&pixel)
+\begin{DoxyCompactList}\small\item\em Sets the \hyperlink{classColor}{Color} pixel at the index passeed as parameter to a new \hyperlink{classColor}{Color} object also passed as a parameter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class that holds content representing a P\+NG image. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classImage_a05c964ca59502cc32c30e8ab89b5e920}\label{classImage_a05c964ca59502cc32c30e8ab89b5e920}} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\subsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily Image\+::\+Image (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+
+
+Creates a \char`\"{}blank\char`\"{} image of a given width and height. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em w} & An integer representing the width of the image to be created. \\
+\hline
+\mbox{\tt in}  & {\em h} & An integer representing the height of the image to be created. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_a81e88caba6ef6c0ed639bf1f25e9d441}\label{classImage_a81e88caba6ef6c0ed639bf1f25e9d441}} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\subsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily Image\+::\+Image (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+Load an image from the hard drive given the filename passed. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em filename} & A string representing the relative location of the image. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_a34410a36b132ab597a8878d45facc89a}\label{classImage_a34410a36b132ab597a8878d45facc89a}} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\subsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily Image\+::\+Image (\begin{DoxyParamCaption}\item[{const \hyperlink{classImage}{Image} \&}]{image }\end{DoxyParamCaption})}
+
+
+
+A copy constructor that allows to copy/duplicate any \hyperlink{classImage}{Image}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em image} & An \hyperlink{classImage}{Image} object used to make a duplicate of. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_a05c964ca59502cc32c30e8ab89b5e920}\label{classImage_a05c964ca59502cc32c30e8ab89b5e920}} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\subsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily Image\+::\+Image (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+
+
+Creates a \char`\"{}blank\char`\"{} image of a given width and height. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em w} & An integer representing the width of the image to be created. \\
+\hline
+\mbox{\tt in}  & {\em h} & An integer representing the height of the image to be created. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_a81e88caba6ef6c0ed639bf1f25e9d441}\label{classImage_a81e88caba6ef6c0ed639bf1f25e9d441}} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\subsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily Image\+::\+Image (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+Load an image from the hard drive given the filename passed. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em filename} & A string representing the relative location of the image. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_a34410a36b132ab597a8878d45facc89a}\label{classImage_a34410a36b132ab597a8878d45facc89a}} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\subsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily Image\+::\+Image (\begin{DoxyParamCaption}\item[{const \hyperlink{classImage}{Image} \&}]{image }\end{DoxyParamCaption})}
+
+
+
+A copy constructor that allows to copy/duplicate any \hyperlink{classImage}{Image}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em image} & An \hyperlink{classImage}{Image} object used to make a duplicate of. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classImage_aec11158c35b24ba60a835c877d791b36}\label{classImage_aec11158c35b24ba60a835c877d791b36}} 
+\index{Image@{Image}!Get\+Component\+Num@{Get\+Component\+Num}}
+\index{Get\+Component\+Num@{Get\+Component\+Num}!Image@{Image}}
+\subsubsection{\texorpdfstring{Get\+Component\+Num()}{GetComponentNum()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Image\+::\+Get\+Component\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+The number of components each pixel has. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImage_aec11158c35b24ba60a835c877d791b36}\label{classImage_aec11158c35b24ba60a835c877d791b36}} 
+\index{Image@{Image}!Get\+Component\+Num@{Get\+Component\+Num}}
+\index{Get\+Component\+Num@{Get\+Component\+Num}!Image@{Image}}
+\subsubsection{\texorpdfstring{Get\+Component\+Num()}{GetComponentNum()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Image\+::\+Get\+Component\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+The number of components each pixel has. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImage_a631ead4be012caf49b3209d2ac401214}\label{classImage_a631ead4be012caf49b3209d2ac401214}} 
+\index{Image@{Image}!Get\+Height@{Get\+Height}}
+\index{Get\+Height@{Get\+Height}!Image@{Image}}
+\subsubsection{\texorpdfstring{Get\+Height()}{GetHeight()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Image\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+The height of the image object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImage_a631ead4be012caf49b3209d2ac401214}\label{classImage_a631ead4be012caf49b3209d2ac401214}} 
+\index{Image@{Image}!Get\+Height@{Get\+Height}}
+\index{Get\+Height@{Get\+Height}!Image@{Image}}
+\subsubsection{\texorpdfstring{Get\+Height()}{GetHeight()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Image\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+The height of the image object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImage_a9efc74ed4a9af25d1eb01416ec47e78e}\label{classImage_a9efc74ed4a9af25d1eb01416ec47e78e}} 
+\index{Image@{Image}!Get\+Max\+Float\+Val@{Get\+Max\+Float\+Val}}
+\index{Get\+Max\+Float\+Val@{Get\+Max\+Float\+Val}!Image@{Image}}
+\subsubsection{\texorpdfstring{Get\+Max\+Float\+Val()}{GetMaxFloatVal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float Image\+::\+Get\+Max\+Float\+Val (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+The max r,g, or b that is found in the image. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImage_a9efc74ed4a9af25d1eb01416ec47e78e}\label{classImage_a9efc74ed4a9af25d1eb01416ec47e78e}} 
+\index{Image@{Image}!Get\+Max\+Float\+Val@{Get\+Max\+Float\+Val}}
+\index{Get\+Max\+Float\+Val@{Get\+Max\+Float\+Val}!Image@{Image}}
+\subsubsection{\texorpdfstring{Get\+Max\+Float\+Val()}{GetMaxFloatVal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float Image\+::\+Get\+Max\+Float\+Val (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+The max r,g, or b that is found in the image. 
+\end{DoxyReturn}
+for each pixel in each original picture \mbox{\Hypertarget{classImage_a01fc9742fb7bb83f66027d5c9091d477}\label{classImage_a01fc9742fb7bb83f66027d5c9091d477}} 
+\index{Image@{Image}!Get\+Pixel@{Get\+Pixel}}
+\index{Get\+Pixel@{Get\+Pixel}!Image@{Image}}
+\subsubsection{\texorpdfstring{Get\+Pixel()}{GetPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \hyperlink{classColor}{Color} $\ast$ Image\+::\+Get\+Pixel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & An integer representing the x-\/position of the pixel to return. \\
+\hline
+\mbox{\tt in}  & {\em y} & An integer representing the y-\/position of the pixel to return.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{classColor}{Color} object pointer, pointing to the \hyperlink{classColor}{Color} at the width and height passed in as parameters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImage_ae7136a83009449a0238f03efa1027c68}\label{classImage_ae7136a83009449a0238f03efa1027c68}} 
+\index{Image@{Image}!Get\+Pixel@{Get\+Pixel}}
+\index{Get\+Pixel@{Get\+Pixel}!Image@{Image}}
+\subsubsection{\texorpdfstring{Get\+Pixel()}{GetPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \hyperlink{classColor}{Color}$\ast$ Image\+::\+Get\+Pixel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & An integer representing the x-\/position of the pixel to return. \\
+\hline
+\mbox{\tt in}  & {\em y} & An integer representing the y-\/position of the pixel to return.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{classColor}{Color} object pointer, pointing to the \hyperlink{classColor}{Color} at the width and height passed in as parameters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImage_a1d2472f49fc5cd5458f32fc54affddcf}\label{classImage_a1d2472f49fc5cd5458f32fc54affddcf}} 
+\index{Image@{Image}!Get\+Pixel@{Get\+Pixel}}
+\index{Get\+Pixel@{Get\+Pixel}!Image@{Image}}
+\subsubsection{\texorpdfstring{Get\+Pixel()}{GetPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \hyperlink{classColor}{Color} $\ast$ Image\+::\+Get\+Pixel (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em i} & integer representing where the image color to retrive is situated\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classColor}{Color} object pointer, pointing to the \hyperlink{classColor}{Color} at the given index in the image. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImage_aa54365cbbea7a483c275e8898b1ed119}\label{classImage_aa54365cbbea7a483c275e8898b1ed119}} 
+\index{Image@{Image}!Get\+Pixel@{Get\+Pixel}}
+\index{Get\+Pixel@{Get\+Pixel}!Image@{Image}}
+\subsubsection{\texorpdfstring{Get\+Pixel()}{GetPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \hyperlink{classColor}{Color}$\ast$ Image\+::\+Get\+Pixel (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em i} & integer representing where the image color to retrive is situated\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classColor}{Color} object pointer, pointing to the \hyperlink{classColor}{Color} at the given index in the image. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImage_a8ee1acb5476bf0fecac66f5dfdd47a38}\label{classImage_a8ee1acb5476bf0fecac66f5dfdd47a38}} 
+\index{Image@{Image}!Get\+Size@{Get\+Size}}
+\index{Get\+Size@{Get\+Size}!Image@{Image}}
+\subsubsection{\texorpdfstring{Get\+Size()}{GetSize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Image\+::\+Get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+The total number of pixels of the image object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImage_a8ee1acb5476bf0fecac66f5dfdd47a38}\label{classImage_a8ee1acb5476bf0fecac66f5dfdd47a38}} 
+\index{Image@{Image}!Get\+Size@{Get\+Size}}
+\index{Get\+Size@{Get\+Size}!Image@{Image}}
+\subsubsection{\texorpdfstring{Get\+Size()}{GetSize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Image\+::\+Get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+The total number of pixels of the image object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImage_a3da5012d5e314ce03b53d77276232186}\label{classImage_a3da5012d5e314ce03b53d77276232186}} 
+\index{Image@{Image}!Get\+Width@{Get\+Width}}
+\index{Get\+Width@{Get\+Width}!Image@{Image}}
+\subsubsection{\texorpdfstring{Get\+Width()}{GetWidth()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Image\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+The width of the image object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImage_a3da5012d5e314ce03b53d77276232186}\label{classImage_a3da5012d5e314ce03b53d77276232186}} 
+\index{Image@{Image}!Get\+Width@{Get\+Width}}
+\index{Get\+Width@{Get\+Width}!Image@{Image}}
+\subsubsection{\texorpdfstring{Get\+Width()}{GetWidth()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Image\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+The width of the image object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImage_ae6b1cdd82584ce9fb729c1e062ee088b}\label{classImage_ae6b1cdd82584ce9fb729c1e062ee088b}} 
+\index{Image@{Image}!operator=@{operator=}}
+\index{operator=@{operator=}!Image@{Image}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Image\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classImage}{Image} \&}]{image }\end{DoxyParamCaption})}
+
+
+
+Deep copy an image passed in as parameter into another object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em image} & An \hyperlink{classImage}{Image} object used to make a duplicate of. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_ae6b1cdd82584ce9fb729c1e062ee088b}\label{classImage_ae6b1cdd82584ce9fb729c1e062ee088b}} 
+\index{Image@{Image}!operator=@{operator=}}
+\index{operator=@{operator=}!Image@{Image}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Image\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classImage}{Image} \&}]{image }\end{DoxyParamCaption})}
+
+
+
+Deep copy an image passed in as parameter into another object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em image} & An \hyperlink{classImage}{Image} object used to make a duplicate of. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_afd027f3a969d6ff41c76a4ab2599d85d}\label{classImage_afd027f3a969d6ff41c76a4ab2599d85d}} 
+\index{Image@{Image}!Save\+As@{Save\+As}}
+\index{Save\+As@{Save\+As}!Image@{Image}}
+\subsubsection{\texorpdfstring{Save\+As()}{SaveAs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Image\+::\+Save\+As (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+A method that takes in a string (or character array) and saves the \hyperlink{classImage}{Image} object into a P\+NG image. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em filename} & A string representing the name and location of the \hyperlink{classImage}{Image} being saved. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_afd027f3a969d6ff41c76a4ab2599d85d}\label{classImage_afd027f3a969d6ff41c76a4ab2599d85d}} 
+\index{Image@{Image}!Save\+As@{Save\+As}}
+\index{Save\+As@{Save\+As}!Image@{Image}}
+\subsubsection{\texorpdfstring{Save\+As()}{SaveAs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Image\+::\+Save\+As (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+A method that takes in a string (or character array) and saves the \hyperlink{classImage}{Image} object into a P\+NG image. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em filename} & A string representing the name and location of the \hyperlink{classImage}{Image} being saved. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_a4b464d4f6348e8be2480688d9871ceac}\label{classImage_a4b464d4f6348e8be2480688d9871ceac}} 
+\index{Image@{Image}!Set\+Pixel@{Set\+Pixel}}
+\index{Set\+Pixel@{Set\+Pixel}!Image@{Image}}
+\subsubsection{\texorpdfstring{Set\+Pixel()}{SetPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void Image\+::\+Set\+Pixel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{const \hyperlink{classColor}{Color} \&}]{pixel }\end{DoxyParamCaption})}
+
+
+
+Sets the \hyperlink{classColor}{Color} pixel at the width and height passed as parameter to a new \hyperlink{classColor}{Color} object passed as parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & An integer representing the x-\/position of the pixel to return. \\
+\hline
+\mbox{\tt in}  & {\em y} & An integer representing the y-\/position of the pixel to return. \\
+\hline
+\mbox{\tt in}  & {\em pixel} & A \hyperlink{classColor}{Color} object to be used as new color of pixel at (x,y). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_a4b464d4f6348e8be2480688d9871ceac}\label{classImage_a4b464d4f6348e8be2480688d9871ceac}} 
+\index{Image@{Image}!Set\+Pixel@{Set\+Pixel}}
+\index{Set\+Pixel@{Set\+Pixel}!Image@{Image}}
+\subsubsection{\texorpdfstring{Set\+Pixel()}{SetPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void Image\+::\+Set\+Pixel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{const \hyperlink{classColor}{Color} \&}]{pixel }\end{DoxyParamCaption})}
+
+
+
+Sets the \hyperlink{classColor}{Color} pixel at the width and height passed as parameter to a new \hyperlink{classColor}{Color} object passed as parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & An integer representing the x-\/position of the pixel to return. \\
+\hline
+\mbox{\tt in}  & {\em y} & An integer representing the y-\/position of the pixel to return. \\
+\hline
+\mbox{\tt in}  & {\em pixel} & A \hyperlink{classColor}{Color} object to be used as new color of pixel at (x,y). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_a9774c194cd627ccb7dfe4165e7e5e996}\label{classImage_a9774c194cd627ccb7dfe4165e7e5e996}} 
+\index{Image@{Image}!Set\+Pixel@{Set\+Pixel}}
+\index{Set\+Pixel@{Set\+Pixel}!Image@{Image}}
+\subsubsection{\texorpdfstring{Set\+Pixel()}{SetPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void Image\+::\+Set\+Pixel (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{const \hyperlink{classColor}{Color} \&}]{pixel }\end{DoxyParamCaption})}
+
+
+
+Sets the \hyperlink{classColor}{Color} pixel at the index passeed as parameter to a new \hyperlink{classColor}{Color} object also passed as a parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em i} & An integer representing where the image color to change is located. \\
+\hline
+\mbox{\tt in}  & {\em pixel} & A \hyperlink{classColor}{Color} object to be used as new color of pixel at (x,y). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_a9774c194cd627ccb7dfe4165e7e5e996}\label{classImage_a9774c194cd627ccb7dfe4165e7e5e996}} 
+\index{Image@{Image}!Set\+Pixel@{Set\+Pixel}}
+\index{Set\+Pixel@{Set\+Pixel}!Image@{Image}}
+\subsubsection{\texorpdfstring{Set\+Pixel()}{SetPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void Image\+::\+Set\+Pixel (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{const \hyperlink{classColor}{Color} \&}]{pixel }\end{DoxyParamCaption})}
+
+
+
+Sets the \hyperlink{classColor}{Color} pixel at the index passeed as parameter to a new \hyperlink{classColor}{Color} object also passed as a parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em i} & An integer representing where the image color to change is located. \\
+\hline
+\mbox{\tt in}  & {\em pixel} & A \hyperlink{classColor}{Color} object to be used as new color of pixel at (x,y). \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/src/\+Image\+Processing/image.\+h\item 
+/home/user/repo/project/src/\+Image\+Processing/image.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,70 @@
+\hypertarget{classPatrol}{}\section{Patrol Class Reference}
+\label{classPatrol}\index{Patrol@{Patrol}}
+
+
+A class that enables a \hyperlink{classPatrol}{Patrol} movement strategy.  
+
+
+
+
+{\ttfamily \#include $<$Patrol.\+h$>$}
+
+
+
+Inheritance diagram for Patrol\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classPatrol__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Patrol\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classPatrol__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPatrol_a4edb1a1832b28cf65f2a7003782af96a}\label{classPatrol_a4edb1a1832b28cf65f2a7003782af96a}} 
+\hyperlink{classPatrol_a4edb1a1832b28cf65f2a7003782af96a}{Patrol} ()
+\begin{DoxyCompactList}\small\item\em A constructor for an instance of the \hyperlink{classPatrol}{Patrol} class. \end{DoxyCompactList}\item 
+void \hyperlink{classPatrol_adb1a2e74fc26e331a279262dc1c5b37e}{Move} (const \hyperlink{classVector3}{Vector3} \&position, std\+::queue$<$ \hyperlink{classVector3}{Vector3} $>$ \&q)
+\begin{DoxyCompactList}\small\item\em A method that adds locations to the queue of \hyperlink{classVector3}{Vector3} locations to be visited. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class that enables a \hyperlink{classPatrol}{Patrol} movement strategy. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPatrol_adb1a2e74fc26e331a279262dc1c5b37e}\label{classPatrol_adb1a2e74fc26e331a279262dc1c5b37e}} 
+\index{Patrol@{Patrol}!Move@{Move}}
+\index{Move@{Move}!Patrol@{Patrol}}
+\subsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily void Patrol\+::\+Move (\begin{DoxyParamCaption}\item[{const \hyperlink{classVector3}{Vector3} \&}]{position,  }\item[{std\+::queue$<$ \hyperlink{classVector3}{Vector3} $>$ \&}]{q }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method that adds locations to the queue of \hyperlink{classVector3}{Vector3} locations to be visited. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em position} & A constant reference to a \hyperlink{classVector3}{Vector3} of any location in space. \\
+\hline
+\mbox{\tt in}  & {\em q} & A reference to a queue of \hyperlink{classVector3}{Vector3} objects that represent the locations to be visited in space. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIMovement_abe373c52df6be3a5139ab785b13e8964}{I\+Movement}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/src/\+Movement/\hyperlink{Patrol_8h}{Patrol.\+h}\item 
+/home/user/repo/project/src/\+Movement/\hyperlink{Patrol_8cc}{Patrol.\+cc}\end{DoxyCompactItemize}

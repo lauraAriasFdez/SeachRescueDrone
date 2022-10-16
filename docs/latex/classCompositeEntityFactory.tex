@@ -1,0 +1,116 @@
+\hypertarget{classCompositeEntityFactory}{}\section{Composite\+Entity\+Factory Class Reference}
+\label{classCompositeEntityFactory}\index{Composite\+Entity\+Factory@{Composite\+Entity\+Factory}}
+
+
+Inheritance diagram for Composite\+Entity\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{classCompositeEntityFactory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Composite\+Entity\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{classCompositeEntityFactory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCompositeEntityFactory_a703746f2b94fc98640de097afdbe1bc9}\label{classCompositeEntityFactory_a703746f2b94fc98640de097afdbe1bc9}} 
+\hyperlink{classCompositeEntityFactory_a703746f2b94fc98640de097afdbe1bc9}{Composite\+Entity\+Factory} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCompositeEntityFactory_a62ec6ba774e3b397fc799c5e972dba45}\label{classCompositeEntityFactory_a62ec6ba774e3b397fc799c5e972dba45}} 
+\hyperlink{classCompositeEntityFactory_a62ec6ba774e3b397fc799c5e972dba45}{$\sim$\+Composite\+Entity\+Factory} ()
+\begin{DoxyCompactList}\small\item\em Destructor deleating all factories. \end{DoxyCompactList}\item 
+\hyperlink{classCompositeEntityFactory_af70fe797d67a1526715369890b1fb136}{Composite\+Entity\+Factory} (const \hyperlink{classCompositeEntityFactory}{Composite\+Entity\+Factory} \&object\+To\+Copy)
+\begin{DoxyCompactList}\small\item\em Copy Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classCompositeEntityFactory_aa53621c622f2dbbf57dc8b3f698c1c59}{operator=} (const \hyperlink{classCompositeEntityFactory}{Composite\+Entity\+Factory} \&object\+To\+Copy)
+\begin{DoxyCompactList}\small\item\em equality overload operator \end{DoxyCompactList}\item 
+\hyperlink{classIEntity}{I\+Entity} $\ast$ \hyperlink{classCompositeEntityFactory_a97b2f95333369f946d0f3ab2116b5f19}{Create\+Entity} (picojson\+::object \&object, \hyperlink{classICameraController}{I\+Camera\+Controller} \&camera\+Controller)
+\begin{DoxyCompactList}\small\item\em calls factories and creates the enitity based on the picson object \end{DoxyCompactList}\item 
+void \hyperlink{classCompositeEntityFactory_a735c4e6bf789486468c4610f75688be2}{Add\+Factory} (\hyperlink{classEntityFactory}{Entity\+Factory} $\ast$factory)
+\begin{DoxyCompactList}\small\item\em Entity\+Factoryadded to the collection of factories in this object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCompositeEntityFactory_af70fe797d67a1526715369890b1fb136}\label{classCompositeEntityFactory_af70fe797d67a1526715369890b1fb136}} 
+\index{Composite\+Entity\+Factory@{Composite\+Entity\+Factory}!Composite\+Entity\+Factory@{Composite\+Entity\+Factory}}
+\index{Composite\+Entity\+Factory@{Composite\+Entity\+Factory}!Composite\+Entity\+Factory@{Composite\+Entity\+Factory}}
+\subsubsection{\texorpdfstring{Composite\+Entity\+Factory()}{CompositeEntityFactory()}}
+{\footnotesize\ttfamily Composite\+Entity\+Factory\+::\+Composite\+Entity\+Factory (\begin{DoxyParamCaption}\item[{const \hyperlink{classCompositeEntityFactory}{Composite\+Entity\+Factory} \&}]{object\+To\+Copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy Constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object\+To\+Copy} & \hyperlink{classCompositeEntityFactory}{Composite\+Entity\+Factory} to copy \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCompositeEntityFactory_a735c4e6bf789486468c4610f75688be2}\label{classCompositeEntityFactory_a735c4e6bf789486468c4610f75688be2}} 
+\index{Composite\+Entity\+Factory@{Composite\+Entity\+Factory}!Add\+Factory@{Add\+Factory}}
+\index{Add\+Factory@{Add\+Factory}!Composite\+Entity\+Factory@{Composite\+Entity\+Factory}}
+\subsubsection{\texorpdfstring{Add\+Factory()}{AddFactory()}}
+{\footnotesize\ttfamily void Composite\+Entity\+Factory\+::\+Add\+Factory (\begin{DoxyParamCaption}\item[{\hyperlink{classEntityFactory}{Entity\+Factory} $\ast$}]{factory }\end{DoxyParamCaption})}
+
+
+
+Entity\+Factoryadded to the collection of factories in this object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em factory} & object factory that needs to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCompositeEntityFactory_a97b2f95333369f946d0f3ab2116b5f19}\label{classCompositeEntityFactory_a97b2f95333369f946d0f3ab2116b5f19}} 
+\index{Composite\+Entity\+Factory@{Composite\+Entity\+Factory}!Create\+Entity@{Create\+Entity}}
+\index{Create\+Entity@{Create\+Entity}!Composite\+Entity\+Factory@{Composite\+Entity\+Factory}}
+\subsubsection{\texorpdfstring{Create\+Entity()}{CreateEntity()}}
+{\footnotesize\ttfamily \hyperlink{classIEntity}{I\+Entity} $\ast$ Composite\+Entity\+Factory\+::\+Create\+Entity (\begin{DoxyParamCaption}\item[{picojson\+::object \&}]{object,  }\item[{\hyperlink{classICameraController}{I\+Camera\+Controller} \&}]{camera\+Controller }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+calls factories and creates the enitity based on the picson object 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object} & json object representing the entity that needs to be created\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+entity based on parameter/argument created 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classEntityFactory_a7f579ca02f15935e6901e5c955c9726a}{Entity\+Factory}.
+
+\mbox{\Hypertarget{classCompositeEntityFactory_aa53621c622f2dbbf57dc8b3f698c1c59}\label{classCompositeEntityFactory_aa53621c622f2dbbf57dc8b3f698c1c59}} 
+\index{Composite\+Entity\+Factory@{Composite\+Entity\+Factory}!operator=@{operator=}}
+\index{operator=@{operator=}!Composite\+Entity\+Factory@{Composite\+Entity\+Factory}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily void Composite\+Entity\+Factory\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classCompositeEntityFactory}{Composite\+Entity\+Factory} \&}]{object\+To\+Copy }\end{DoxyParamCaption})}
+
+
+
+equality overload operator 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object\+To\+Copy} & \hyperlink{classCompositeEntityFactory}{Composite\+Entity\+Factory} to copy \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/src/\+Factory/\hyperlink{CompositeEntityFactory_8h}{Composite\+Entity\+Factory.\+h}\item 
+/home/user/repo/project/src/\+Factory/\hyperlink{CompositeEntityFactory_8cc}{Composite\+Entity\+Factory.\+cc}\end{DoxyCompactItemize}

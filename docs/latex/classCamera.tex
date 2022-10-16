@@ -1,0 +1,123 @@
+\hypertarget{classCamera}{}\section{Camera Class Reference}
+\label{classCamera}\index{Camera@{Camera}}
+
+
+A class that processes and takes picture of what the entity is looking at.  
+
+
+
+
+{\ttfamily \#include $<$Camera.\+h$>$}
+
+
+
+Inheritance diagram for Camera\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classCamera__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Camera\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classCamera__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCamera_aaf2867de230aff68de7d10deae302e8d}\label{classCamera_aaf2867de230aff68de7d10deae302e8d}} 
+\hyperlink{classCamera_aaf2867de230aff68de7d10deae302e8d}{Camera} (int id, \hyperlink{classICameraController}{I\+Camera\+Controller} $\ast$controller)
+\begin{DoxyCompactList}\small\item\em A constructor for an instance of the \hyperlink{classCamera}{Camera} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCamera_ad1897942d0ccf91052386388a497349f}\label{classCamera_ad1897942d0ccf91052386388a497349f}} 
+\hyperlink{classCamera_ad1897942d0ccf91052386388a497349f}{$\sim$\+Camera} ()
+\begin{DoxyCompactList}\small\item\em A destructor (deallocate result mememory). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCamera_a70dfc7f06d6e12855afadd358831cf3a}\label{classCamera_a70dfc7f06d6e12855afadd358831cf3a}} 
+void \hyperlink{classCamera_a70dfc7f06d6e12855afadd358831cf3a}{Take\+Picture} ()
+\begin{DoxyCompactList}\small\item\em Makes the camera take a picture using the specified camera id. \end{DoxyCompactList}\item 
+\hyperlink{classICameraResult}{I\+Camera\+Result} $\ast$ \hyperlink{classCamera_a792611ad34a1c595b61b7c72ce1d5e32}{Process\+Images} (int camera\+Id, double x\+Pos, double y\+Pos, double z\+Pos, const std\+::vector$<$ \hyperlink{structRawCameraImage}{Raw\+Camera\+Image} $>$ \&images, picojson\+::object \&details) const
+\begin{DoxyCompactList}\small\item\em Processes images asynchronously. The returned camera result will be passed into the Image\+Processing\+Complete(...) method. \end{DoxyCompactList}\item 
+void \hyperlink{classCamera_aa44e2101b2cf0a75ab1fd498f3f7adea}{Image\+Processing\+Complete} (\hyperlink{classICameraResult}{I\+Camera\+Result} $\ast$result2)
+\begin{DoxyCompactList}\small\item\em After the asynchronous image processing, this method will be synchronized with the update loop. \end{DoxyCompactList}\item 
+\hyperlink{classCameraResult}{Camera\+Result} $\ast$ \hyperlink{classCamera_af98a21b496a5d63ca5cc6c813d3c6587}{Get\+Camera\+Result} ()
+\begin{DoxyCompactList}\small\item\em Getter for the result of the camera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class that processes and takes picture of what the entity is looking at. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCamera_af98a21b496a5d63ca5cc6c813d3c6587}\label{classCamera_af98a21b496a5d63ca5cc6c813d3c6587}} 
+\index{Camera@{Camera}!Get\+Camera\+Result@{Get\+Camera\+Result}}
+\index{Get\+Camera\+Result@{Get\+Camera\+Result}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{Get\+Camera\+Result()}{GetCameraResult()}}
+{\footnotesize\ttfamily \hyperlink{classCameraResult}{Camera\+Result} $\ast$ Camera\+::\+Get\+Camera\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for the result of the camera. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classCamera}{Camera} has a private variable containing the result of the process img that can be shared with the \hyperlink{classEntity}{Entity} owner of the camera through this method 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_aa44e2101b2cf0a75ab1fd498f3f7adea}\label{classCamera_aa44e2101b2cf0a75ab1fd498f3f7adea}} 
+\index{Camera@{Camera}!Image\+Processing\+Complete@{Image\+Processing\+Complete}}
+\index{Image\+Processing\+Complete@{Image\+Processing\+Complete}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{Image\+Processing\+Complete()}{ImageProcessingComplete()}}
+{\footnotesize\ttfamily void Camera\+::\+Image\+Processing\+Complete (\begin{DoxyParamCaption}\item[{\hyperlink{classICameraResult}{I\+Camera\+Result} $\ast$}]{result2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+After the asynchronous image processing, this method will be synchronized with the update loop. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em result2} & a camera result object if the robot was found with the the position of the robot or a null\+Ptr if robot not found \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classICameraObserver_a7d261bd08d570d05032e61b2d5252c88}{I\+Camera\+Observer}.
+
+\mbox{\Hypertarget{classCamera_a792611ad34a1c595b61b7c72ce1d5e32}\label{classCamera_a792611ad34a1c595b61b7c72ce1d5e32}} 
+\index{Camera@{Camera}!Process\+Images@{Process\+Images}}
+\index{Process\+Images@{Process\+Images}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{Process\+Images()}{ProcessImages()}}
+{\footnotesize\ttfamily \hyperlink{classICameraResult}{I\+Camera\+Result} $\ast$ Camera\+::\+Process\+Images (\begin{DoxyParamCaption}\item[{int}]{camera\+Id,  }\item[{double}]{x\+Pos,  }\item[{double}]{y\+Pos,  }\item[{double}]{z\+Pos,  }\item[{const std\+::vector$<$ \hyperlink{structRawCameraImage}{Raw\+Camera\+Image} $>$ \&}]{images,  }\item[{picojson\+::object \&}]{details }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Processes images asynchronously. The returned camera result will be passed into the Image\+Processing\+Complete(...) method. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em camera\+Id} & the id of the camera when created \\
+\hline
+\mbox{\tt in}  & {\em x\+Pos} & the x position of the camera within the visualization \\
+\hline
+\mbox{\tt in}  & {\em y\+Pos} & the y position of the camera within the visualization \\
+\hline
+\mbox{\tt in}  & {\em z\+Pos} & the z position of the camera within the visualization \\
+\hline
+\mbox{\tt in}  & {\em images} & a vector containing the depth and color img to be process \\
+\hline
+\mbox{\tt in}  & {\em details} & a picson obj containing extra details\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a camera result object if the robot was found with the the position of the robot or a null\+Ptr if robot not found 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classICameraObserver_aec871459f2c429b4334769021b72ec34}{I\+Camera\+Observer}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/src/\+Camera/\hyperlink{Camera_8h}{Camera.\+h}\item 
+/home/user/repo/project/src/\+Camera/\hyperlink{Camera_8cc}{Camera.\+cc}\end{DoxyCompactItemize}

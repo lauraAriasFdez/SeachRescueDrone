@@ -1,0 +1,111 @@
+\hypertarget{classCameraResult}{}\section{Camera\+Result Class Reference}
+\label{classCameraResult}\index{Camera\+Result@{Camera\+Result}}
+
+
+A class that strores the result of processing an img when looking for a robot.  
+
+
+
+
+{\ttfamily \#include $<$Camera\+Result.\+h$>$}
+
+
+
+Inheritance diagram for Camera\+Result\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{classCameraResult__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Camera\+Result\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{classCameraResult__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCameraResult_aac91602d9a7322df55bf0e3bf0c32e39}\label{classCameraResult_aac91602d9a7322df55bf0e3bf0c32e39}} 
+\hyperlink{classCameraResult_aac91602d9a7322df55bf0e3bf0c32e39}{Camera\+Result} ()
+\begin{DoxyCompactList}\small\item\em An empty constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classCameraResult_ab9285652d06715797fee95132a51fbf6}{Get\+Found\+Robot} () const
+\begin{DoxyCompactList}\small\item\em Getter of img result. \end{DoxyCompactList}\item 
+void \hyperlink{classCameraResult_a764f0b2b6fa57734ebf45703c79e071c}{Set\+Found\+Robot} (bool f)
+\begin{DoxyCompactList}\small\item\em Setter of img result. \end{DoxyCompactList}\item 
+\hyperlink{classVector3}{Vector3} \hyperlink{classCameraResult_a12314f7a760e9eaa5fd949afc3289d54}{Get\+Robot\+Pos} () const
+\begin{DoxyCompactList}\small\item\em Getter of robot position. \end{DoxyCompactList}\item 
+void \hyperlink{classCameraResult_a669e85149ff4bf617c136afa57577bbf}{Set\+Found\+Robot} (\hyperlink{classVector3}{Vector3} pos)
+\begin{DoxyCompactList}\small\item\em Setter of robot pos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class that strores the result of processing an img when looking for a robot. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCameraResult_ab9285652d06715797fee95132a51fbf6}\label{classCameraResult_ab9285652d06715797fee95132a51fbf6}} 
+\index{Camera\+Result@{Camera\+Result}!Get\+Found\+Robot@{Get\+Found\+Robot}}
+\index{Get\+Found\+Robot@{Get\+Found\+Robot}!Camera\+Result@{Camera\+Result}}
+\subsubsection{\texorpdfstring{Get\+Found\+Robot()}{GetFoundRobot()}}
+{\footnotesize\ttfamily bool Camera\+Result\+::\+Get\+Found\+Robot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter of img result. 
+
+\begin{DoxyReturn}{Returns}
+true if robot was found when processing this img, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCameraResult_a12314f7a760e9eaa5fd949afc3289d54}\label{classCameraResult_a12314f7a760e9eaa5fd949afc3289d54}} 
+\index{Camera\+Result@{Camera\+Result}!Get\+Robot\+Pos@{Get\+Robot\+Pos}}
+\index{Get\+Robot\+Pos@{Get\+Robot\+Pos}!Camera\+Result@{Camera\+Result}}
+\subsubsection{\texorpdfstring{Get\+Robot\+Pos()}{GetRobotPos()}}
+{\footnotesize\ttfamily \hyperlink{classVector3}{Vector3} Camera\+Result\+::\+Get\+Robot\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter of robot position. 
+
+\begin{DoxyReturn}{Returns}
+a \hyperlink{classVector3}{Vector3} with the x,y,z values of where the robot is located in the map 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCameraResult_a764f0b2b6fa57734ebf45703c79e071c}\label{classCameraResult_a764f0b2b6fa57734ebf45703c79e071c}} 
+\index{Camera\+Result@{Camera\+Result}!Set\+Found\+Robot@{Set\+Found\+Robot}}
+\index{Set\+Found\+Robot@{Set\+Found\+Robot}!Camera\+Result@{Camera\+Result}}
+\subsubsection{\texorpdfstring{Set\+Found\+Robot()}{SetFoundRobot()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Camera\+Result\+::\+Set\+Found\+Robot (\begin{DoxyParamCaption}\item[{bool}]{f }\end{DoxyParamCaption})}
+
+
+
+Setter of img result. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em f} & true if robot was found when processing this img, false otherwise \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCameraResult_a669e85149ff4bf617c136afa57577bbf}\label{classCameraResult_a669e85149ff4bf617c136afa57577bbf}} 
+\index{Camera\+Result@{Camera\+Result}!Set\+Found\+Robot@{Set\+Found\+Robot}}
+\index{Set\+Found\+Robot@{Set\+Found\+Robot}!Camera\+Result@{Camera\+Result}}
+\subsubsection{\texorpdfstring{Set\+Found\+Robot()}{SetFoundRobot()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Camera\+Result\+::\+Set\+Found\+Robot (\begin{DoxyParamCaption}\item[{\hyperlink{classVector3}{Vector3}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Setter of robot pos. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pos} & a \hyperlink{classVector3}{Vector3} with the x,y,z values of where the robot is located in the map \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/src/\+Camera/\hyperlink{CameraResult_8h}{Camera\+Result.\+h}\item 
+/home/user/repo/project/src/\+Camera/\hyperlink{CameraResult_8cc}{Camera\+Result.\+cc}\end{DoxyCompactItemize}

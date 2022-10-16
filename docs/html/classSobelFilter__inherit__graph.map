@@ -1,0 +1,5 @@
+<map id="SobelFilter" name="SobelFilter">
+<area shape="rect" id="node2" href="$classConvolutionFilter.html" title="ConvolutionFilter is an abstract Filter class with a convolution kernel. In order to compute the valu..." alt="" coords="7,300,175,436"/>
+<area shape="rect" id="node3" href="$classRelatedPixelFilter.html" title="Abstract class that defines the virtual methods for all classes derived from RelatedPixelFilter. " alt="" coords="5,145,176,252"/>
+<area shape="rect" id="node4" href="$classFilter.html" title="Abstract class that defines the virtual methods for all filter classes. " alt="" coords="45,5,136,97"/>
+</map>

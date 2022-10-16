@@ -1,0 +1,79 @@
+\hypertarget{classSobelFilter}{}\section{Sobel\+Filter Class Reference}
+\label{classSobelFilter}\index{Sobel\+Filter@{Sobel\+Filter}}
+
+
+A filter that iterates two different kernels over an image to extract horizontal and vertical lines, then combine them using Euclidean distance. The result is an intensify matrix represented by and image, as well as, a direction matrix, in degrees, of edges, also represented by an image.  
+
+
+
+
+{\ttfamily \#include $<$sobel\+\_\+filter.\+h$>$}
+
+
+
+Inheritance diagram for Sobel\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classSobelFilter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sobel\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classSobelFilter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSobelFilter_ae46218b3594451a1b5fbdf0ebbd7c688}\label{classSobelFilter_ae46218b3594451a1b5fbdf0ebbd7c688}} 
+\hyperlink{classSobelFilter_ae46218b3594451a1b5fbdf0ebbd7c688}{Sobel\+Filter} ()
+\begin{DoxyCompactList}\small\item\em Constructor that call in parent constructor passing the 2 kernels needed for the filter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classColor}{Color} $>$ \hyperlink{classSobelFilter_a7ce32ba94d87a008e7344863c442a1bb}{Apply\+At\+Pixel} (const std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$ original, int x, int y)
+\begin{DoxyCompactList}\small\item\em Applies the Sobel filter to one single pixel, taking into consideration the necessary surrounding pixels. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A filter that iterates two different kernels over an image to extract horizontal and vertical lines, then combine them using Euclidean distance. The result is an intensify matrix represented by and image, as well as, a direction matrix, in degrees, of edges, also represented by an image. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSobelFilter_a7ce32ba94d87a008e7344863c442a1bb}\label{classSobelFilter_a7ce32ba94d87a008e7344863c442a1bb}} 
+\index{Sobel\+Filter@{Sobel\+Filter}!Apply\+At\+Pixel@{Apply\+At\+Pixel}}
+\index{Apply\+At\+Pixel@{Apply\+At\+Pixel}!Sobel\+Filter@{Sobel\+Filter}}
+\subsubsection{\texorpdfstring{Apply\+At\+Pixel()}{ApplyAtPixel()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{classColor}{Color} $>$ Sobel\+Filter\+::\+Apply\+At\+Pixel (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classImage}{Image} $\ast$$>$}]{original,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Applies the Sobel filter to one single pixel, taking into consideration the necessary surrounding pixels. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em original} & A vector of images needed to take into consideration to produce the filtered pixel. \\
+\hline
+\mbox{\tt in}  & {\em x} & An integer representing the x-\/position of the pixel the filter should be applied to. \\
+\hline
+\mbox{\tt in}  & {\em y} & An integer representing the y-\/position of the pixel the filter should be applied to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of Colors, each representing the new color value for a filtered image\textquotesingle{}s pixel located at (x,y). 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classConvolutionFilter_abc4b4ffef2b69fc2b7164e96af6cf186}{Convolution\+Filter}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{sobel__filter_8h}{sobel\+\_\+filter.\+h}\item 
+/home/user/repo/project/\+Image\+Processing/\hyperlink{sobel__filter_8cc}{sobel\+\_\+filter.\+cc}\end{DoxyCompactItemize}

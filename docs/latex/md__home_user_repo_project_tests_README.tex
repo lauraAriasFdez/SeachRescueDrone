@@ -1,0 +1,44 @@
+This directory contains all of the different types of tests that help to ensure that this project is functional and functions correctly.
+
+To compile and run these tests in aggregate\+:
+\begin{DoxyEnumerate}
+\item Navigate up one directory to {\ttfamily ../project}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Run {\ttfamily make -\/j}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Run {\ttfamily ./build/test-\/app}
+\end{DoxyEnumerate}
+
+The results of all tests present within the {\ttfamily project/tests/} directory will be displayed on the console.
+
+\subsubsection*{Unit Tests}
+
+The project specification requires {\bfseries at least 10 unit tests} to test the functionality of individual classes. Below are the files in which unit tests can be found and how many unit tests are present in that file.
+\begin{DoxyItemize}
+\item 13 Unit Tests -\/ {\ttfamily \hyperlink{vector3__test_8cc}{vector3\+\_\+test.\+cc}}
+\end{DoxyItemize}
+
+\subsubsection*{Component Tests}
+
+The project specification requires {\bfseries at least 5 component tests} to test the functionality of the various facades present within the project. Below are the files in which component tests can be found and how many component tests are present in that file.
+\begin{DoxyItemize}
+\item TO DO
+\end{DoxyItemize}
+
+\subsubsection*{Integration Tests}
+
+The project specification requires {\bfseries at least 5 integration tests} to test the functionality of two or more classes working together to create functionality. Below are the files in which integration tests can be found and how many integration tests are present in that file.
+\begin{DoxyItemize}
+\item 2 Integration Tests -\/ {\ttfamily \hyperlink{drone__test_8cc}{drone\+\_\+test.\+cc}}
+\item 4 Integration Tests -\/ {\ttfamily \hyperlink{CompositeEntityFactory__test_8cc}{Composite\+Entity\+Factory\+\_\+test.\+cc}}
+\end{DoxyItemize}
+
+\subsubsection*{Regression Tests}
+
+The project specification requires {\bfseries at least 5 regression tests} that should always return {\bfseries true} no matter how the project may evolve over time. Below are the files in which regression tests can be found and how many regression tests are present in that file.
+\begin{DoxyItemize}
+\item 3 Regression Tests -\/ {\ttfamily \hyperlink{drone__test_8cc}{drone\+\_\+test.\+cc}}
+\item 5 Regression Tests -\/ {\ttfamily \hyperlink{CompositeEntityFactory__test_8cc}{Composite\+Entity\+Factory\+\_\+test.\+cc}} 
+\end{DoxyItemize}

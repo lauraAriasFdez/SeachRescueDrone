@@ -1,0 +1,172 @@
+\hypertarget{classRescueSimulation}{}\section{Rescue\+Simulation Class Reference}
+\label{classRescueSimulation}\index{Rescue\+Simulation@{Rescue\+Simulation}}
+
+
+A facade to start, interact, and end a rescue simulation.  
+
+
+
+
+{\ttfamily \#include $<$Rescue\+Simulation.\+h$>$}
+
+
+
+Collaboration diagram for Rescue\+Simulation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classRescueSimulation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRescueSimulation_ae649620f5bdc10bdc74860480ee0ac71}\label{classRescueSimulation_ae649620f5bdc10bdc74860480ee0ac71}} 
+\hyperlink{classRescueSimulation_ae649620f5bdc10bdc74860480ee0ac71}{Rescue\+Simulation} ()
+\begin{DoxyCompactList}\small\item\em A constructor for an instance of the \hyperlink{classRescueSimulation}{Rescue\+Simulation} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRescueSimulation_a6db1aa5856a1eb244a9a24d38d10327e}\label{classRescueSimulation_a6db1aa5856a1eb244a9a24d38d10327e}} 
+\hyperlink{classRescueSimulation_a6db1aa5856a1eb244a9a24d38d10327e}{$\sim$\+Rescue\+Simulation} ()
+\begin{DoxyCompactList}\small\item\em A destructor for an instance of the \hyperlink{classRescueSimulation}{Rescue\+Simulation} class. \end{DoxyCompactList}\item 
+\hyperlink{classIEntity}{I\+Entity} $\ast$ \hyperlink{classRescueSimulation_a38c93703a086b12bad9de7164047cffc}{Create\+Entity} (picojson\+::object \&object, \hyperlink{classICameraController}{I\+Camera\+Controller} \&camera\+Controller)
+\begin{DoxyCompactList}\small\item\em A method to create an entity within the rescue simulation. \end{DoxyCompactList}\item 
+void \hyperlink{classRescueSimulation_a6b9248fa229d3592a68096628ca654a2}{Update} (float dt)
+\begin{DoxyCompactList}\small\item\em A method to update the automatic movement of Entities within the simulation. \end{DoxyCompactList}\item 
+void \hyperlink{classRescueSimulation_aef3363ae3303a037fbb9faab87ab5a31}{Update\+Manual\+Movement} (float dt, double x, double y, double z, double rot)
+\begin{DoxyCompactList}\small\item\em A method to update the automatic movement of Entities within the simulation. \end{DoxyCompactList}\item 
+int \hyperlink{classRescueSimulation_a6769ffcc2fae87c710dad5f7330b01cb}{Get\+Number\+Of\+Entities} ()
+\begin{DoxyCompactList}\small\item\em A method that returns the number of Entities that are apart of the rescue simulation. \end{DoxyCompactList}\item 
+bool \hyperlink{classRescueSimulation_a1de477a7e889760895bd174d14221235}{Get\+Manual\+Mov} ()
+\begin{DoxyCompactList}\small\item\em A method that returns the value of the boolean flag tracking if manual movement is being used in the simulation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRescueSimulation_a29d260161bc77cfcd2ae201824489308}\label{classRescueSimulation_a29d260161bc77cfcd2ae201824489308}} 
+void \hyperlink{classRescueSimulation_a29d260161bc77cfcd2ae201824489308}{Set\+Manual\+Mov} ()
+\begin{DoxyCompactList}\small\item\em A method that enables manual movement for moveable entities in the simulation. \end{DoxyCompactList}\item 
+double \hyperlink{classRescueSimulation_a0acab880cfa4fea96c399a0b54af1593}{Get\+Lowest\+Battery\+Level} ()
+\begin{DoxyCompactList}\small\item\em A method that returns the lowest battery level of all the drones in the simulation. \end{DoxyCompactList}\item 
+void \hyperlink{classRescueSimulation_abdf13de83b12c3062be5a535a8c02545}{Finish\+Update} (picojson\+::object \&return\+Value, std\+::vector$<$ picojson\+::object $>$ \&entity\+Updates)
+\begin{DoxyCompactList}\small\item\em A method to call after updating the simulation to pass the updates via J\+S\+ON to the visual simulation that the user intreacts with. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A facade to start, interact, and end a rescue simulation. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRescueSimulation_a38c93703a086b12bad9de7164047cffc}\label{classRescueSimulation_a38c93703a086b12bad9de7164047cffc}} 
+\index{Rescue\+Simulation@{Rescue\+Simulation}!Create\+Entity@{Create\+Entity}}
+\index{Create\+Entity@{Create\+Entity}!Rescue\+Simulation@{Rescue\+Simulation}}
+\subsubsection{\texorpdfstring{Create\+Entity()}{CreateEntity()}}
+{\footnotesize\ttfamily \hyperlink{classIEntity}{I\+Entity} $\ast$ Rescue\+Simulation\+::\+Create\+Entity (\begin{DoxyParamCaption}\item[{picojson\+::object \&}]{object,  }\item[{\hyperlink{classICameraController}{I\+Camera\+Controller} \&}]{camera\+Controller }\end{DoxyParamCaption})}
+
+
+
+A method to create an entity within the rescue simulation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object} & A reference to an instance of a picojson\+::object containing the J\+S\+ON for an \hyperlink{classEntity}{Entity} \\
+\hline
+\mbox{\tt in}  & {\em camera\+Controller} & A reference to an instance of a class implementing \hyperlink{classICameraController}{I\+Camera\+Controller} to be able to capture images\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\+Entity$\ast$ Returns a pointer to an \hyperlink{classIEntity}{I\+Entity} if an entity was created, or a nullptr in all other situations. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRescueSimulation_abdf13de83b12c3062be5a535a8c02545}\label{classRescueSimulation_abdf13de83b12c3062be5a535a8c02545}} 
+\index{Rescue\+Simulation@{Rescue\+Simulation}!Finish\+Update@{Finish\+Update}}
+\index{Finish\+Update@{Finish\+Update}!Rescue\+Simulation@{Rescue\+Simulation}}
+\subsubsection{\texorpdfstring{Finish\+Update()}{FinishUpdate()}}
+{\footnotesize\ttfamily void Rescue\+Simulation\+::\+Finish\+Update (\begin{DoxyParamCaption}\item[{picojson\+::object \&}]{return\+Value,  }\item[{std\+::vector$<$ picojson\+::object $>$ \&}]{entity\+Updates }\end{DoxyParamCaption})}
+
+
+
+A method to call after updating the simulation to pass the updates via J\+S\+ON to the visual simulation that the user intreacts with. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em return\+Value} & A reference to an instance of a picojson\+::object containing the updated J\+S\+ON for an \hyperlink{classEntity}{Entity} \\
+\hline
+\mbox{\tt in}  & {\em entity\+Updates} & A reference to a vector containing a list of picojson\+::object values containing the updates for the Entities in J\+S\+ON format \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRescueSimulation_a0acab880cfa4fea96c399a0b54af1593}\label{classRescueSimulation_a0acab880cfa4fea96c399a0b54af1593}} 
+\index{Rescue\+Simulation@{Rescue\+Simulation}!Get\+Lowest\+Battery\+Level@{Get\+Lowest\+Battery\+Level}}
+\index{Get\+Lowest\+Battery\+Level@{Get\+Lowest\+Battery\+Level}!Rescue\+Simulation@{Rescue\+Simulation}}
+\subsubsection{\texorpdfstring{Get\+Lowest\+Battery\+Level()}{GetLowestBatteryLevel()}}
+{\footnotesize\ttfamily double Rescue\+Simulation\+::\+Get\+Lowest\+Battery\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A method that returns the lowest battery level of all the drones in the simulation. 
+
+\begin{DoxyReturn}{Returns}
+double Returns the lowest battery level of all the drones in the simulation. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRescueSimulation_a1de477a7e889760895bd174d14221235}\label{classRescueSimulation_a1de477a7e889760895bd174d14221235}} 
+\index{Rescue\+Simulation@{Rescue\+Simulation}!Get\+Manual\+Mov@{Get\+Manual\+Mov}}
+\index{Get\+Manual\+Mov@{Get\+Manual\+Mov}!Rescue\+Simulation@{Rescue\+Simulation}}
+\subsubsection{\texorpdfstring{Get\+Manual\+Mov()}{GetManualMov()}}
+{\footnotesize\ttfamily bool Rescue\+Simulation\+::\+Get\+Manual\+Mov (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A method that returns the value of the boolean flag tracking if manual movement is being used in the simulation. 
+
+\begin{DoxyReturn}{Returns}
+boolean Returns the value of the boolean flag tracking if manual movement is being used in the simulation. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRescueSimulation_a6769ffcc2fae87c710dad5f7330b01cb}\label{classRescueSimulation_a6769ffcc2fae87c710dad5f7330b01cb}} 
+\index{Rescue\+Simulation@{Rescue\+Simulation}!Get\+Number\+Of\+Entities@{Get\+Number\+Of\+Entities}}
+\index{Get\+Number\+Of\+Entities@{Get\+Number\+Of\+Entities}!Rescue\+Simulation@{Rescue\+Simulation}}
+\subsubsection{\texorpdfstring{Get\+Number\+Of\+Entities()}{GetNumberOfEntities()}}
+{\footnotesize\ttfamily int Rescue\+Simulation\+::\+Get\+Number\+Of\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A method that returns the number of Entities that are apart of the rescue simulation. 
+
+\begin{DoxyReturn}{Returns}
+int Returns an integer containing how many entities are present in the simulation. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRescueSimulation_a6b9248fa229d3592a68096628ca654a2}\label{classRescueSimulation_a6b9248fa229d3592a68096628ca654a2}} 
+\index{Rescue\+Simulation@{Rescue\+Simulation}!Update@{Update}}
+\index{Update@{Update}!Rescue\+Simulation@{Rescue\+Simulation}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Rescue\+Simulation\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{dt }\end{DoxyParamCaption})}
+
+
+
+A method to update the automatic movement of Entities within the simulation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dt} & A float containing the change in time since the last update \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRescueSimulation_aef3363ae3303a037fbb9faab87ab5a31}\label{classRescueSimulation_aef3363ae3303a037fbb9faab87ab5a31}} 
+\index{Rescue\+Simulation@{Rescue\+Simulation}!Update\+Manual\+Movement@{Update\+Manual\+Movement}}
+\index{Update\+Manual\+Movement@{Update\+Manual\+Movement}!Rescue\+Simulation@{Rescue\+Simulation}}
+\subsubsection{\texorpdfstring{Update\+Manual\+Movement()}{UpdateManualMovement()}}
+{\footnotesize\ttfamily void Rescue\+Simulation\+::\+Update\+Manual\+Movement (\begin{DoxyParamCaption}\item[{float}]{dt,  }\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z,  }\item[{double}]{rot }\end{DoxyParamCaption})}
+
+
+
+A method to update the automatic movement of Entities within the simulation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dt} & A float containing the change in time since the last update \\
+\hline
+\mbox{\tt in}  & {\em x} & A double containing the new x-\/coordinate position of the \hyperlink{classEntity}{Entity} \\
+\hline
+\mbox{\tt in}  & {\em y} & A double containing the new y-\/coordinate position of the \hyperlink{classEntity}{Entity} \\
+\hline
+\mbox{\tt in}  & {\em z} & A double containing the new z-\/coordinate position of the \hyperlink{classEntity}{Entity} \\
+\hline
+\mbox{\tt in}  & {\em rot} & A double containing the new rotation position of the \hyperlink{classEntity}{Entity} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/repo/project/src/\+Simulation/\hyperlink{RescueSimulation_8h}{Rescue\+Simulation.\+h}\item 
+/home/user/repo/project/src/\+Simulation/\hyperlink{RescueSimulation_8cc}{Rescue\+Simulation.\+cc}\end{DoxyCompactItemize}

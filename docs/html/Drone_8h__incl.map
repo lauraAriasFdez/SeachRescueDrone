@@ -1,0 +1,17 @@
+<map id="/home/user/repo/project/src/Entity/Drone.h" name="/home/user/repo/project/src/Entity/Drone.h">
+<area shape="rect" id="node3" href="$IDrone_8h.html" title="IDrone.h" alt="" coords="432,95,509,121"/>
+<area shape="rect" id="node22" href="$CameraResult_8h.html" title="CameraResult.h" alt="" coords="893,326,1019,353"/>
+<area shape="rect" id="node27" href="$Patrol_8h.html" title="../Movement/Patrol.h" alt="" coords="59,95,215,121"/>
+<area shape="rect" id="node28" href="$Beeline_8h.html" title="../Movement/Beeline.h" alt="" coords="240,95,408,121"/>
+<area shape="rect" id="node4" href="$Entity_8h.html" title="Entity.h" alt="" coords="446,169,517,196"/>
+<area shape="rect" id="node11" href="$vector3_8h.html" title="../vector3.h" alt="" coords="286,415,381,442"/>
+<area shape="rect" id="node25" href="$IMovement_8h.html" title="../Movement/IMovement.h" alt="" coords="116,169,308,196"/>
+<area shape="rect" id="node5" href="$IEntity_8h.html" title="IEntity.h" alt="" coords="1043,326,1117,353"/>
+<area shape="rect" id="node13" href="$Camera_8h.html" title="../Camera/Camera.h" alt="" coords="508,244,660,271"/>
+<area shape="rect" id="node9" href="$IObserver_8h.html" title="../Observer/IObserver.h" alt="" coords="1163,415,1333,442"/>
+<area shape="rect" id="node14" href="$src_2ImageProcessing_2image_8h_source.html" title="../ImageProcessing\l/image.h" alt="" coords="622,319,767,360"/>
+<area shape="rect" id="node15" href="$src_2ImageProcessing_2color_8h_source.html" title="color.h" alt="" coords="734,415,799,442"/>
+<area shape="rect" id="node16" href="$ObjectDetector_8h.html" title="../ObjectDetector/Object\lDetector.h" alt="" coords="512,408,691,449"/>
+<area shape="rect" id="node21" href="$camera__controller_8h_source.html" title="../camera_controller.h" alt="" coords="875,415,1037,442"/>
+<area shape="rect" id="node23" href="$base64_8h_source.html" title="../util/base64.h" alt="" coords="1251,326,1370,353"/>
+</map>

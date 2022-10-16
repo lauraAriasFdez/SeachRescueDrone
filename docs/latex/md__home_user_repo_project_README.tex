@@ -1,0 +1,135 @@
+This directory contains the support code needed to visualize the C\+S\+CI 3081 project and run tests. The beta support code explains how to quickly get a drone moving. Most of the logic should be moved into the simulation facade so that the simulation is not dependent on the view. See {\ttfamily \hyperlink{web__app_8cc}{web\+\_\+app.\+cc}} for more details.
+
+\paragraph*{What is in this directory?}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily R\+E\+A\+D\+M\+E.\+md} 
+\item {\ttfamily .gitignore} 
+\item {\ttfamily src} folder, which contains\+: 
+\begin{DoxyItemize}
+\item {\ttfamily main.\+cc} 
+\item {\ttfamily \hyperlink{web__app_8h}{web\+\_\+app.\+h}} and {\ttfamily \hyperlink{web__app_8cc}{web\+\_\+app.\+cc}} 
+\end{DoxyItemize}
+\item {\ttfamily test} folder, which contains\+: 
+\begin{DoxyItemize}
+\item {\ttfamily example\+\_\+test.\+cc} to get you started 
+\end{DoxyItemize}
+\item {\ttfamily web} folder, which contains\+: 
+\begin{DoxyItemize}
+\item The javascript visualization code 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection*{Getting Started}
+
+Here is a quick overview of how to run the visualization (These steps are similar in each build environment. See below for environment details.)\+: \begin{DoxyVerb}```bash
+# Go to the project directory
+cd /path/to/repo/project
+
+# Build the project
+make -j
+
+# Run the tests
+./build/test-app
+
+# Run the project (./build/web-app <port> <web folder>)
+./build/web-app 8081 web
+```
+\end{DoxyVerb}
+
+
+Navigate to \href{http://127.0.0.1:8081}{\tt http\+://127.\+0.\+0.\+1\+:8081} and you should see a visualization. You can move a drone around by using the arrow keys and wsda.
+
+Below are instructions that detail how to build and run in several different environments.
+
+\subsubsection*{Getting Started with Docker}
+
+\paragraph*{Pre-\/requisites}
+
+
+\begin{DoxyItemize}
+\item \href{https://git-scm.com/}{\tt Git}
+\end{DoxyItemize}
+
+\paragraph*{Docker Pre-\/requisites}
+
+
+\begin{DoxyItemize}
+\item Windows 10 Home
+\begin{DoxyItemize}
+\item Install \href{https://www.youtube.com/watch?v=ilKQHAFeQR0&list=RDCMUCzLbHrU7U3cUDNQWWAqjceA&start_radio=1&t=7}{\tt wsl2 and Ubuntu}
+\end{DoxyItemize}
+\item Install \href{https://hub.docker.com/?overlay=onboarding}{\tt Docker Desktop} from \href{https://hub.docker.com/}{\tt Docker Hub}
+\item Linux
+\begin{DoxyItemize}
+\item Use \href{https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04}{\tt docker group instead of sudo}
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\paragraph*{Building and running the project}
+
+
+\begin{DoxyEnumerate}
+\item Build docker image
+
+```bash bin/build-\/env.\+sh ```
+\item Run docker image
+
+```bash \#\+Usage bin/run-\/env.\+sh $<$port -\/ optional(default 8081)$>$ bin/run-\/env.\+sh ```
+\item Build project web server (inside docker image) N\+O\+TE\+: You won\textquotesingle{}t be able to {\ttfamily cd} here yet because the project directory does not exist. If you were able to launch the above commands you should now be inside the docker image. You can exit it with C\+T\+R\+L+D now.
+
+```bash \section*{Inside docker image}
+
+cd /home/user/repo/project make -\/j ```
+\item Run web server (inside docker image)
+
+```bash \section*{M\+U\+ST be within project/ directory inside docker image}
+
+cd /home/user/repo/project ./build/web-\/app 8081 web ```
+\item Open up Firefox and browse to \href{http://127.0.0.1:8081/}{\tt http\+://127.\+0.\+0.\+1\+:8081/}
+\end{DoxyEnumerate}
+
+\subsubsection*{Getting Started using S\+SH on C\+SE Lab machines}
+
+
+\begin{DoxyEnumerate}
+\item S\+SH into a C\+SE Lab Machine using port forwarding for the UI
+
+{\bfseries Note\+:} If port {\ttfamily 8081} is not available, choose a different port (e.\+g. 8082, 8083, etc...)
+
+```bash ssh -\/L 8081\+:127.\+0.\+0.\+1\+:8081 \href{mailto:x500@csel-xxxx.cselabs.umn.edu}{\tt x500@csel-\/xxxx.\+cselabs.\+umn.\+edu} ```
+
+Example\+: ```bash \section*{ssh -\/L 8081\+:127.\+0.\+0.\+1\+:8081 \href{mailto:x500@csel-kh1250-05.cselabs.umn.edu}{\tt x500@csel-\/kh1250-\/05.\+cselabs.\+umn.\+edu}}
+
+```
+\item Compile the project (within ssh session)
+
+```bash cd /path/to/cloned/repository cd project make -\/j ```
+\begin{DoxyEnumerate}
+\item Run project (within ssh session)
+
+```bash \section*{M\+U\+ST be within project/ directory}
+
+./build/web-\/app 8081 web ```
+\end{DoxyEnumerate}
+\item Open up Firefox and browse to \href{http://127.0.0.1:8081/}{\tt http\+://127.\+0.\+0.\+1\+:8081/}
+\end{DoxyEnumerate}
+
+\subsubsection*{Getting Started with C\+SE Lab Machines, V\+O\+L\+E-\/3D, or V\+O\+LE}
+
+
+\begin{DoxyEnumerate}
+\item Log on to C\+SE Lab Macines, \href{https://vole.cse.umn.edu/}{\tt V\+O\+L\+E-\/3D, or V\+O\+LE} (V\+O\+LE is slower for graphics, but is great for tests, etc...)
+\item Build project
+
+```bash cd /path/to/cloned/repository cd project make -\/j ```
+\begin{DoxyEnumerate}
+\item Run project
+
+```bash \section*{M\+U\+ST be within project/ directory}
+
+./build/web-\/app 8081 web ```
+\item Open up Firefox and browse to \href{http://127.0.0.1:8081/}{\tt http\+://127.\+0.\+0.\+1\+:8081/} 
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}

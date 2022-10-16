@@ -1,4 +1,4 @@
-# Repo for repo-team-54. 
+# Repo for Rescue/Search Drone
 Team members include Laura Arias Fernadez, Michael Weiner, and Malik Khadar.
 
 ## Pre-requisites
